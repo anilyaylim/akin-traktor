@@ -1,5 +1,5 @@
 # Test deployment to GitHub Pages (noindex, nofollow): https://anilyaylim.github.io/akin-traktor/
-# Builds the static export with the /akin-traktor base path and publishes ./out to the gh-pages branch.
+# Builds the dark site (/akin-traktor/) and the light v2 (/akin-traktor/light/) and publishes ./site to gh-pages.
 name: Pages (test)
 on:
   push:
@@ -20,14 +20,13 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: bash scripts/build-all.sh
         env:
-          NEXT_PUBLIC_BASE_PATH: /akin-traktor
+          BASE: /akin-traktor
           NEXT_TELEMETRY_DISABLED: 1
-      - run: touch out/.nojekyll
       - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./out
+          publish_dir: ./site
           publish_branch: gh-pages
           force_orphan: true

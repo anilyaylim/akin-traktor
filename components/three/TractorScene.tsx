@@ -4,6 +4,7 @@
    chosen parts glow, the catalogue filters to match. */
 import * as THREE from 'three';
 import { asset } from '@/lib/i18n';
+import { LIGHT } from '@/lib/theme';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Bounds, ContactShadows, Environment, Html, OrbitControls, RoundedBox } from '@react-three/drei';
 import { useEffect, useMemo, useRef } from 'react';
@@ -128,7 +129,7 @@ export default function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: 
     <Canvas shadows dpr={[1, 1.75]} camera={{ fov: 30, position: [7.2, 4.2, 8.2] }} gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}>
       <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={0.85} />
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
-      <pointLight position={[-6, 3, -4]} intensity={40} color="#ff2a2f" distance={18} />
+      <pointLight position={[-6, 3, -4]} intensity={40} color={LIGHT ? "#2d6bff" : "#ff2a2f"} distance={18} />
       <Bounds fit observe margin={1.12}><Tractor sel={sel} /></Bounds>
       {SPOTS.map(([id, p]) => (
         <Html key={id} position={p} center zIndexRange={[6, 0]}>
@@ -137,7 +138,7 @@ export default function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: 
           </button>
         </Html>
       ))}
-      <ContactShadows position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
+      <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
       <OrbitControls makeDefault target={[0, 1.3, 0]} enablePan={false} enableZoom={false} autoRotate={!sel} autoRotateSpeed={0.6} minPolarAngle={0.6} maxPolarAngle={1.45} enableDamping />
     </Canvas>
   );
