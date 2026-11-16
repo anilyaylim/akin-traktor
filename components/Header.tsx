@@ -7,6 +7,7 @@ import { href, t } from '@/lib/i18n';
 import { useQuote } from './Providers';
 import { Arrow, CartIcon, Logo } from './ui';
 import QuoteDrawer from './QuoteDrawer';
+import { ALT_BASE, ALT_ON, LIGHT } from '@/lib/theme';
 
 export default function Header({ lang }: { lang: Lang }) {
   const d = t(lang); const path = usePathname() || `/${lang}/`;
@@ -34,6 +35,7 @@ export default function Header({ lang }: { lang: Lang }) {
           </nav>
           <div className="hdr-r">
             <div className="lang"><Link href={lang === 'tr' ? path : swap} className={lang === 'tr' ? 'on' : ''}>TR</Link><Link href={lang === 'en' ? path : swap} className={lang === 'en' ? 'on' : ''}>EN</Link></div>
+            {ALT_ON && <a className="ver" href={ALT_BASE + path} title={LIGHT ? (lang === 'tr' ? 'Koyu versiyon' : 'Dark version') : (lang === 'tr' ? 'Açık versiyon' : 'Light version')}><i /><span>{LIGHT ? (lang === 'tr' ? 'Koyu' : 'Dark') : (lang === 'tr' ? 'Açık' : 'Light')}</span></a>}
             <button className={'cart-btn' + (bump ? ' bump' : '')} onClick={() => setOpen(true)} aria-label={d.nav.quote}><CartIcon />{count > 0 && <b>{count}</b>}</button>
             <Link href={href(lang, 'products') + '#finder'} className="btn btn-red btn-sm">{d.nav.finder} <Arrow /></Link>
             <button className={'burger' + (menu ? ' open' : '')} onClick={() => setMenu(!menu)} aria-label={menu ? d.nav.close : d.nav.menu} aria-expanded={menu}><i /><i /></button>

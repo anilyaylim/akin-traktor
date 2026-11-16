@@ -1,6 +1,8 @@
 /* Small shared UI pieces (server-safe): split-text heading, arrow icon, logo, system icons. */
 import { Fragment } from 'react';
 import type { SystemId } from '@/lib/catalog';
+import { LIGHT } from '@/lib/theme';
+import { HYBRID, HYBRID_VB } from '@/lib/logos';
 
 export function Split({ lines, className = '', as: Tag = 'h2' }: { lines: string[] | string; className?: string; as?: 'h1' | 'h2' | 'h3' | 'p' | 'div' }) {
   const ls = Array.isArray(lines) ? lines : [lines]; let i = 0;
@@ -28,6 +30,12 @@ export const CartIcon = () => (
 /* New identity proposal: a nut-shaped mark (hexagon = engineering) cut by the "A" arrow,
    paired with a wide geometric wordmark. */
 export function Logo({ sub }: { sub?: string }) {
+  if (LIGHT) return (
+    <span className="logo">
+      <svg className="hyb" viewBox={HYBRID_VB} aria-label="akın" dangerouslySetInnerHTML={{ __html: HYBRID }} />
+      {sub && <small>{sub}</small>}
+    </span>
+  );
   return (
     <span className="logo">
       <svg viewBox="0 0 132 30" aria-label="AKIN">

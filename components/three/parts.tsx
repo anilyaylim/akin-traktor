@@ -7,11 +7,12 @@ import * as THREE from 'three';
 import { useMemo } from 'react';
 import type { ThreeElements } from '@react-three/fiber';
 import type { ModelKind } from '@/lib/catalog';
+import { LIGHT } from '@/lib/theme';
 
 /* ── materials ── */
 export function useMats() {
   return useMemo(() => ({
-    steel: new THREE.MeshPhysicalMaterial({ color: 0xa7adb4, metalness: 1, roughness: 0.28, clearcoat: 0.2 }),
+    steel: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0x6f7782 : 0xa7adb4, metalness: 1, roughness: LIGHT ? 0.32 : 0.28, clearcoat: 0.2 }),   // darker on light backgrounds
     dark: new THREE.MeshPhysicalMaterial({ color: 0x3a3f46, metalness: 0.9, roughness: 0.42 }),
     black: new THREE.MeshPhysicalMaterial({ color: 0x15171a, metalness: 0.5, roughness: 0.55 }),
     brass: new THREE.MeshPhysicalMaterial({ color: 0xc9a46a, metalness: 1, roughness: 0.3 }),

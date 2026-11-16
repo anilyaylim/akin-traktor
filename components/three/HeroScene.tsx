@@ -4,6 +4,7 @@
    Gears keep turning, the whole set follows the pointer slightly. */
 import * as THREE from 'three';
 import { asset } from '@/lib/i18n';
+import { LIGHT } from '@/lib/theme';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { ContactShadows, Environment, Html } from '@react-three/drei';
 import { useMemo, useRef } from 'react';
@@ -72,10 +73,10 @@ export default function HeroScene({ prog, labels }: { prog: Prog; labels: string
     <Canvas shadows dpr={[1, 1.75]} gl={{ antialias: true, alpha: true, toneMapping: THREE.ACESFilmicToneMapping, toneMappingExposure: 1.05 }} camera={{ fov: 32, position: [7.5, 3.2, 8.5], near: 0.1, far: 100 }}>
       <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={0.9} />
       <directionalLight position={[6, 9, 6]} intensity={2.2} castShadow shadow-mapSize={[1024, 1024]} shadow-bias={-0.0005} />
-      <pointLight position={[-6, 1, -5]} intensity={60} color="#ff2a2f" distance={20} />
+      <pointLight position={[-6, 1, -5]} intensity={60} color={LIGHT ? "#2d6bff" : "#ff2a2f"} distance={20} />
       <pointLight position={[6, -2, 4]} intensity={18} color="#9fb4ff" distance={18} />
       <Assembly prog={prog} labels={labels} />
-      <ContactShadows position={[0, -3.6, 0]} opacity={0.55} scale={26} blur={2.6} far={6} />
+      <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, -3.6, 0]} opacity={0.55} scale={26} blur={2.6} far={6} />
     </Canvas>
   );
 }
