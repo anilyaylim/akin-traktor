@@ -34,8 +34,8 @@ CONCEPTS = [
    ['İkon: traktör lastiğinin tırtıkları ile dişli çarkın birleşimi, içinde AKIN’ın “A”sı.', 'İkon tek başına uygulama simgesi, favicon ve sosyal medya profili olur.', 'Yazı ile ikon ayrı ayrı da kullanılabilen esnek bir sistem.']),
   ('C', 'Hybrid · Traktör + Akın', 'Harflerden kurulmuş bir traktör.',
    ['“akın” yazısı traktörün kendisi: “a” arka teker, “k” kabin direği, “ı” egzoz, “n” motor kaputu.', 'Altta şasi, “n”nin altında ön teker. Akın soyadı ile traktör simgesi tek işarette birleşir.', 'Arka teker tek başına ikon olarak kullanılabilir; dijitalde tekerler dönebilir.']),
-  ('C2', 'Hybrid · büyük harf', 'Tekerlekler üzerinde AKIN.',
-   ['C’nin büyük harfli yorumu: AKIN harfleri traktörün gövdesi, altında şasi.', 'Tekerlekler harflere çamurluk kavisi açar; “I” egzoz bacası, A’nın kırmızı ara çizgisi A önerisiyle aynı imza.', 'Kurumsal ve ağır sanayi hissi daha güçlü; tabelada uzaktan okunur.']),
+  ('C2', 'Hybrid · büyük harf', 'A harfi traktörün kabini.',
+   ['A’nın tepesi “–” tente (kabin tavanı), iki bacağı “/ \\” kabin direkleri; kırmızı ara çizgi gösterge paneli.', 'Dönen arka teker A’nın tam altında ortalı; teker, direklere çamurluk kavisi açar. “I” egzoz bacası, “N”nin altında ön teker.', 'Tek başına ikon: tenteli A ve altındaki teker. Uzaktan okunur, dijitalde tekerlekler döner.']),
   ('D', 'Mevcut logoya güçlü alternatif', 'Kırmızı rozet, hız çizgisi, traktör.',
    ['Bugünkü logonun kırmızı “A”sı, keskin köşeli bir rozete dönüştü: tek başına ikon olur.', '“KIN” ağır, eğik ve lacivert; hareket ve güç hissi verir.', 'Traktör artık dolu ve kırmızı bir silüet, AKIN ile aynı zemin çizgisinde ilerliyor.']),
 ]

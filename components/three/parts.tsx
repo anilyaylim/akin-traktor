@@ -99,15 +99,16 @@ export function ClutchDisc({ m, r = 2.4, ...g }: P & { r?: number }) {
   );
 }
 export function BrakeDisc({ m, r = 1.9, ...g }: P & { r?: number }) {
-  const disc = useMemo(() => ringGeo(r, 0.62, 0.22), [r]);
-  const pad = useMemo(() => { const s = new THREE.Shape(); s.absarc(0, 0, r * 0.98, -0.22, 0.22, false); s.absarc(0, 0, r * 0.66, 0.22, -0.22, true); return new THREE.ExtrudeGeometry(s, { depth: 0.08, bevelEnabled: false, curveSegments: 16 }); }, [r]);
-  const hub = useMemo(() => gearGeo(24, 0.66, 0.4, 0.4, 0, 12), []);
-  const hole = useMemo(() => cyl(0.07, 0.24, 16), []);
+  const k = r / 1.9;   // everything scales with the disc radius (tractor discs are small)
+  const disc = useMemo(() => ringGeo(r, 0.62 * k, 0.22 * Math.max(k, 0.45)), [r, k]);
+  const pad = useMemo(() => { const s = new THREE.Shape(); s.absarc(0, 0, r * 0.98, -0.22, 0.22, false); s.absarc(0, 0, r * 0.66, 0.22, -0.22, true); return new THREE.ExtrudeGeometry(s, { depth: 0.08 * Math.max(k, 0.45), bevelEnabled: false, curveSegments: 16 }); }, [r]);
+  const hub = useMemo(() => gearGeo(24, 0.66 * k, 0.4 * Math.max(k, 0.45), 0.4 * k, 0, 12), [k]);
+  const hole = useMemo(() => cyl(0.07 * k, 0.24 * Math.max(k, 0.45), 16), [k]);
   return (
     <group {...g}>
       <mesh geometry={disc} material={m.dark} castShadow receiveShadow />
       <mesh geometry={hub} material={m.steel} />
-      {[0.11, -0.19].map(z => Array.from({ length: 8 }, (_, i) => <mesh key={z + ':' + i} geometry={pad} material={m.friction} rotation-z={(i / 8) * Math.PI * 2} position-z={z} />))}
+      {[0.11 * Math.max(k, 0.45), -0.19 * Math.max(k, 0.45)].map(z => Array.from({ length: 8 }, (_, i) => <mesh key={z + ':' + i} geometry={pad} material={m.friction} rotation-z={(i / 8) * Math.PI * 2} position-z={z} />))}
       {Array.from({ length: 12 }, (_, i) => { const a = (i / 12) * Math.PI * 2; return <mesh key={i} geometry={hole} material={m.black} position={[Math.cos(a) * r * 0.82, Math.sin(a) * r * 0.82, 0]} rotation-x={Math.PI / 2} />; })}
     </group>
   );

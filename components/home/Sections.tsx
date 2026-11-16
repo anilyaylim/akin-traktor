@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PRODUCTS, STATS, SYSTEMS, type Lang, type SystemId } from '@/lib/catalog';
@@ -95,20 +95,22 @@ export function FinderTeaser({ lang }: { lang: Lang }) {
 }
 
 export function Process({ lang }: { lang: Lang }) {
-  const d = t(lang).process; const sec = useRef<HTMLElement>(null); const track = useRef<HTMLDivElement>(null);
-  useEffect(() => {
+  const d = t(lang).process; const sec = useRef<HTMLElement>(null); const pinEl = useRef<HTMLDivElement>(null); const track = useRef<HTMLDivElement>(null);
+  // layout effect: the pin is undone before React removes the DOM on route change (a pin wraps the pinned
+  // node in a spacer; tearing it down after removal crashed client-side navigation with removeChild)
+  useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     const mm = gsap.matchMedia();
     mm.add('(min-width: 900px) and (prefers-reduced-motion: no-preference)', () => {
       const tr = track.current!;
-      const tw = gsap.to(tr, { x: () => -(tr.scrollWidth - innerWidth + 80), ease: 'none', scrollTrigger: { trigger: sec.current, start: 'top top', end: () => '+=' + (tr.scrollWidth - innerWidth), scrub: 0.6, pin: true, invalidateOnRefresh: true } });
+      const tw = gsap.to(tr, { x: () => -(tr.scrollWidth - innerWidth + 80), ease: 'none', scrollTrigger: { trigger: sec.current, start: 'top top', end: () => '+=' + (tr.scrollWidth - innerWidth), scrub: 0.6, pin: pinEl.current, invalidateOnRefresh: true } });
       return () => tw.kill();
     });
     return () => mm.revert();
   }, []);
   return (
     <section ref={sec} className="process">
-      <div className="process-in">
+      <div ref={pinEl} className="process-in">
         <div className="wrap"><span className="eyebrow">{d.eyebrow}</span><Split className="h1" lines={d.title} /></div>
         <div ref={track} className="process-track">
           {d.steps.map(([h, p], i) => (
