@@ -1,28 +1,49 @@
 import type { Metadata } from 'next';
 import ContactForm from '@/components/ContactForm';
-import { Split } from '@/components/ui';
+import PageHero from '@/components/PageHero';
+import { WaIcon } from '@/components/ui';
 import type { Lang } from '@/lib/catalog';
 import { CONTACT, t } from '@/lib/i18n';
+import { p } from '@/lib/pages';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> { const { lang } = await params; return { title: lang === 'tr' ? 'İletişim' : 'Contact' }; }
 
+const ICON: Record<string, React.ReactNode> = {
+  wa: <WaIcon />,
+  tel: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg>,
+  mail: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>,
+  map: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg>,
+};
+
 export default async function Contact({ params }: { params: Promise<{ lang: string }> }) {
-  const { lang } = (await params) as { lang: Lang }; const d = t(lang).contact;
+  const { lang } = (await params) as { lang: Lang }; const d = t(lang).contact; const x = p(lang).contact;
   const ld = { '@context': 'https://schema.org', '@type': 'AutoPartsStore', name: 'Akın Traktör', foundingDate: '1998', email: CONTACT.email, address: { '@type': 'PostalAddress', streetAddress: 'Fevziçakmak Mah. 10763 Sk. No: 1/C', addressLocality: 'Karatay', addressRegion: 'Konya', postalCode: '42050', addressCountry: 'TR' } };
+  const hrefOf = (k: string) => k === 'wa' ? `https://wa.me/${CONTACT.whatsapp}` : k === 'tel' ? `tel:${CONTACT.phone.replace(/\s/g, '')}` : k === 'mail' ? `mailto:${CONTACT.email}` : CONTACT.map;
+  const val = (k: string) => k === 'wa' || k === 'tel' ? CONTACT.phone : k === 'mail' ? CONTACT.email : 'Fevziçakmak, Karatay';
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
-      <section className="phero"><div className="wrap">
-        <span className="eyebrow">{d.eyebrow}</span><Split as="h1" className="h1" lines={d.title} /><p className="lead fade">{d.sub}</p>
+      <PageHero eyebrow={d.eyebrow} title={d.title} lead={d.sub} />
+      <section className="section" style={{ paddingTop: 30 }}><div className="wrap">
+        <div className="chan">{x.channels.map(([h, s, k], i) => (
+          <a key={k} className="chan-c fade" style={{ transitionDelay: i * 70 + 'ms' }} href={hrefOf(k)} target={k === 'wa' || k === 'map' ? '_blank' : undefined} rel="noopener">
+            <span className="chan-ic">{ICON[k]}</span><b>{h}</b><span className="muted">{s}</span><em className="mono">{val(k)}</em><i aria-hidden>↗</i>
+          </a>))}</div>
       </div></section>
-      <section className="section" style={{ paddingTop: 50 }}><div className="wrap cgrid">
+      <section className="section" style={{ paddingTop: 0 }}><div className="wrap cgrid">
         <dl className="cinfo fade">
-          <div><dt>{d.address}</dt><dd>{CONTACT.address}</dd><a className="mono muted" style={{ fontSize: 12, textDecoration: 'underline' }} href={CONTACT.map} target="_blank" rel="noopener">{d.map} ↗</a></div>
+          <div><dt>{d.address}</dt><dd>{CONTACT.address}</dd></div>
           <div><dt>{d.phone}</dt><dd><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a></dd></div>
           <div><dt>{d.email}</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
           <div><dt>{d.hours}</dt><dd>{CONTACT.hours[lang]}</dd></div>
         </dl>
         <ContactForm lang={lang} />
+      </div></section>
+      <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
+        <div className="mapw fade">
+          <iframe title={x.mapT} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://maps.google.com/maps?q=${encodeURIComponent('Fevziçakmak 10763 Sk. No:1 Karatay Konya')}&z=15&output=embed`} />
+          <div className="mapw-card"><span className="eyebrow">{x.mapT}</span><p>{CONTACT.address}</p><a className="btn btn-red btn-sm" href={CONTACT.map} target="_blank" rel="noopener">{x.open} ↗</a></div>
+        </div>
       </div></section>
     </>
   );

@@ -27,6 +27,11 @@ export default function Finder({ lang, compact = false }: { lang: Lang; compact?
     const qq = u.get('q'); if (qq) setQuery(qq);
   }, []);
   useEffect(() => setN(PAGE), [sys, group, brand, query]);
+  // product-group tiles on the products page talk to the finder through a window event
+  useEffect(() => {
+    const on = (e: Event) => { const g = (e as CustomEvent).detail?.group as string; if (g && GROUPS[g]) { setSys(GROUPS[g].system); setGroup(g); setBrand(null); setQuery(''); } };
+    addEventListener('akin-filter', on); return () => removeEventListener('akin-filter', on);
+  }, []);
   const labels = useMemo(() => Object.fromEntries(Object.entries(SYSTEMS).map(([k, v]) => [k, v[lang]])) as Record<SystemId, string>, [lang]);
   const res = useMemo(() => {
     const terms = norm(query).split(/\s+/).filter(Boolean);
