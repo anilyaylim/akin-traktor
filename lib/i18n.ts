@@ -21,20 +21,20 @@ const tr = {
     spec: ['Stok kodu', 'Ürün grubu', 'Uyum'],
   },
   stats: { title: 'Rakamlarla Akın', items: ['Kuruluş', 'Stok kodu', 'Ürün grubu', 'Mutlu müşteri', 'Uzman personel'] },
-  systems: { eyebrow: 'Ürün sistemleri', title: 'Sekiz sistem. Tek tedarikçi.', sub: 'Her parça bir sisteme ait. Kataloğumuz da öyle düzenlendi: traktörün neresinde arıza varsa, parçası bir tık uzakta.', count: 'ürün', all: 'Tümünü gör' },
+  systems: { eyebrow: 'Ürün sistemleri', title: ['Sekiz sistem.', 'Tek tedarikçi.'], sub: 'Her parça bir sisteme ait. Kataloğumuz da öyle düzenlendi: traktörün neresinde arıza varsa, parçası bir tık uzakta.', count: 'ürün', all: 'Tümünü gör' },
   finder: {
-    eyebrow: 'Parça Bulucu', title: 'Parçanı traktörün üzerinde bul.', sub: 'Sistemi seç, modeli yaz ya da ürün kodunu gir. 565 stok kodu anında filtrelenir; istediklerini teklif sepetine ekle.',
+    eyebrow: 'Parça Bulucu', title: ['Parçanı', 'traktörün üzerinde bul.'], sub: 'Sistemi seç, modeli yaz ya da ürün kodunu gir. 565 stok kodu anında filtrelenir; istediklerini teklif sepetine ekle.',
     search: 'Ürün adı, kod veya model (ör. 70.56, E007)…', systems: 'Sistem', brands: 'Marka', all: 'Tümü', results: 'sonuç', empty: 'Bu kriterlere uygun parça bulunamadı.', reset: 'Filtreleri temizle',
     add: 'Sepete ekle', added: 'Sepette', details: 'Detay', models: 'Uyumlu', code: 'Kod', tap: 'Sisteme dokun', more: 'Daha fazla göster', open: 'Parça Bulucu’yu aç',
   },
-  process: { eyebrow: 'Süreç', title: 'Depodan tarlaya.', steps: [
+  process: { eyebrow: 'Süreç', title: ['Depodan', 'tarlaya.'], steps: [
     ['Stok & kodlama', 'Her parça benzersiz bir kodla raflanır; 15 ürün grubunda 565 kalem anlık izlenir.'],
     ['Ölçü kontrolü', 'Dişli modülü, pim çapı, rakor dişi: sevkiyattan önce ölçü ve uyum kontrolü.'],
     ['Teklif & onay', 'Sepetten gelen talep satış ekibine düşer; fiyat ve termin aynı gün döner.'],
     ['Sevkiyat', 'Konya’dan Türkiye geneline kargo ve ambar ağıyla hızlı teslimat.'],
   ] },
-  b2b: { eyebrow: 'Bayi & B2B', title: 'Bayiler için ayrı bir dünya.', sub: 'Özel fiyat listeleri, toplu sipariş ve sipariş takibi B2B platformunda.', cta: 'B2B Platforma Giriş', cta2: 'Bayimiz olun' },
-  contactCta: { title: 'Aradığın parçayı birlikte bulalım.', sub: 'Kodu bilmiyor musun? Fotoğrafını WhatsApp’tan gönder, uzmanlarımız eşleştirsin.', wa: 'WhatsApp’tan yaz', call: 'Hemen ara' },
+  b2b: { eyebrow: 'Bayi & B2B', title: ['Bayiler için', 'ayrı bir dünya.'], sub: 'Özel fiyat listeleri, toplu sipariş ve sipariş takibi B2B platformunda.', cta: 'B2B Platforma Giriş', cta2: 'Bayimiz olun' },
+  contactCta: { title: ['Aradığın parçayı', 'birlikte bulalım.'], sub: 'Kodu bilmiyor musun? Fotoğrafını WhatsApp’tan gönder, uzmanlarımız eşleştirsin.', wa: 'WhatsApp’tan yaz', call: 'Hemen ara' },
   footer: { tag: 'Traktör güç aktarma, hidrolik ve fren yedek parçaları. Konya’dan Türkiye’nin dört bir yanına.', rights: 'Tüm hakları saklıdır.', demo: 'Konsept tasarım · No7 Software', legal: 'KVKK & Gizlilik', cols: ['Ürünler', 'Kurumsal', 'İletişim'] },
   product: {
     back: 'Kataloğa dön', group: 'Ürün grubu', system: 'Sistem', code: 'Stok kodu', models: 'Uyumlu modeller', universal: 'Tüm modellerle uyumlu', qty: 'Adet', add: 'Teklif sepetine ekle', added: 'Sepete eklendi',
@@ -79,20 +79,20 @@ const en: typeof tr = {
     spec: ['Stock codes', 'Product groups', 'Fits'],
   },
   stats: { title: 'Akın in numbers', items: ['Founded', 'Stock codes', 'Product groups', 'Happy customers', 'Specialists'] },
-  systems: { eyebrow: 'Product systems', title: 'Eight systems. One supplier.', sub: 'Every part belongs to a system, and so does our catalogue: wherever the tractor fails, the part is one click away.', count: 'products', all: 'See all' },
+  systems: { eyebrow: 'Product systems', title: ['Eight systems.', 'One supplier.'], sub: 'Every part belongs to a system, and so does our catalogue: wherever the tractor fails, the part is one click away.', count: 'products', all: 'See all' },
   finder: {
-    eyebrow: 'Part Finder', title: 'Find your part on the tractor.', sub: 'Pick a system, type a model or enter a stock code. 565 codes filter instantly; add what you need to your quote list.',
+    eyebrow: 'Part Finder', title: ['Find your part', 'on the tractor.'], sub: 'Pick a system, type a model or enter a stock code. 565 codes filter instantly; add what you need to your quote list.',
     search: 'Part name, code or model (e.g. 70.56, E007)…', systems: 'System', brands: 'Brand', all: 'All', results: 'results', empty: 'No parts match these filters.', reset: 'Clear filters',
     add: 'Add to quote', added: 'In list', details: 'Details', models: 'Fits', code: 'Code', tap: 'Tap a system', more: 'Show more', open: 'Open the Part Finder',
   },
-  process: { eyebrow: 'Process', title: 'From shelf to field.', steps: [
+  process: { eyebrow: 'Process', title: ['From shelf', 'to field.'], steps: [
     ['Stock & coding', 'Every part is shelved under a unique code; 565 items in 15 groups tracked in real time.'],
     ['Dimensional check', 'Gear module, pin diameter, fitting thread: size and fit are checked before dispatch.'],
     ['Quote & approval', 'Requests from the quote list reach sales directly; price and lead time come back the same day.'],
     ['Dispatch', 'Fast delivery from Konya across Turkey through courier and freight partners.'],
   ] },
-  b2b: { eyebrow: 'Dealers & B2B', title: 'A dedicated world for dealers.', sub: 'Dealer price lists, bulk orders and order tracking on the B2B platform.', cta: 'B2B platform login', cta2: 'Become a dealer' },
-  contactCta: { title: 'Let’s find your part together.', sub: 'Don’t know the code? Send a photo on WhatsApp and our specialists will match it.', wa: 'Message on WhatsApp', call: 'Call now' },
+  b2b: { eyebrow: 'Dealers & B2B', title: ['A dedicated world', 'for dealers.'], sub: 'Dealer price lists, bulk orders and order tracking on the B2B platform.', cta: 'B2B platform login', cta2: 'Become a dealer' },
+  contactCta: { title: ['Let’s find your part', 'together.'], sub: 'Don’t know the code? Send a photo on WhatsApp and our specialists will match it.', wa: 'Message on WhatsApp', call: 'Call now' },
   footer: { tag: 'Tractor powertrain, hydraulic and brake spare parts. From Konya to every corner of Turkey.', rights: 'All rights reserved.', demo: 'Concept design · No7 Software', legal: 'Privacy', cols: ['Products', 'Company', 'Contact'] },
   product: {
     back: 'Back to catalogue', group: 'Product group', system: 'System', code: 'Stock code', models: 'Compatible models', universal: 'Fits all models', qty: 'Qty', add: 'Add to quote list', added: 'Added to list',

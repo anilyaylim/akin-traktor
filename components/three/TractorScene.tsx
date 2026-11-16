@@ -28,7 +28,7 @@ function Tire({ r, w, lugs, m }: { r: number; w: number; lugs: number; m: Mats }
       <mesh geometry={tire} material={m.black} castShadow />
       {Array.from({ length: lugs }, (_, i) => { const a = (i / lugs) * Math.PI * 2; return [-1, 1].map(s => (
         <mesh key={i + ':' + s} geometry={lug} material={m.black} position={[Math.cos(a) * (r + 0.02), Math.sin(a) * (r + 0.02), s * w * 0.22]} rotation={[0, 0, a + s * 0.5]} />)); })}
-      <mesh geometry={rim} material={m.red} rotation-x={Math.PI / 2} />
+      <mesh geometry={rim} material={m.rim} rotation-x={Math.PI / 2} />
       <mesh geometry={hub} material={m.steel} rotation-x={Math.PI / 2} />
     </group>
   );
@@ -49,7 +49,7 @@ function Tractor({ sel }: { sel: Sel }) {
       const orig = mesh.userData.orig as THREE.MeshPhysicalMaterial;
       if (!sel) { mesh.material = orig; mesh.castShadow = true; return; }
       if (g.userData.sys === sel) {
-        let gm = glowCache.get(orig); if (!gm) { gm = orig.clone(); gm.emissive = new THREE.Color(0xff2a30); glowCache.set(orig, gm); }
+        let gm = glowCache.get(orig); if (!gm) { gm = orig.clone(); gm.emissive = new THREE.Color(LIGHT ? 0x2d6bff : 0xff2a30); glowCache.set(orig, gm); }
         mesh.material = gm; glows.current.push(gm); mesh.castShadow = true;
       } else { mesh.material = ghost; mesh.castShadow = false; }
     }));
@@ -61,11 +61,11 @@ function Tractor({ sel }: { sel: Sel }) {
     <group position={[-0.2, 0, 0]}>
       {/* chassis & bodywork */}
       <group ref={reg('body')}>
-        {box(1.85, 0.5, 0.95, m.red, [1.55, 1.62, 0], 0.12)}
-        {box(0.5, 0.42, 0.7, m.red, [0.42, 1.68, 0], 0.08)}
+        {box(1.85, 0.5, 0.95, m.body, [1.55, 1.62, 0], 0.12)}
+        {box(0.5, 0.42, 0.7, m.body, [0.42, 1.68, 0], 0.08)}
         {box(1.5, 0.08, 1.0, m.dark, [1.55, 1.38, 0])}
         <mesh position={[1.25, 2.25, 0.32]} castShadow material={m.dark}><cylinderGeometry args={[0.06, 0.07, 1.3, 16]} /></mesh>
-        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color="#d0242b" metalness={0.55} roughness={0.32} clearcoat={0.6} side={THREE.DoubleSide} /></mesh>)}
+        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color={LIGHT ? "#14365e" : "#d0242b"} metalness={0.5} roughness={0.3} clearcoat={0.7} side={THREE.DoubleSide} /></mesh>)}
         {box(0.5, 0.12, 0.5, m.black, [-1.05, 1.82, 0], 0.05)}{box(0.1, 0.5, 0.5, m.black, [-1.32, 2.05, 0], 0.04)}
         <mesh position={[-0.35, 1.95, 0]} rotation-z={0.5} material={m.dark}><cylinderGeometry args={[0.035, 0.035, 0.7, 12]} /></mesh>
         <mesh position={[-0.52, 2.27, 0]} rotation={[0, Math.PI / 2, 0.5]} material={m.black}><torusGeometry args={[0.22, 0.03, 10, 36]} /></mesh>
