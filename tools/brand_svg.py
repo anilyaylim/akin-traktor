@@ -62,11 +62,15 @@ if __name__ == '__main__':
 # 3b · hybrid uppercase: AKIN rides on wheels — the wheels cut fender arches out of the letters,
 #      the I is the exhaust stack. (300 × 136)
 def _hyb_caps():
-    rw, fw = (50, 98, 32), (241, 104, 21)
+    """A = tractor cab: flat canopy bar on top ('–'), two slanted ROPS posts ('/ \\'), red dash line as
+    the crossbar, and the rear wheel spinning centred right under the A (fender arch cut into the posts)."""
+    rw, fw = (40, 97, 30), (241, 104, 21)
     mask = ('<mask id="m-hc" maskUnits="userSpaceOnUse" x="-20" y="-40" width="340" height="200">'
             '<rect x="-20" y="-40" width="340" height="200" fill="#fff"/>'
             f'<circle cx="{rw[0]}" cy="{rw[1]}" r="{rw[2] + 6}" fill="#000"/><circle cx="{fw[0]}" cy="{fw[1]}" r="{fw[2] + 5}" fill="#000"/></mask>')
-    letters = ('<path d="M0 80L28 0H52L80 80H59L40 24L21 80Z"/>'
+    cab = ('<path d="M-2 -2H82V10H-2Z"/>'                                     # canopy / roof
+           '<path d="M21 10H37L18 84H0Z"/><path d="M43 10H59L80 84H62Z"/>')    # ROPS posts
+    letters = (cab +
                '<path d="M92 0H112V80H92Z"/><path d="M112 30L135 0H161L112 62Z"/><path d="M127 45L141 29L166 80H141Z"/>'
                '<path d="M176 -16L196 -24V80H176Z"/>'                         # I = exhaust stack with a slanted cap
                '<path d="M208 0H228L250 44V0H270V80H250L228 36V80H208Z"/>'
@@ -75,9 +79,11 @@ def _hyb_caps():
         f'<g class="c1">{lugs(c[0], c[1], c[2] - 2, c[2] + lug1, n, lug0, lug0 * .62)}</g>'
         f'<circle class="c1" cx="{c[0]}" cy="{c[1]}" r="{c[2]}"/><circle class="bg" cx="{c[0]}" cy="{c[1]}" r="{c[2] - hub}"/>'
         f'<circle class="acc" cx="{c[0]}" cy="{c[1]}" r="{max(4, c[2] * .22):.1f}"/></g>')
-    spokes = ''.join(f'<rect class="c1" x="{rw[0] - 2}" y="{rw[1] - 20}" width="4" height="12" transform="rotate({k * 60} {rw[0]} {rw[1]})"/>' for k in range(6))
-    w_r = wheel(rw, .085, 6, 22, 10).replace('<circle class="acc"', spokes + '<circle class="acc"', 1)
-    return (mask + f'<g class="c1" mask="url(#m-hc)">{letters}</g><rect class="acc" x="31" y="44" width="18" height="10"/>' + w_r + wheel(fw, .12, 5, 15, 7))
+    spokes = ''.join(f'<rect class="c1" x="{rw[0] - 2}" y="{rw[1] - 19}" width="4" height="11" transform="rotate({k * 60} {rw[0]} {rw[1]})"/>' for k in range(6))
+    w_r = wheel(rw, .09, 6, 21, 10).replace('<circle class="acc"', spokes + '<circle class="acc"', 1)
+    return (mask + f'<g class="c1" mask="url(#m-hc)">{letters}</g>'
+            '<path class="acc" d="M27 44H53L55.6 54H24.4Z"/>'                  # red crossbar = dashboard line
+            + w_r + wheel(fw, .12, 5, 15, 7))
 HYB_CAPS = _hyb_caps()
 
 # 4b · stronger alternative to the current logo: red badge, white A breaking out into a speed line
@@ -96,6 +102,6 @@ RET2 = ('<rect class="acc" x="0" y="6" width="96" height="96" rx="22"/>'
 # icon for 3b: the A riding on the rear wheel
 def _hyb_caps_icon():
     full = HYB_CAPS.replace('m-hc', 'm-hci')
-    clip = '<clipPath id="cl-hci"><rect x="-14" y="-10" width="104" height="160"/></clipPath>'
+    clip = '<clipPath id="cl-hci"><rect x="-6" y="-10" width="92" height="160"/></clipPath>'
     return clip + f'<g clip-path="url(#cl-hci)">{full}</g>'
 HYB_CAPS_ICON = _hyb_caps_icon()

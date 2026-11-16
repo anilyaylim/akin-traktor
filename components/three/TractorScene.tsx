@@ -5,7 +5,7 @@
 import * as THREE from 'three';
 import { asset } from '@/lib/i18n';
 import { LIGHT } from '@/lib/theme';
-import { Canvas, useFrame } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bounds, ContactShadows, Environment, Html, OrbitControls, RoundedBox } from '@react-three/drei';
 import { useEffect, useMemo, useRef } from 'react';
 import type { SystemId } from '@/lib/catalog';
@@ -54,11 +54,66 @@ function Tractor({ sel }: { sel: Sel }) {
       } else { mesh.material = ghost; mesh.castShadow = false; }
     }));
   }, [sel, ghost, glowCache]);
-  useFrame(({ clock }) => { const k = 0.35 + Math.sin(clock.elapsedTime * 3) * 0.2; glows.current.forEach(g => { g.emissiveIntensity = k; }); });
+  /* selection sequence: 1) the system glows and blinks, 2) it detaches from the tractor, flies towards the
+     camera and grows, 3) a dashed vector line keeps pointing at the place it came from. Deselect = reverse. */
+  const root = useRef<THREE.Group>(null!);
+  const { camera } = useThree();
+  const st = useRef<Partial<Record<SystemId, { c: THREE.Vector3; S: number; q: number; tgt: THREE.Vector3 }>>>({});
+  const selAt = useRef(0); const clockRef = useRef(0);
+  useEffect(() => { selAt.current = clockRef.current; }, [sel]);
+  const line = useMemo(() => {
+    const g = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
+    const l = new THREE.Line(g, new THREE.LineDashedMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, dashSize: 0.12, gapSize: 0.08, transparent: true, depthTest: false }));
+    l.renderOrder = 10; l.frustumCulled = false; return l;
+  }, []);
+  const dotA = useMemo(() => new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), new THREE.MeshBasicMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, depthTest: false, transparent: true })), []);
+  const ringB = useMemo(() => new THREE.Mesh(new THREE.RingGeometry(0.16, 0.2, 40), new THREE.MeshBasicMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, depthTest: false, transparent: true, side: THREE.DoubleSide })), []);
+  useEffect(() => { [line, dotA, ringB].forEach(o => { o.renderOrder = 10; o.visible = false; }); }, [line, dotA, ringB]);
+  const tmp = useMemo(() => new THREE.Vector3(), []);
+  useFrame(({ clock }, dt) => {
+    const t = clock.elapsedTime; clockRef.current = t; const since = t - selAt.current;
+    // glow: three quick blinks after selection, then a calm pulse
+    const k = since < 0.9 ? 0.15 + 0.95 * Math.abs(Math.sin(since * Math.PI * 3.3)) : 0.35 + Math.sin(t * 3) * 0.15;
+    glows.current.forEach(g => { g.emissiveIntensity = k; });
+    const r = root.current; if (!r) return;
+    // rest centres (tractor-local) – measured once while everything is assembled
+    (Object.keys(sys.current) as (SystemId | 'body')[]).forEach(key => {
+      if (key === 'body' || st.current[key]) return; const g = sys.current[key]!;
+      const b = new THREE.Box3().setFromObject(g); const c = b.getCenter(new THREE.Vector3()); r.worldToLocal(c);
+      const size = b.getSize(new THREE.Vector3()).length() / r.getWorldScale(tmp).x;
+      st.current[key] = { c, S: THREE.MathUtils.clamp(1.5 / Math.max(size, 0.3), 1.25, 1.9), q: 0, tgt: new THREE.Vector3() };
+    });
+    let shown: { c: THREE.Vector3; cur: THREE.Vector3; q: number } | null = null;
+    (Object.keys(st.current) as SystemId[]).forEach(key => {
+      const s = st.current[key]!; const g = sys.current[key]!;
+      const goal = key === sel && since > 0.9 ? 1 : 0;
+      if (key === sel && goal && s.q < 0.001) {
+        // fly-to point: between the look target and the camera, a little above → converted to tractor space
+        const look = new THREE.Vector3(0, 1.3, 0); const w = look.clone().lerp(camera.position, 0.26).add(new THREE.Vector3(0, 0.6, 0));
+        s.tgt.copy(r.worldToLocal(w));
+      }
+      s.q += (goal - s.q) * Math.min(1, dt * (goal ? 3.2 : 5));
+      const e = s.q * s.q * (3 - 2 * s.q), sc = 1 + (s.S - 1) * e;
+      const cur = s.c.clone().lerp(s.tgt, e);
+      g.position.copy(cur).addScaledVector(s.c, -sc); g.scale.setScalar(sc);
+      if (key === sel || s.q > 0.02) g.rotation.y = e * Math.sin(t * 0.8) * 0.25;
+      if (s.q > 0.02 && (!shown || key === sel)) shown = { c: s.c, cur, q: s.q };
+    });
+    const on = !!shown; line.visible = dotA.visible = ringB.visible = on;
+    if (shown) {
+      const sh = shown as { c: THREE.Vector3; cur: THREE.Vector3; q: number };
+      const pos = line.geometry.attributes.position as THREE.BufferAttribute;
+      pos.setXYZ(0, sh.c.x, sh.c.y, sh.c.z); pos.setXYZ(1, sh.cur.x, sh.cur.y, sh.cur.z); pos.needsUpdate = true; line.computeLineDistances();
+      (line.material as THREE.LineDashedMaterial).opacity = Math.min(1, sh.q * 1.4);
+      dotA.position.copy(sh.c); ringB.position.copy(sh.c); ringB.lookAt(camera.position); ringB.scale.setScalar(1 + ((t * 1.2) % 1) * 1.6);
+      (ringB.material as THREE.MeshBasicMaterial).opacity = (1 - ((t * 1.2) % 1)) * sh.q;
+    }
+  });
 
   const box = (w: number, h: number, d: number, mat: THREE.Material, p: [number, number, number], r = 0.04) => <RoundedBox args={[w, h, d]} radius={r} smoothness={3} position={p} material={mat} castShadow receiveShadow />;
   return (
-    <group position={[-0.2, 0, 0]}>
+    <group ref={root} position={[-0.2, 0, 0]}>
+      <primitive object={line} /><primitive object={dotA} /><primitive object={ringB} />
       {/* chassis & bodywork */}
       <group ref={reg('body')}>
         {box(1.85, 0.5, 0.95, m.body, [1.55, 1.62, 0], 0.12)}
