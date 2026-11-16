@@ -1,0 +1,4522 @@
+[
+{
+"id": 5,
+"name": "BASKI AYAĞI (3 ADET TAKIM)",
+"code": "A003",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "450-480",
+"img": "b2b/uploads/A03.png"
+},
+{
+"id": 6,
+"name": "DEBRİYAJ BASKI AYAĞI TAMİR TAKIMI",
+"code": "A004",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-780",
+"img": "b2b/uploads/A04.png"
+},
+{
+"id": 7,
+"name": "KASNAK AYAĞI TAMİR TAKIMI",
+"code": "A005",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-780",
+"img": "b2b/uploads/A05.png"
+},
+{
+"id": 8,
+"name": "ÜNİVERSAL BASKI AYAĞI TAMİR TAKIMI",
+"code": "A006",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "445-550-530",
+"img": "b2b/uploads/A06.png"
+},
+{
+"id": 9,
+"name": "DEBRİYAJ BASKI AYAĞI TAMİR TAKIMI",
+"code": "A007",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "640-65.46",
+"img": "b2b/uploads/A07.png"
+},
+{
+"id": 10,
+"name": "OMG TİPİ DEBRİYAJ BASKI AYAĞI TAMİR TK",
+"code": "A008",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70.56-80.66",
+"img": "b2b/uploads/A08.png"
+},
+{
+"id": 11,
+"name": "OMG TİPİ KASNAK BASKI AYAĞI TAMİR TK",
+"code": "A009",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70.56-80.66",
+"img": "b2b/uploads/A09.png"
+},
+{
+"id": 12,
+"name": "VALEO TİPİ DEBRİYAJ BASKI AYAĞI TAMİR TK",
+"code": "A010",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "110.90-TD95",
+"img": "b2b/uploads/A10.png"
+},
+{
+"id": 13,
+"name": "VALEO TİPİ KASNAK BASKI AYAĞI TAMİR TK",
+"code": "A011",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "110.90-TD95",
+"img": "b2b/uploads/A11.png"
+},
+{
+"id": 14,
+"name": "LUK TİPİ DEB.ASKI AYAĞI TAMİR TK",
+"code": "A046",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "80-66",
+"img": "b2b/uploads/A46.png"
+},
+{
+"id": 15,
+"name": "LUK TİPİ KASNAK BASKI AYAĞI TAMİR TK",
+"code": "A047",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "80-66",
+"img": "b2b/uploads/A47.png"
+},
+{
+"id": 16,
+"name": "DEBRİYAJ BASKI PLEYT AYAĞI",
+"code": "A012",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "450-480",
+"img": "b2b/uploads/A12.png"
+},
+{
+"id": 17,
+"name": "SENKROMENÇ ÇATALI (DÖĞME)",
+"code": "A013",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "415-480",
+"img": "b2b/uploads/A13.png"
+},
+{
+"id": 18,
+"name": "SENKROMENÇ ÇATALI (DÖĞME)",
+"code": "A014",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-640-70.56",
+"img": "b2b/uploads/A14.png"
+},
+{
+"id": 19,
+"name": "SENKROMENÇ SARISI",
+"code": "A015",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "415-480",
+"img": "b2b/uploads/A15.png"
+},
+{
+"id": 20,
+"name": "SENKROMENÇ SARISI TIRNAKLI Y.M",
+"code": "A016",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "640-70.56",
+"img": "b2b/uploads/A16.png"
+},
+{
+"id": 21,
+"name": "KUYRUK MİLİ DEBRİYAJ ÇATALI",
+"code": "A017",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70.56-80.66-54C SR",
+"img": "b2b/uploads/A17.png"
+},
+{
+"id": 22,
+"name": "DEBRİYAJ ÇATALI",
+"code": "A018",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "480",
+"img": "b2b/uploads/A18.png"
+},
+{
+"id": 23,
+"name": "DEBRİYAJ ÇATALI",
+"code": "A019",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-640-65.46",
+"img": "b2b/uploads/A19.png"
+},
+{
+"id": 24,
+"name": "KASNAK RULMAN SACI",
+"code": "A020",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-640-65.46",
+"img": "b2b/uploads/A20.png"
+},
+{
+"id": 25,
+"name": "DEBRİYAJ RULMAN ÇANAĞI",
+"code": "A021",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/A21.png"
+},
+{
+"id": 26,
+"name": "DEBRIYAJ RULMAN SACI KALIN -",
+"code": "A048",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540 , 55-46 , 640 , 65-46 , 70-56",
+"img": "b2b/uploads/A48.png"
+},
+{
+"id": 27,
+"name": "GÜÇ KAVRAMA AYIRMA MAŞONU (H:185)",
+"code": "A043",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "54JUN-55.46-70.56",
+"img": "b2b/uploads/A43.png"
+},
+{
+"id": 28,
+"name": "GÜÇ KAVRAMA AYIRMA MAŞONU (H:185)",
+"code": "A044",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "TD65-75-85-TIERII",
+"img": "b2b/uploads/A44.png"
+},
+{
+"id": 29,
+"name": "GÜÇ KAVRAMA AYIRMA MAŞONU (H:185)",
+"code": "A045",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "TD95-TD100-TIERII",
+"img": "b2b/uploads/A45.png"
+},
+{
+"id": 30,
+"name": "TAKVIYE SEHPASI KOMPLE",
+"code": "A023",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "480/54-C",
+"img": "b2b/uploads/A23.png"
+},
+{
+"id": 31,
+"name": "TAKVİYE SEHPA SACI",
+"code": "A024",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "480-70.56",
+"img": "b2b/uploads/A24.png"
+},
+{
+"id": 32,
+"name": "SENKROMENÇ MANŞONU",
+"code": "A025",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "100-90DT, 110-90DT/ M Seri",
+"img": "b2b/uploads/A25.png"
+},
+{
+"id": 33,
+"name": "SENKROMENÇ MANŞONU (FREZELİ)",
+"code": "A026",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "415-450-480",
+"img": "b2b/uploads/A26.png"
+},
+{
+"id": 34,
+"name": "SENKROMENÇ MANŞONU (FREZELİ) 8620 SEMENTELİ",
+"code": "A027",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/A27.png"
+},
+{
+"id": 35,
+"name": "SENKROMENÇ MANŞONU (DÜZ)",
+"code": "A028",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/A28.png"
+},
+{
+"id": 36,
+"name": "SAAT ARKASI KİLOMETRE ADAPTÖRÜ",
+"code": "A029",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "55.46-70.56-54-C",
+"img": "b2b/uploads/A29.png"
+},
+{
+"id": 37,
+"name": "SAAT ARKASI KİLOMETRE ADAPTÖRÜ",
+"code": "A030",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "480-640",
+"img": "b2b/uploads/A30.png"
+},
+{
+"id": 38,
+"name": "SAAT ARKASI KİLOMETRE ADAPTÖRÜ",
+"code": "A031",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "415-450",
+"img": "b2b/uploads/A31.png"
+},
+{
+"id": 39,
+"name": "BASKI AYAĞI YAY ÇANAĞI",
+"code": "A034",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "450-455-460-480",
+"img": "b2b/uploads/A34.png"
+},
+{
+"id": 40,
+"name": "DEBRİYAJ BASKI YAYI",
+"code": "A035",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "450-455-460-480",
+"img": "b2b/uploads/A35.png"
+},
+{
+"id": 41,
+"name": "KAPLİN PULU",
+"code": "A036",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "450-455-460-480",
+"img": "b2b/uploads/A36.png"
+},
+{
+"id": 42,
+"name": "KURU KAPLİN",
+"code": "A038",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "415-480",
+"img": "b2b/uploads/A38.png"
+},
+{
+"id": 43,
+"name": "KIZAK KAPLİNİ 10 DİŞ",
+"code": "A039",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "65.45-70.56-80.66-DT",
+"img": "b2b/uploads/A39.png"
+},
+{
+"id": 44,
+"name": "KIZAK KAPLİNİ DELİKLİ 10 DİŞ",
+"code": "A054",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70-56/65-46/70 TD SERİ",
+"img": "b2b/uploads/A54.png"
+},
+{
+"id": 45,
+"name": "KIZAK KAPLİNİ TAŞLAMALI 10 DİŞ",
+"code": "A055",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "70-56 (56 Series) / TÜMOSAN 580/680/780",
+"img": "b2b/uploads/A55.png"
+},
+{
+"id": 46,
+"name": "KIZAK KAPLİNİ 10 DİŞ ( UZUN-8 CM )",
+"code": "A056",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "DT-CASE JXC -TT50JR2, TT50JR4, TT75JR4 - TT4,TT4.55",
+"img": "b2b/uploads/A56.png"
+},
+{
+"id": 47,
+"name": "ÖN DEFRANSİYEL KIZAK KAPLİNİ - 12 DİŞ",
+"code": "A059",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "110/90",
+"img": "b2b/uploads/A59.png"
+},
+{
+"id": 48,
+"name": "TÜMOSAN KASNAK MİL MAŞONU",
+"code": "A050",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "780 / DT110-90 / TÜMOSAN",
+"img": "b2b/uploads/A50.png"
+},
+{
+"id": 49,
+"name": "ÖN DİF.KOVANI-EKLEM BAŞI SOL",
+"code": "A057",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "65.46-70.56 DT.TD65/TT55/TT65",
+"img": "b2b/uploads/A57.png"
+},
+{
+"id": 50,
+"name": "ÖN DİF.KOVANI-EKLEM BAŞI SAĞ",
+"code": "A058",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "65.46-70.56 DT.TD65",
+"img": "b2b/uploads/A58.png"
+},
+{
+"id": 51,
+"name": "ÖN DİNGİL PERNOSU",
+"code": "A060",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "480-640",
+"img": "b2b/uploads/A60.png"
+},
+{
+"id": 52,
+"name": "ÖN DİNGİL PERNOSU-54C-SPECIAL ( Q32 )",
+"code": "A061",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "54C-SPECIAL",
+"img": "b2b/uploads/A61.png"
+},
+{
+"id": 53,
+"name": "ÖN DİNGİL PERNOSU ( Q38 )",
+"code": "A062",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "55/46-70/56-80/66",
+"img": "b2b/uploads/A62.png"
+},
+{
+"id": 54,
+"name": "CER DISLISI",
+"code": "A070",
+"cat": "DEBRİYAJ & ŞANZIMAN",
+"desc": "60-66/TD65",
+"img": "b2b/uploads/A70.png"
+},
+{
+"id": 55,
+"name": "KOMPLE DİREKSİYON",
+"code": "B001",
+"cat": "ÖN DÜZEN",
+"desc": "450-480-640",
+"img": "b2b/uploads/B01.png"
+},
+{
+"id": 56,
+"name": "DİREKSİYON KUTUSU",
+"code": "B002",
+"cat": "ÖN DÜZEN",
+"desc": "480-640",
+"img": "b2b/uploads/B02.png"
+},
+{
+"id": 57,
+"name": "KOMPLE DİREKSİYON",
+"code": "B003",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-65.46",
+"img": "b2b/uploads/B03.png"
+},
+{
+"id": 58,
+"name": "DİREKSİYON KUTUSU BOŞ",
+"code": "B004",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-70.56",
+"img": "b2b/uploads/B04.png"
+},
+{
+"id": 59,
+"name": "KOMPLE DİREKSİYON",
+"code": "B037",
+"cat": "ÖN DÜZEN",
+"desc": "DEUTZ",
+"img": "b2b/uploads/B37.png"
+},
+{
+"id": 60,
+"name": "ÖN AKSON ROT KOLU SAĞ (DÖVME)",
+"code": "B005",
+"cat": "ÖN DÜZEN",
+"desc": "480-640",
+"img": "b2b/uploads/B05.png"
+},
+{
+"id": 61,
+"name": "ÖN AKSON ROT KOLU SOL(DÖVME)",
+"code": "B006",
+"cat": "ÖN DÜZEN",
+"desc": "480-640",
+"img": "b2b/uploads/B06.png"
+},
+{
+"id": 62,
+"name": "AKSON ROTU SOL",
+"code": "B007",
+"cat": "ÖN DÜZEN",
+"desc": "55-46/65-46/70-56",
+"img": "b2b/uploads/B07.png"
+},
+{
+"id": 63,
+"name": "AKSON ROTU SAĞ",
+"code": "B008",
+"cat": "ÖN DÜZEN",
+"desc": "55-46/65-46/70-56",
+"img": "b2b/uploads/B08.png"
+},
+{
+"id": 64,
+"name": "AKSON ROTU SOL (TÜM MODELLER)",
+"code": "B009",
+"cat": "ÖN DÜZEN",
+"desc": "60.56-70.56-80.66",
+"img": "b2b/uploads/B09.png"
+},
+{
+"id": 65,
+"name": "AKSON KOLU SAĞ (ÇİFT DELİKLİ) (DÖVME)",
+"code": "B010",
+"cat": "ÖN DÜZEN",
+"desc": "80-66/70-66/95-66",
+"img": "b2b/uploads/B10.png"
+},
+{
+"id": 66,
+"name": "HİDROLİK DİREKSİYON AKSON ROTU",
+"code": "B011",
+"cat": "ÖN DÜZEN",
+"desc": "54C seri TT65D/TT55B/TT50",
+"img": "b2b/uploads/B11.png"
+},
+{
+"id": 67,
+"name": "DİREKSİYON SAĞ ÜST ROT KOLU",
+"code": "B035",
+"cat": "ÖN DÜZEN",
+"desc": "54C-TT SERİİ- TIERII",
+"img": "b2b/uploads/B35.png"
+},
+{
+"id": 68,
+"name": "MERKEZ ROT (DÖVME, ISIL İŞLEMLİ)",
+"code": "B012",
+"cat": "ÖN DÜZEN",
+"desc": "415-480-540-640",
+"img": "b2b/uploads/B12.png"
+},
+{
+"id": 69,
+"name": "MERKEZ ROT PİMİ CIVATASI",
+"code": "B013",
+"cat": "ÖN DÜZEN",
+"desc": "415-480-540-640",
+"img": "b2b/uploads/B13.png"
+},
+{
+"id": 70,
+"name": "DİREKSİYON DEVE BOYNU (DÖVME)",
+"code": "B014",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-70.56",
+"img": "b2b/uploads/B14.png"
+},
+{
+"id": 71,
+"name": "DİREKSİYON DEVE BOYNU (DÖVME)",
+"code": "B015",
+"cat": "ÖN DÜZEN",
+"desc": "480-640",
+"img": "b2b/uploads/B15.png"
+},
+{
+"id": 72,
+"name": "DİREKSİYON DEVE BOYNU",
+"code": "B016",
+"cat": "ÖN DÜZEN",
+"desc": "415/450/Üniversal",
+"img": "b2b/uploads/B16.png"
+},
+{
+"id": 73,
+"name": "R40 AKSON TABAN RULMANI",
+"code": "B036",
+"cat": "ÖN DÜZEN",
+"desc": "450-480-540-640",
+"img": "b2b/uploads/B36.png"
+},
+{
+"id": 74,
+"name": "DİREKSİYON LİFT BAĞ CIVA.BURCUTK(UZUN)",
+"code": "B017",
+"cat": "ÖN DÜZEN",
+"desc": "70.56-80.66",
+"img": "b2b/uploads/B17.png"
+},
+{
+"id": 75,
+"name": "DİREKSİYON LİFT BAĞ CIVA.BURCUTK(KISA)",
+"code": "B018",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-65.46",
+"img": "b2b/uploads/B18.png"
+},
+{
+"id": 76,
+"name": "20’Lİ DANA GÖZÜ BİLYA",
+"code": "B019",
+"cat": "ÖN DÜZEN",
+"desc": "65.46-70.56",
+"img": "b2b/uploads/B19.png"
+},
+{
+"id": 77,
+"name": "25’Lİ DANA GÖZÜ BİLYA",
+"code": "B020",
+"cat": "ÖN DÜZEN",
+"desc": "70.66-80.66 SERİSİ",
+"img": "b2b/uploads/B20.png"
+},
+{
+"id": 78,
+"name": "30’Lİ DANA GÖZÜ BİLYA",
+"code": "B021",
+"cat": "ÖN DÜZEN",
+"desc": "110.90",
+"img": "b2b/uploads/B21.png"
+},
+{
+"id": 79,
+"name": "DİREKSİYON BORUSU (MONTAJ)",
+"code": "B022",
+"cat": "ÖN DÜZEN",
+"desc": "480-640",
+"img": "b2b/uploads/B22.png"
+},
+{
+"id": 80,
+"name": "DİREKSİYON BORUSU Y.M",
+"code": "B023",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-65.46-70.56",
+"img": "b2b/uploads/B23.png"
+},
+{
+"id": 81,
+"name": "DİREKSİYON TIKIRTI BURCU TAMİR TAKIMI",
+"code": "B024",
+"cat": "ÖN DÜZEN",
+"desc": "480-640-55.46-70-80",
+"img": "b2b/uploads/B24.png"
+},
+{
+"id": 82,
+"name": "DİREKSİYON YAĞ DEPOSU (Y) ÇATALI",
+"code": "B025",
+"cat": "ÖN DÜZEN",
+"desc": "55.46-60.56-70.56",
+"img": "b2b/uploads/B25.png"
+},
+{
+"id": 83,
+"name": "ÖN TEKER KAPAĞI",
+"code": "B029",
+"cat": "ÖN DÜZEN",
+"desc": "480-540-640-70.56",
+"img": "b2b/uploads/B29.png"
+},
+{
+"id": 84,
+"name": "HİD.DİREKSİYON PİSTON DİSKİ E.M",
+"code": "B030",
+"cat": "ÖN DÜZEN",
+"desc": "55-46 /60-56 /70-56",
+"img": "b2b/uploads/B30.png"
+},
+{
+"id": 85,
+"name": "HİD.DİREKSİYON LİFT DİSKİ İÇİ OVAL",
+"code": "B031",
+"cat": "ÖN DÜZEN",
+"desc": "Tüm Modeller Yerli",
+"img": "b2b/uploads/B31.png"
+},
+{
+"id": 86,
+"name": "HİD.DİREKSİYON PİSTON KAPAĞI (H:42mm)",
+"code": "B032",
+"cat": "ÖN DÜZEN",
+"desc": "E.M 54C Junior",
+"img": "b2b/uploads/B32.png"
+},
+{
+"id": 87,
+"name": "HİD.DİREKSİYON PİSTON KAPAĞI (H:39mm)",
+"code": "B033",
+"cat": "ÖN DÜZEN",
+"desc": "E.M 60-56/80-66",
+"img": "b2b/uploads/B33.png"
+},
+{
+"id": 88,
+"name": "HİD.DİREKSİYON PİSTON KAPAĞI (H:34mm)",
+"code": "B034",
+"cat": "ÖN DÜZEN",
+"desc": "55-46 /60-56 /70-56",
+"img": "b2b/uploads/B34.png"
+},
+{
+"id": 89,
+"name": "HİD.DİREKSİYON PİSTON KAPAĞI (H:36,3mm)",
+"code": "B040",
+"cat": "ÖN DÜZEN",
+"desc": "80.66/110.90DT",
+"img": "b2b/uploads/B40.png"
+},
+{
+"id": 90,
+"name": "HİD.DİREKSİYON PİSTON KAPAĞI (H:44mm )",
+"code": "B041",
+"cat": "ÖN DÜZEN",
+"desc": "55/60/70.56",
+"img": "b2b/uploads/B41.png"
+},
+{
+"id": 91,
+"name": "ÖN LİFT MAKARA SEKTÖR TAKOZU(26,55 mm)(3 KANAL)",
+"code": "B042",
+"cat": "ÖN DÜZEN",
+"desc": "80-66 /TD",
+"img": "b2b/uploads/B42.png"
+},
+{
+"id": 92,
+"name": "ÖN DİFRANSİYEL BAĞLANTI PİMİ",
+"code": "B045",
+"cat": "ÖN DÜZEN",
+"desc": "70-56-80-66-95-66-TD75D-TD85D-TD95D",
+"img": "b2b/uploads/B45.png"
+},
+{
+"id": 93,
+"name": "ÖN TEKER GEZEGEN DİŞLİ PİMİ",
+"code": "B046",
+"cat": "ÖN DÜZEN",
+"desc": "140-90/100-90/100-90DT/110-90/110-90DT",
+"img": "b2b/uploads/B46.png"
+},
+{
+"id": 94,
+"name": "SDD ALT BAĞLANTI ( MESNED )",
+"code": "C001",
+"cat": "RADYATÖR",
+"desc": "480-640-55.46-70.56",
+"img": "b2b/uploads/C01.png"
+},
+{
+"id": 95,
+"name": "SDD ALT BORU KOMPLE(ÇİFT TAPALI) YM",
+"code": "C002",
+"cat": "RADYATÖR",
+"desc": "54C SR/55-46/60-56",
+"img": "b2b/uploads/C02.png"
+},
+{
+"id": 96,
+"name": "SDD ALT BORU (ÇİFT TAPALI) YM",
+"code": "C003",
+"cat": "RADYATÖR",
+"desc": "54C SR/55-46/60-56",
+"img": "b2b/uploads/C03.png"
+},
+{
+"id": 97,
+"name": "RADYATÖR SAÇ SU BORU TAKIMI ( MONTAJ )",
+"code": "C004",
+"cat": "RADYATÖR",
+"desc": "450-480-540-640",
+"img": "b2b/uploads/C04.png"
+},
+{
+"id": 98,
+"name": "RADYATÖR FLANŞLI BORU ( TEK )",
+"code": "C005",
+"cat": "RADYATÖR",
+"desc": "450-80.66",
+"img": "b2b/uploads/C05.png"
+},
+{
+"id": 99,
+"name": "RADYATÖR TAPALI BORU ( TEK )",
+"code": "C006",
+"cat": "RADYATÖR",
+"desc": "450-80.66",
+"img": "b2b/uploads/C06.png"
+},
+{
+"id": 100,
+"name": "RADYATÖR ALT HORTUMU",
+"code": "C007",
+"cat": "RADYATÖR",
+"desc": "450-80.66",
+"img": "b2b/uploads/C07.png"
+},
+{
+"id": 101,
+"name": "D.D SU PULESİ (MONTAJ SACI KALIN ) E.M",
+"code": "C008",
+"cat": "RADYATÖR",
+"desc": "450-480-540-640",
+"img": "b2b/uploads/C08.png"
+},
+{
+"id": 102,
+"name": "DEVİR DAİM SU PULESİ MONTAJ Y.M",
+"code": "C009",
+"cat": "RADYATÖR",
+"desc": "55.46-65.46-70.56",
+"img": "b2b/uploads/C09.png"
+},
+{
+"id": 103,
+"name": "FIAT RADYATÖR MUSLUĞU",
+"code": "C011",
+"cat": "RADYATÖR",
+"desc": "450-80.66",
+"img": "b2b/uploads/C11.png"
+},
+{
+"id": 104,
+"name": "SDD RADYATÖR ARA BORU",
+"code": "C015",
+"cat": "RADYATÖR",
+"desc": "110/90",
+"img": "b2b/uploads/C15.png"
+},
+{
+"id": 105,
+"name": "RADYATÖR KAPAĞI İKİ KULAKLI",
+"code": "C019",
+"cat": "RADYATÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/C19.png"
+},
+{
+"id": 106,
+"name": "RADYATÖR KAPAĞI DÖRT KULAKLI",
+"code": "C020",
+"cat": "RADYATÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/C20.png"
+},
+{
+"id": 107,
+"name": "HİDROLİK EMME BORUSU (MONTAJ)",
+"code": "D001",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480",
+"img": "b2b/uploads/D01.png"
+},
+{
+"id": 108,
+"name": "HİDROLİK EMME BORUSU (MONTAJ)",
+"code": "D002",
+"cat": "HİDROLİK AKSAM",
+"desc": "640",
+"img": "b2b/uploads/D02.png"
+},
+{
+"id": 109,
+"name": "HİDROLİK İNCE BORUSU (MONTAJ)",
+"code": "D003",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480",
+"img": "b2b/uploads/D03.png"
+},
+{
+"id": 110,
+"name": "HİDROLİK İNCE BORUSU (MONTAJ)",
+"code": "D004",
+"cat": "HİDROLİK AKSAM",
+"desc": "640",
+"img": "b2b/uploads/D04.png"
+},
+{
+"id": 111,
+"name": "HİDROLİK İNCE BORUSU (MONTAJ)",
+"code": "D005",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.46",
+"img": "b2b/uploads/D05.png"
+},
+{
+"id": 112,
+"name": "HİDROLİK İNCE BORUSU (MONTAJ)",
+"code": "D006",
+"cat": "HİDROLİK AKSAM",
+"desc": "65.46-70.56",
+"img": "b2b/uploads/D06.png"
+},
+{
+"id": 113,
+"name": "HİDROLİK KALIN BORUSU (MONTAJ)",
+"code": "D007",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.46-54C",
+"img": "b2b/uploads/D07.png"
+},
+{
+"id": 114,
+"name": "HİDROLİK KALIN BORUSU (MONTAJ)",
+"code": "D008",
+"cat": "HİDROLİK AKSAM",
+"desc": "65-46",
+"img": "b2b/uploads/D08.png"
+},
+{
+"id": 115,
+"name": "HİDROLİK BASMA BORUSU",
+"code": "D009",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.46/54C SR/60-56",
+"img": "b2b/uploads/D09.png"
+},
+{
+"id": 116,
+"name": "HİDROLİK EMİŞ BORUSU",
+"code": "D010",
+"cat": "HİDROLİK AKSAM",
+"desc": "54C-55.56-60.56",
+"img": "b2b/uploads/D10.png"
+},
+{
+"id": 117,
+"name": "HİDROLİK KALIN BORUSU (MONTAJ)",
+"code": "D011",
+"cat": "HİDROLİK AKSAM",
+"desc": "65.46-70.56",
+"img": "b2b/uploads/D11.png"
+},
+{
+"id": 118,
+"name": "1.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D012",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD 65-75-85",
+"img": "b2b/uploads/D12.png"
+},
+{
+"id": 119,
+"name": "2.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D013",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD 65-75-85",
+"img": "b2b/uploads/D13.png"
+},
+{
+"id": 120,
+"name": "3.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D014",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD 65-75-85",
+"img": "b2b/uploads/D14.png"
+},
+{
+"id": 121,
+"name": "4.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D015",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD 65-75-85",
+"img": "b2b/uploads/D15.png"
+},
+{
+"id": 122,
+"name": "1.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D117",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-56/65TT",
+"img": "b2b/uploads/D117.png"
+},
+{
+"id": 123,
+"name": "2.HIZLI BİRLEŞTİRİCİ BORUSU",
+"code": "D118",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-56/65TT",
+"img": "b2b/uploads/D118.png"
+},
+{
+"id": 124,
+"name": "HİD.DİREKSİYON PİSTON BORUSU KISA",
+"code": "D016",
+"cat": "HİDROLİK AKSAM",
+"desc": "70.56-65.46-DT",
+"img": "b2b/uploads/D16.png"
+},
+{
+"id": 125,
+"name": "HİD.DİREKSİYON PİSTON BORUSU UZUN",
+"code": "D017",
+"cat": "HİDROLİK AKSAM",
+"desc": "70.56-65.46-DT",
+"img": "b2b/uploads/D17.png"
+},
+{
+"id": 126,
+"name": "HİDROLİK POMPA KAPLİNİ ( DİŞİ )",
+"code": "D141",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-540-640",
+"img": "b2b/uploads/D141.png"
+},
+{
+"id": 127,
+"name": "HİDROLİK POMPA MAŞONU ( ERKEK )",
+"code": "D142",
+"cat": "HİDROLİK AKSAM",
+"desc": "TÜM MODELLER",
+"img": "b2b/uploads/D142.png"
+},
+{
+"id": 128,
+"name": "HİD.DAMP.MUSLUĞU (KAFA İKİ CİVATALI)",
+"code": "D018",
+"cat": "HİDROLİK AKSAM",
+"desc": "55/56-60/56-54C",
+"img": "b2b/uploads/D18.png"
+},
+{
+"id": 129,
+"name": "HİD.DAMPER ÇIKIŞ BORUSU (KAFA REKORLU) Q22",
+"code": "D019",
+"cat": "HİDROLİK AKSAM",
+"desc": "60-56/70-56",
+"img": "b2b/uploads/D19.png"
+},
+{
+"id": 130,
+"name": "HİD.DAMPER ÇIKIŞ BORUSU (KAFA REKORLU) Q19",
+"code": "D120",
+"cat": "HİDROLİK AKSAM",
+"desc": "54C/54C JUN/60C JUN",
+"img": "b2b/uploads/D120.png"
+},
+{
+"id": 131,
+"name": "HİD KISA BASMA BORUSU",
+"code": "D020",
+"cat": "HİDROLİK AKSAM",
+"desc": "60.66-70.66-80-66-95-66",
+"img": "b2b/uploads/D20.png"
+},
+{
+"id": 132,
+"name": "HİDROLİK BORU SETİ Y.M TAKIM KISA",
+"code": "D021",
+"cat": "HİDROLİK AKSAM",
+"desc": "Lift Oto. Serisi",
+"img": "b2b/uploads/D21.png"
+},
+{
+"id": 133,
+"name": "HİDROLİK Y.M DAMPER BORU SETİNİN TEK KISA İÇ KISIM (EĞRİ)",
+"code": "D022",
+"cat": "HİDROLİK AKSAM",
+"desc": "Lift Oto. Serisi",
+"img": "b2b/uploads/D22.png"
+},
+{
+"id": 134,
+"name": "HİDROLİK Y.M DAMPER BORU SETİNİN TEK KISA DIŞ KISIM (DÜZ)",
+"code": "D023",
+"cat": "HİDROLİK AKSAM",
+"desc": "Kısa Hepsine",
+"img": "b2b/uploads/D23.png"
+},
+{
+"id": 135,
+"name": "HİDROLİK BORU SETİ TAKIM UZUN",
+"code": "D024",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D24.png"
+},
+{
+"id": 136,
+"name": "HİD. DAMPER BORU SETİ UZUN TEK DIŞ KISIM ( D25-1 İÇ KISIM)",
+"code": "D025",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D25.png"
+},
+{
+"id": 137,
+"name": "HİDROLİK BORU SETİ Y.M TAKIM KISA",
+"code": "D026",
+"cat": "HİDROLİK AKSAM",
+"desc": "54C-55.46-65.46",
+"img": "b2b/uploads/D26.png"
+},
+{
+"id": 138,
+"name": "HİDROLİK 54C DAMPER BORU SETİNİN TEK KISA İÇ KISIM (EĞRİ)",
+"code": "D027",
+"cat": "HİDROLİK AKSAM",
+"desc": "54C-55.46-65.46",
+"img": "b2b/uploads/D27.png"
+},
+{
+"id": 139,
+"name": "HİDROLİK BASTON BORU 5/8",
+"code": "D051",
+"cat": "HİDROLİK AKSAM",
+"desc": "Tum Modeller",
+"img": "b2b/uploads/D51.png"
+},
+{
+"id": 140,
+"name": "HİDROLİK BASTON BORU 9/16",
+"code": "D052",
+"cat": "HİDROLİK AKSAM",
+"desc": "Tum Modeller",
+"img": "b2b/uploads/D52.png"
+},
+{
+"id": 141,
+"name": "HİDROLİK BASTON BORU 3/4",
+"code": "D053",
+"cat": "HİDROLİK AKSAM",
+"desc": "Tum Modeller",
+"img": "b2b/uploads/D53.png"
+},
+{
+"id": 142,
+"name": "KALIN BASMA BORUSU",
+"code": "D154",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD65D/TD95",
+"img": "b2b/uploads/D154.png"
+},
+{
+"id": 143,
+"name": "KAYDIRICI MİL (MONTAJ)",
+"code": "D028",
+"cat": "HİDROLİK AKSAM",
+"desc": "110-90",
+"img": "b2b/uploads/D28.png"
+},
+{
+"id": 144,
+"name": "HİDROLİK KAYDIRICI MİL",
+"code": "D030",
+"cat": "HİDROLİK AKSAM",
+"desc": "60.66-70.66-80.66",
+"img": "b2b/uploads/D30.png"
+},
+{
+"id": 145,
+"name": "HİDROLİK KAYDIRICI MİL",
+"code": "D033",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD95D-TD95A",
+"img": "b2b/uploads/D33.png"
+},
+{
+"id": 146,
+"name": "FLEKSİNBAR MİLİ",
+"code": "D034",
+"cat": "HİDROLİK AKSAM",
+"desc": "L95/TL100/T5060",
+"img": "b2b/uploads/D34.png"
+},
+{
+"id": 147,
+"name": "HİDROLİK KAYDIRICI MİL",
+"code": "D167",
+"cat": "HİDROLİK AKSAM",
+"desc": "130/90-14/90",
+"img": "b2b/uploads/D167.png"
+},
+{
+"id": 148,
+"name": "HİDROLİK KAYDIRICI MİL GÖVDESİ",
+"code": "D225",
+"cat": "HİDROLİK AKSAM",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/D225.png"
+},
+{
+"id": 149,
+"name": "HİDROLİK KAYDIRICI MİL GÖVDESİ KOMPLE",
+"code": "D226",
+"cat": "HİDROLİK AKSAM",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/D226.png"
+},
+{
+"id": 150,
+"name": "HİDROLİK KAYDIRICI MİL GÖVDESİ",
+"code": "D227",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD95-100-110SERİ",
+"img": "b2b/uploads/D227.png"
+},
+{
+"id": 151,
+"name": "HİDROLİK KAYDIRICI MİL GÖVDESİ KOMPLE-",
+"code": "D228",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD95-100-110SERİ",
+"img": "b2b/uploads/D228.png"
+},
+{
+"id": 152,
+"name": "KAYDIRICI MİL BURCU (MONTAJ)",
+"code": "D029",
+"cat": "HİDROLİK AKSAM",
+"desc": "110-90",
+"img": "b2b/uploads/D29.png"
+},
+{
+"id": 153,
+"name": "KAYDIRICI MİL BURCU (MONTAJ)",
+"code": "D031",
+"cat": "HİDROLİK AKSAM",
+"desc": "66 SERİSİ",
+"img": "b2b/uploads/D31.png"
+},
+{
+"id": 154,
+"name": "HİDROLİK KAYDIRICI MİL BURCU",
+"code": "D165",
+"cat": "HİDROLİK AKSAM",
+"desc": "L95/TD95/TL",
+"img": "b2b/uploads/D165.png"
+},
+{
+"id": 155,
+"name": "HİDROLİK KAYDIRICI MİL BURCU",
+"code": "D166",
+"cat": "HİDROLİK AKSAM",
+"desc": "M160/G190",
+"img": "b2b/uploads/D166.png"
+},
+{
+"id": 156,
+"name": "KAYDIRICI MİL KEÇESİ (MONTAJ)",
+"code": "D032",
+"cat": "HİDROLİK AKSAM",
+"desc": "80.66",
+"img": "b2b/uploads/D32.png"
+},
+{
+"id": 157,
+"name": "HİDROLİK ANA MİL KELEPÇESİ",
+"code": "D035",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D35.png"
+},
+{
+"id": 158,
+"name": "HİDROLİK ANA MİL KELEPÇESİ",
+"code": "D036",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450",
+"img": "b2b/uploads/D36.png"
+},
+{
+"id": 159,
+"name": "HİDROLİK ANA MİL KELEPÇESİ",
+"code": "D037",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.56-60.56-70.56",
+"img": "b2b/uploads/D37.png"
+},
+{
+"id": 160,
+"name": "HİDROLİK ANA MİL KELEPÇESİ",
+"code": "D038",
+"cat": "HİDROLİK AKSAM",
+"desc": "ÜNİVERSAL",
+"img": "b2b/uploads/D38.png"
+},
+{
+"id": 161,
+"name": "HİDROLİK ANA MİL KELEPÇESİ PİMİ",
+"code": "D039",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D39.png"
+},
+{
+"id": 162,
+"name": "HİDROLİK ANA MİL KELEPÇESİ PİMİ",
+"code": "D040",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.56-70.56",
+"img": "b2b/uploads/D40.png"
+},
+{
+"id": 163,
+"name": "HİDROLİK PİSTON İTİCİ MİL PERNOSU",
+"code": "D231",
+"cat": "HİDROLİK AKSAM",
+"desc": "60-70-80.66-L95-TD90-TL-TS",
+"img": "b2b/uploads/D231.png"
+},
+{
+"id": 164,
+"name": "HİDROLİK LEVYESİ",
+"code": "D044",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640-55.46-65.46",
+"img": "b2b/uploads/D44.png"
+},
+{
+"id": 165,
+"name": "HİDROLİK LEVYESİ (ÜÇLÜ)",
+"code": "D045",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640-55.46",
+"img": "b2b/uploads/D45.png"
+},
+{
+"id": 166,
+"name": "HİD. EKSANTRİK MAKARASI ÜSTÜ BİLYALI",
+"code": "D048",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-65.46",
+"img": "b2b/uploads/D48.png"
+},
+{
+"id": 167,
+"name": "HİD. EKSANTRİK MAKARASI UCU FREZELİ",
+"code": "D049",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-65.45",
+"img": "b2b/uploads/D49.png"
+},
+{
+"id": 168,
+"name": "HİD. EKSANTRİK MAKARASI SARI BURÇLU",
+"code": "D050",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450-480-65.46",
+"img": "b2b/uploads/D50.png"
+},
+{
+"id": 169,
+"name": "HİDROLİK HASSASİYET KOLU (DÖVME)",
+"code": "D055",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640-55.46",
+"img": "b2b/uploads/D55.png"
+},
+{
+"id": 170,
+"name": "KUYRUK MİL ÇIK.ŞAFTI 3 DELİK",
+"code": "D130",
+"cat": "HİDROLİK AKSAM",
+"desc": "80-66/110-90/Tümosan",
+"img": "b2b/uploads/D130.png"
+},
+{
+"id": 171,
+"name": "KUYRUK MİL ÇIKIŞ ŞAFTI 6 DELİK",
+"code": "D131",
+"cat": "HİDROLİK AKSAM",
+"desc": "TÜMOSAN",
+"img": "b2b/uploads/D131.png"
+},
+{
+"id": 172,
+"name": "KUYRUK MİLİ 8 DELİK",
+"code": "D139",
+"cat": "HİDROLİK AKSAM",
+"desc": "SAME",
+"img": "b2b/uploads/D139.png"
+},
+{
+"id": 173,
+"name": "KUYRUK MİL KAPAĞI",
+"code": "D116",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-70.56",
+"img": "b2b/uploads/D116.png"
+},
+{
+"id": 174,
+"name": "KUYRUK MİLİ KISA 540 DEVİR",
+"code": "D140",
+"cat": "HİDROLİK AKSAM",
+"desc": "TM120, TM125, TM130, TM155, TM100A, TS110A, T6020, T6050, T7030, T7040, T7050",
+"img": "b2b/uploads/D140.png"
+},
+{
+"id": 175,
+"name": "YAN KOL UZUN GERGİ YAYI",
+"code": "D057",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D57.png"
+},
+{
+"id": 176,
+"name": "HİDROLİK FREZELİ KOL SAĞ",
+"code": "D058",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D58.png"
+},
+{
+"id": 177,
+"name": "HİDROLİK FREZELİ KOL SOL",
+"code": "D059",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D59.png"
+},
+{
+"id": 178,
+"name": "HİDROLİK FREZELİ KOL SAĞ",
+"code": "D060",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450",
+"img": "b2b/uploads/D60.png"
+},
+{
+"id": 179,
+"name": "HİDROLİK FREZELİ KOL SOL",
+"code": "D061",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450",
+"img": "b2b/uploads/D61.png"
+},
+{
+"id": 180,
+"name": "HİDROLİK FREZELİ KOL SAĞ",
+"code": "D062",
+"cat": "HİDROLİK AKSAM",
+"desc": "ÜNİVERSAL",
+"img": "b2b/uploads/D62.png"
+},
+{
+"id": 181,
+"name": "HİDROLİK FREZELİ KOL SOL",
+"code": "D063",
+"cat": "HİDROLİK AKSAM",
+"desc": "ÜNİVERSAL",
+"img": "b2b/uploads/D63.png"
+},
+{
+"id": 182,
+"name": "HİD.FİREZELİ KALDIRMA KOLU R-L",
+"code": "D172",
+"cat": "HİDROLİK AKSAM",
+"desc": "54C-55.46-70.56-TT SERIES",
+"img": "b2b/uploads/D172.png"
+},
+{
+"id": 183,
+"name": "HİDR. FREZELİ KAL. KOLU SAĞ(Pimli)",
+"code": "D173",
+"cat": "HİDROLİK AKSAM",
+"desc": "80.66/TD85-TD95",
+"img": "b2b/uploads/D173.png"
+},
+{
+"id": 184,
+"name": "HİDR. FREZELİ KAL. KOLU SOL",
+"code": "D174",
+"cat": "HİDROLİK AKSAM",
+"desc": "80.66 / TD SERİ",
+"img": "b2b/uploads/D174.png"
+},
+{
+"id": 185,
+"name": "HİDR. FREZELİ KAL. KOLU SOL (Delikli)",
+"code": "D175",
+"cat": "HİDROLİK AKSAM",
+"desc": "T5 SERİ",
+"img": "b2b/uploads/D175.png"
+},
+{
+"id": 186,
+"name": "HİDROLİK KALDIRMA KOLU YARDIMCILİFTLİ-SOL-",
+"code": "D176",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD110",
+"img": "b2b/uploads/D176.png"
+},
+{
+"id": 187,
+"name": "HİDROLİK KALDIRMA KOLU YARDIMCILİFTLİ-SAĞ-",
+"code": "D177",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD110",
+"img": "b2b/uploads/D177.png"
+},
+{
+"id": 188,
+"name": "FREZELİ KOL AŞIĞI",
+"code": "D255",
+"cat": "HİDROLİK AKSAM",
+"desc": "",
+"img": "b2b/uploads/D255.png"
+},
+{
+"id": 189,
+"name": "HİDROLİK YAYI",
+"code": "D065",
+"cat": "HİDROLİK AKSAM",
+"desc": "411-415",
+"img": "b2b/uploads/D65.png"
+},
+{
+"id": 190,
+"name": "HİDROLİK YAYI",
+"code": "D066",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-55.46",
+"img": "b2b/uploads/D66.png"
+},
+{
+"id": 191,
+"name": "HİDROLİK YAYI",
+"code": "D067",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-70.56",
+"img": "b2b/uploads/D67.png"
+},
+{
+"id": 192,
+"name": "HİDROLİK YAYI",
+"code": "D068",
+"cat": "HİDROLİK AKSAM",
+"desc": "750-780",
+"img": "b2b/uploads/D68.png"
+},
+{
+"id": 193,
+"name": "HİDROLİK YAYI SAĞ (R)",
+"code": "D160",
+"cat": "HİDROLİK AKSAM",
+"desc": "FENDT",
+"img": "b2b/uploads/D160.png"
+},
+{
+"id": 194,
+"name": "HİDROLİK YAYI SOL (L)",
+"code": "D161",
+"cat": "HİDROLİK AKSAM",
+"desc": "FENDT",
+"img": "b2b/uploads/D161.png"
+},
+{
+"id": 195,
+"name": "HİDROLİK YAYI 4 DELİK",
+"code": "D162",
+"cat": "HİDROLİK AKSAM",
+"desc": "LANDİNİ 1007/300 SERİ",
+"img": "b2b/uploads/D162.png"
+},
+{
+"id": 196,
+"name": "HİDROLİK YAYI 8 DELİK",
+"code": "D163",
+"cat": "HİDROLİK AKSAM",
+"desc": "LANDİNİ VİZYON",
+"img": "b2b/uploads/D163.png"
+},
+{
+"id": 197,
+"name": "HİDROLİK YAY DEUTZ 80x9 / 270 mm",
+"code": "D164",
+"cat": "HİDROLİK AKSAM",
+"desc": "DE D2506-D2807-D3006-D3607-D4007-D4506-D4807-D5006-D520",
+"img": "b2b/uploads/D164.png"
+},
+{
+"id": 198,
+"name": "HİDROLİK MAKARA SEKTÖRÜ",
+"code": "D070",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-540-640",
+"img": "b2b/uploads/D70.png"
+},
+{
+"id": 199,
+"name": "HİDROLİK MAKARA SEKTÖRÜ",
+"code": "D119",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450",
+"img": "b2b/uploads/D119.png"
+},
+{
+"id": 200,
+"name": "HİDROLİK YAY MANDALI (DÖĞME )",
+"code": "D072",
+"cat": "HİDROLİK AKSAM",
+"desc": "415-450-480",
+"img": "b2b/uploads/D72.png"
+},
+{
+"id": 201,
+"name": "HİDROLİK YAY MANDALI (DÖĞME )",
+"code": "D073",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65.46",
+"img": "b2b/uploads/D73.png"
+},
+{
+"id": 202,
+"name": "HİDROLİK YAY LAMASI (PASOLU)",
+"code": "D074",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-55.46-60.56",
+"img": "b2b/uploads/D74.png"
+},
+{
+"id": 203,
+"name": "HİDROLİK YAY LAMASI (PASOSUZ)",
+"code": "D075",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-55.46-60.56",
+"img": "b2b/uploads/D75.png"
+},
+{
+"id": 204,
+"name": "HİDROLİK YAY LAMASI (PASOLU) (YM)",
+"code": "D076",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65.46-70.56",
+"img": "b2b/uploads/D76.png"
+},
+{
+"id": 205,
+"name": "HİDROLİK YAY LAMASI (PASOSUZ) (YM)",
+"code": "D077",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65.46-70.56",
+"img": "b2b/uploads/D77.png"
+},
+{
+"id": 206,
+"name": "HiDR. YAY LAMASI PASOSUZ",
+"code": "D158",
+"cat": "HİDROLİK AKSAM",
+"desc": "TT55/TT60/TT75/75-56/TIER",
+"img": "b2b/uploads/D158.png"
+},
+{
+"id": 207,
+"name": "HİDROLİK YAY SEHPA MİLİ",
+"code": "D078",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-640-55.46",
+"img": "b2b/uploads/D78.png"
+},
+{
+"id": 208,
+"name": "HİDROLİK YAY SEHPASI ( ÜÇ DELİK )",
+"code": "D079",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65.46-70.56",
+"img": "b2b/uploads/D79.png"
+},
+{
+"id": 209,
+"name": "HİDROLİK YAY SEHPASI ( DÖRT DELİK )",
+"code": "D080",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480-55.46-60.56",
+"img": "b2b/uploads/D80.png"
+},
+{
+"id": 210,
+"name": "GERGİ ZİNCİR BAĞLANTI LAMASI SAĞ",
+"code": "D081",
+"cat": "HİDROLİK AKSAM",
+"desc": "480/540/640",
+"img": "b2b/uploads/D81.png"
+},
+{
+"id": 211,
+"name": "GERGİ ZİNCİR BAĞLANTI LAMASI SOL",
+"code": "D082",
+"cat": "HİDROLİK AKSAM",
+"desc": "480/540/640",
+"img": "b2b/uploads/D82.png"
+},
+{
+"id": 212,
+"name": "GERGİ ZİNCİR BAĞLANTI MESNEDİ SAĞ",
+"code": "D083",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-5660-5670-56",
+"img": "b2b/uploads/D83.png"
+},
+{
+"id": 213,
+"name": "GERGİ ZİNCİR BAĞLANTI MESNEDİ SOL",
+"code": "D084",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-5660-5670-56",
+"img": "b2b/uploads/D84.png"
+},
+{
+"id": 214,
+"name": "GERGİ ZİNCİR BAĞLANTI MESNEDİ SOL",
+"code": "D085",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-5660-56TT50",
+"img": "b2b/uploads/D85.png"
+},
+{
+"id": 215,
+"name": "GERGİ ZİNCİR BAĞLANTI MESNEDİ SAĞ",
+"code": "D086",
+"cat": "HİDROLİK AKSAM",
+"desc": "55-5660-56TT50",
+"img": "b2b/uploads/D86.png"
+},
+{
+"id": 216,
+"name": "TELES.GERGİ ZİNCİR BAĞ.MESNETİ",
+"code": "D137",
+"cat": "HİDROLİK AKSAM",
+"desc": "TÜMOSAN 780-74.80-82.80-110.90",
+"img": "b2b/uploads/D137.png"
+},
+{
+"id": 217,
+"name": "ALT ÇEKİ BAĞLANTI LAMASI (YAN DELİKLİ)",
+"code": "D087",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-55.46",
+"img": "b2b/uploads/D87.png"
+},
+{
+"id": 218,
+"name": "ALT ÇEKİ BAĞLANTI LAMASI (YAN DELİKLİ)",
+"code": "D088",
+"cat": "HİDROLİK AKSAM",
+"desc": "640/65.46/70-56",
+"img": "b2b/uploads/D88.png"
+},
+{
+"id": 219,
+"name": "ÇEKİ OKU (1040 ÇELİK) (GARANTİLİ)",
+"code": "D089",
+"cat": "HİDROLİK AKSAM",
+"desc": "480/55.46",
+"img": "b2b/uploads/D89.png"
+},
+{
+"id": 220,
+"name": "ÇEKİ OKU (1040 ÇELİK) (GARANTİLİ)",
+"code": "D090",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65-46/780",
+"img": "b2b/uploads/D90.png"
+},
+{
+"id": 221,
+"name": "ÇEKİ OKU KAFASI ( Z )",
+"code": "D105",
+"cat": "HİDROLİK AKSAM",
+"desc": "480/55-46/640/65-46/780",
+"img": "b2b/uploads/D105.png"
+},
+{
+"id": 222,
+"name": "ARKA ÇEKİ SEHPASI (OKSUZ-LAMASIZ)",
+"code": "D091",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-640",
+"img": "b2b/uploads/D91.png"
+},
+{
+"id": 223,
+"name": "ÇEKİ OKU SABİTLEME PİMİ TK ( 2 Lİ SET)",
+"code": "D104",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D104.png"
+},
+{
+"id": 224,
+"name": "ARKA ÇEKİ SEHPASI KOMPLE (OKLU)",
+"code": "D093",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-55.46",
+"img": "b2b/uploads/D93.png"
+},
+{
+"id": 225,
+"name": "ARKA ÇEKİ SEHPASI KOMPLE (OKLU)",
+"code": "D094",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-65.46-70.56",
+"img": "b2b/uploads/D94.png"
+},
+{
+"id": 226,
+"name": "DOKUZ DELİKLİ DEMİR DÜZ 60X25 28 MM",
+"code": "D095",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D95.png"
+},
+{
+"id": 227,
+"name": "DOKUZ DELİKLİ DEMİR DÜZ 60X25 22 MM",
+"code": "D096",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D96.png"
+},
+{
+"id": 228,
+"name": "DOKUZ DELİKLİ DEMİR DÜZ 60X30 28 MM",
+"code": "D102",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D102.png"
+},
+{
+"id": 229,
+"name": "DOKUZ DELİKLİ DEMİR DÜZ 60X30 22 MM",
+"code": "D102-1",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D102-1.png"
+},
+{
+"id": 230,
+"name": "DELİKLİ DEMİR KÖPRÜLÜ 60X25 22 MM",
+"code": "D097",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D97.png"
+},
+{
+"id": 231,
+"name": "DELİKLİ DEMİR KÖPRÜLÜ 60X25 28 MM",
+"code": "D098",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D98.png"
+},
+{
+"id": 232,
+"name": "DELİKLİ DEMİR KÖPRÜLÜ 60X30 28 MM",
+"code": "D103",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D103.png"
+},
+{
+"id": 233,
+"name": "DELİKLİ DEMİR KÖPRÜLÜ 60X30 22 MM",
+"code": "D103-1",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D103-1.png"
+},
+{
+"id": 234,
+"name": "DELİKLİ DEMİR YUVARLAK Q45 22 mm",
+"code": "D099",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D99.png"
+},
+{
+"id": 235,
+"name": "DELİKLİ DEMİR YUVARLAK Q45 28 mm",
+"code": "D100",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D100.png"
+},
+{
+"id": 236,
+"name": "DELİKLİ DEMİR YUVARLAK Q50 28 mm",
+"code": "D101",
+"cat": "HİDROLİK AKSAM",
+"desc": "Hepsine",
+"img": "b2b/uploads/D101.png"
+},
+{
+"id": 237,
+"name": "YANKOL BAŞI KANCALI ( C KAFA )",
+"code": "D145",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD SERİSİ",
+"img": "b2b/uploads/D145.png"
+},
+{
+"id": 238,
+"name": "YAN KOL BAŞI ( GENİŞ TİP ) 28 MM",
+"code": "D107",
+"cat": "HİDROLİK AKSAM",
+"desc": "640 / 70.56",
+"img": "b2b/uploads/D107.png"
+},
+{
+"id": 239,
+"name": "YAN KOL BAŞI ( GENİŞ TİP ) 22 MM",
+"code": "D108",
+"cat": "HİDROLİK AKSAM",
+"desc": "640 / 70.56",
+"img": "b2b/uploads/D108.png"
+},
+{
+"id": 240,
+"name": "YAN KOL BAŞI",
+"code": "D109",
+"cat": "HİDROLİK AKSAM",
+"desc": "MF 165 / 640 E.M",
+"img": "b2b/uploads/D109.png"
+},
+{
+"id": 241,
+"name": "YAN KOL BAŞI ( GENİŞ TİP ) 28-22 MM ÇİFT DELİKLİ",
+"code": "D121",
+"cat": "HİDROLİK AKSAM",
+"desc": "MF 165 / 640 E.M",
+"img": "b2b/uploads/D121.png"
+},
+{
+"id": 242,
+"name": "YAN KOL BAŞI ( GENİŞ TİP ) 29MM",
+"code": "D122",
+"cat": "HİDROLİK AKSAM",
+"desc": "70-66/80-66",
+"img": "b2b/uploads/D122.png"
+},
+{
+"id": 243,
+"name": "YAN KOL BAŞI ( DAR DELİK) 25 MM",
+"code": "D128",
+"cat": "HİDROLİK AKSAM",
+"desc": "70-66/80-66",
+"img": "b2b/uploads/D128.png"
+},
+{
+"id": 244,
+"name": "YAN KOL BAŞI E.M İNCE DAR",
+"code": "D124",
+"cat": "HİDROLİK AKSAM",
+"desc": "480-135",
+"img": "b2b/uploads/D124.png"
+},
+{
+"id": 245,
+"name": "DANA GÖZÜ",
+"code": "D125",
+"cat": "HİDROLİK AKSAM",
+"desc": "64X44X29",
+"img": "b2b/uploads/D125.png"
+},
+{
+"id": 246,
+"name": "DANA GÖZÜ",
+"code": "D126",
+"cat": "HİDROLİK AKSAM",
+"desc": "56X44X29",
+"img": "b2b/uploads/D126.png"
+},
+{
+"id": 247,
+"name": "DANA GÖZÜ",
+"code": "D127",
+"cat": "HİDROLİK AKSAM",
+"desc": "KERTİKLİ",
+"img": "b2b/uploads/D127.png"
+},
+{
+"id": 248,
+"name": "DANA GÖZÜ FATURALI (56*45*29)-(822441-3042429M1)",
+"code": "D251",
+"cat": "HİDROLİK AKSAM",
+"desc": "56X44X29",
+"img": "b2b/uploads/D251.png"
+},
+{
+"id": 249,
+"name": "ORTA KOL KÜRESİ",
+"code": "D129",
+"cat": "HİDROLİK AKSAM",
+"desc": "48 x 26",
+"img": "b2b/uploads/D129.png"
+},
+{
+"id": 250,
+"name": "TELESKOPİK GERGİ ÇATALI ( DÖKÜM )",
+"code": "D115",
+"cat": "HİDROLİK AKSAM",
+"desc": "80-66",
+"img": "b2b/uploads/D115.png"
+},
+{
+"id": 251,
+"name": "GERGİ BAĞLANTI ÇATALI",
+"code": "D136",
+"cat": "HİDROLİK AKSAM",
+"desc": "TÜMOSAN",
+"img": "b2b/uploads/D136.png"
+},
+{
+"id": 252,
+"name": "GERGİ BAĞLANTI ÇATALI",
+"code": "D181",
+"cat": "HİDROLİK AKSAM",
+"desc": "TT55J-TT55JR2-TT55JR4",
+"img": "b2b/uploads/D181.png"
+},
+{
+"id": 253,
+"name": "TELESKOPİK GERGİ CİVATASI",
+"code": "D138",
+"cat": "HİDROLİK AKSAM",
+"desc": "SAME",
+"img": "b2b/uploads/D138.png"
+},
+{
+"id": 254,
+"name": "ORTA KOL TUTUCU ÇENGEL YAYI",
+"code": "D106",
+"cat": "HİDROLİK AKSAM",
+"desc": "Tüm Modeller",
+"img": "b2b/uploads/D106.png"
+},
+{
+"id": 255,
+"name": "HİDROLİK GÖMLEĞİ 95 MM H : 143 MM",
+"code": "D071",
+"cat": "HİDROLİK AKSAM",
+"desc": "640-55.46-65.46",
+"img": "b2b/uploads/D71.png"
+},
+{
+"id": 256,
+"name": "HİDROLİK GÖMLEĞİ 90 MM H :143 MM",
+"code": "D110",
+"cat": "HİDROLİK AKSAM",
+"desc": "450-480",
+"img": "b2b/uploads/D110.png"
+},
+{
+"id": 257,
+"name": "HİDROLİK GÖMLEĞİ 90 MM H :158 MM",
+"code": "D111",
+"cat": "HİDROLİK AKSAM",
+"desc": "Lift otomatik",
+"img": "b2b/uploads/D111.png"
+},
+{
+"id": 258,
+"name": "HİDROLİK GÖMLEĞİ 95 MM H :182 MM",
+"code": "D112",
+"cat": "HİDROLİK AKSAM",
+"desc": "780",
+"img": "b2b/uploads/D112.png"
+},
+{
+"id": 259,
+"name": "HİDROLİK GÖMLEĞİ 95 MM H:140",
+"code": "D199",
+"cat": "HİDROLİK AKSAM",
+"desc": "UTB",
+"img": "b2b/uploads/D199.png"
+},
+{
+"id": 260,
+"name": "HİDROLİK GÖMLEĞİ",
+"code": "D200",
+"cat": "HİDROLİK AKSAM",
+"desc": "80-66",
+"img": "b2b/uploads/D200.png"
+},
+{
+"id": 261,
+"name": "HİDROLİK PİSTONU 95 MM (TAŞLAMALI)",
+"code": "D113",
+"cat": "HİDROLİK AKSAM",
+"desc": "640/55.46/65.46",
+"img": "b2b/uploads/D113.png"
+},
+{
+"id": 262,
+"name": "HİDROLİK PİSTONU 90 MM (TAŞLAMALI)",
+"code": "D114",
+"cat": "HİDROLİK AKSAM",
+"desc": "640/55.46/65.46",
+"img": "b2b/uploads/D114.png"
+},
+{
+"id": 263,
+"name": "HİDROLİK PİSTONU 110 mm ( ÇİFT KANALLI )",
+"code": "D146",
+"cat": "HİDROLİK AKSAM",
+"desc": "80-66",
+"img": "b2b/uploads/D146.png"
+},
+{
+"id": 264,
+"name": "HİDROLİK PİSTONU (110 MM TEK KANAL-Y.M)",
+"code": "D147",
+"cat": "HİDROLİK AKSAM",
+"desc": "80/66-TD SERI",
+"img": "b2b/uploads/D147.png"
+},
+{
+"id": 265,
+"name": "HİDROLİK PİSTONU (LİFT OTOMATİK 90 mm)",
+"code": "D148",
+"cat": "HİDROLİK AKSAM",
+"desc": "55.56-70.56-TT55",
+"img": "b2b/uploads/D148.png"
+},
+{
+"id": 266,
+"name": "DAMPER MUSLUĞU BAĞLANTI PARÇASI - KÜPE",
+"code": "D299",
+"cat": "HİDROLİK AKSAM",
+"desc": "70-56/TD85",
+"img": "b2b/uploads/D299.png"
+},
+{
+"id": 267,
+"name": "HİDROLİK ORTAKOL",
+"code": "D210",
+"cat": "HİDROLİK AKSAM",
+"desc": "50 CM",
+"img": "b2b/uploads/D210.png"
+},
+{
+"id": 268,
+"name": "HİDROLİK ORTAKOL",
+"code": "D211",
+"cat": "HİDROLİK AKSAM",
+"desc": "55 CM",
+"img": "b2b/uploads/D211.png"
+},
+{
+"id": 269,
+"name": "HİDROLİK ORTAKOL",
+"code": "D212",
+"cat": "HİDROLİK AKSAM",
+"desc": "60cm",
+"img": "b2b/uploads/D212.png"
+},
+{
+"id": 270,
+"name": "HİDROLİK ORTAKOL",
+"code": "D213",
+"cat": "HİDROLİK AKSAM",
+"desc": "68-70 cm",
+"img": "b2b/uploads/D213.png"
+},
+{
+"id": 271,
+"name": "HİDROLİK ORTAKOL",
+"code": "D243",
+"cat": "HİDROLİK AKSAM",
+"desc": "65-68-70 cm BİR BAŞ BÜYÜK",
+"img": "b2b/uploads/D243.png"
+},
+{
+"id": 272,
+"name": "HİDROLİK ORTAKOL BAĞ.PİMİ LAMALI",
+"code": "PM141",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD SERISI",
+"img": "b2b/uploads/PM141.png"
+},
+{
+"id": 273,
+"name": "ORTA ÇEKİ KOLU ASMA KANCASI-",
+"code": "PM142",
+"cat": "HİDROLİK AKSAM",
+"desc": "TD SERİ",
+"img": "b2b/uploads/PM142.png"
+},
+{
+"id": 274,
+"name": "DİSK FREN PLEYTİ TEK",
+"code": "E001",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56",
+"img": "b2b/uploads/E01.png"
+},
+{
+"id": 275,
+"name": "DİSK FREN PLEYTİ KOMPLE",
+"code": "E002",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56",
+"img": "b2b/uploads/E02.png"
+},
+{
+"id": 276,
+"name": "DİSK FREN PLEYTİ TEK 18º",
+"code": "E019",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56",
+"img": "b2b/uploads/E19.png"
+},
+{
+"id": 277,
+"name": "DİSK FREN PLEYTİ KOMPLE 18º",
+"code": "E020",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56",
+"img": "b2b/uploads/E20.png"
+},
+{
+"id": 278,
+"name": "DİSK FREN SACI 2,50 MM",
+"code": "E003",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56-80.66",
+"img": "b2b/uploads/E03.png"
+},
+{
+"id": 279,
+"name": "DİSK FREN SACI CPI- 3 MM",
+"code": "E021",
+"cat": "FREN AKSAMI",
+"desc": "New Holland /TD75-65/Case/ Steyr/ iveco/ Magırus FPT",
+"img": "b2b/uploads/E21.png"
+},
+{
+"id": 280,
+"name": "DİSK FREN SACI CPI- 3,5 MM",
+"code": "E023",
+"cat": "FREN AKSAMI",
+"desc": "TD5.65TİER3/TD5.75 TİER3",
+"img": "b2b/uploads/E23.png"
+},
+{
+"id": 281,
+"name": "DİSK FREN BAĞLANTI SACI (LAMA)",
+"code": "E004",
+"cat": "FREN AKSAMI",
+"desc": "55.46-60.56-70.56-80.66",
+"img": "b2b/uploads/E04.png"
+},
+{
+"id": 282,
+"name": "DİSK FREN ÇATALI İNCE",
+"code": "E005",
+"cat": "FREN AKSAMI",
+"desc": "54C/55-46/60-56-70.56",
+"img": "b2b/uploads/E05.png"
+},
+{
+"id": 283,
+"name": "DİSK FREN ÇATALI KALIN",
+"code": "E006",
+"cat": "FREN AKSAMI",
+"desc": "54C/55-46/60-56-70.57",
+"img": "b2b/uploads/E06.png"
+},
+{
+"id": 284,
+"name": "EL FRENİ KOMPLE",
+"code": "E007",
+"cat": "FREN AKSAMI",
+"desc": "480-540-640-55.46-70.56",
+"img": "b2b/uploads/E07.png"
+},
+{
+"id": 285,
+"name": "FREN AŞIĞI",
+"code": "E008",
+"cat": "FREN AKSAMI",
+"desc": "450-480-640-55.46-70.56",
+"img": "b2b/uploads/E08.png"
+},
+{
+"id": 286,
+"name": "FREN AYAR ÇUBUĞU",
+"code": "E009",
+"cat": "FREN AKSAMI",
+"desc": "450-480",
+"img": "b2b/uploads/E09.png"
+},
+{
+"id": 287,
+"name": "FREN AYAR ÇUBUĞU",
+"code": "E010",
+"cat": "FREN AKSAMI",
+"desc": "640-55.46-70.56",
+"img": "b2b/uploads/E10.png"
+},
+{
+"id": 288,
+"name": "FREN AYAR ÇUBUĞU UZUN",
+"code": "E011",
+"cat": "FREN AKSAMI",
+"desc": "70.56-80.66-54 C",
+"img": "b2b/uploads/E11.png"
+},
+{
+"id": 289,
+"name": "EL FREN TAMİR TAKIMI",
+"code": "E012",
+"cat": "FREN AKSAMI",
+"desc": "48064054C Sr55-46",
+"img": "b2b/uploads/E12.png"
+},
+{
+"id": 290,
+"name": "EL FREN CIRCIR LAMASI",
+"code": "E013",
+"cat": "FREN AKSAMI",
+"desc": "415-480-640-70.56",
+"img": "b2b/uploads/E13.png"
+},
+{
+"id": 291,
+"name": "FREN PEDAL YAYI",
+"code": "E014",
+"cat": "FREN AKSAMI",
+"desc": "480-540-640",
+"img": "b2b/uploads/E14.png"
+},
+{
+"id": 292,
+"name": "FREN PEDAL YAYI",
+"code": "E015",
+"cat": "FREN AKSAMI",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/E15.png"
+},
+{
+"id": 293,
+"name": "DEBRİYAJ FREN PEDAL YAYI",
+"code": "E022",
+"cat": "FREN AKSAMI",
+"desc": "TD SERİ",
+"img": "b2b/uploads/E22.png"
+},
+{
+"id": 294,
+"name": "DİSK FREN BAĞ.CIVATASI (SETLİ ORİJİNAL )",
+"code": "E016",
+"cat": "FREN AKSAMI",
+"desc": "55.46-55.56-60.56-70.56",
+"img": "b2b/uploads/E16.png"
+},
+{
+"id": 295,
+"name": "FREN ÇEMBER PİMİ",
+"code": "E017",
+"cat": "FREN AKSAMI",
+"desc": "480-640-55.46-70.56",
+"img": "b2b/uploads/E17.png"
+},
+{
+"id": 296,
+"name": "FREN DİSKİ (SARI-SİYAH)",
+"code": "E018",
+"cat": "FREN AKSAMI",
+"desc": "55.46-80.66",
+"img": "b2b/uploads/E18.png"
+},
+{
+"id": 297,
+"name": "FREN PEDAL MİLİ (GLASÖRLÜKLÜ)",
+"code": "E025",
+"cat": "FREN AKSAMI",
+"desc": "480/640/70.56",
+"img": "b2b/uploads/E25.png"
+},
+{
+"id": 298,
+"name": "1.VE 4. VİTES ÇATALI",
+"code": "F001",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F01.png"
+},
+{
+"id": 299,
+"name": "VİTES ÇATALI ( İLERİ - GERİ SENKRONIZER )",
+"code": "F046",
+"cat": "VİTES AKSAMI",
+"desc": "70/66-80/66 / T SERISI",
+"img": "b2b/uploads/F46.png"
+},
+{
+"id": 300,
+"name": "VİTES KAPAĞI KOMPLE",
+"code": "F002",
+"cat": "VİTES AKSAMI",
+"desc": "450-480",
+"img": "b2b/uploads/F02.png"
+},
+{
+"id": 301,
+"name": "VİTES KAPAĞI",
+"code": "F003",
+"cat": "VİTES AKSAMI",
+"desc": "450-480",
+"img": "b2b/uploads/F03.png"
+},
+{
+"id": 302,
+"name": "VİTES KAPAĞI",
+"code": "F004",
+"cat": "VİTES AKSAMI",
+"desc": "540-640",
+"img": "b2b/uploads/F04.png"
+},
+{
+"id": 303,
+"name": "VİTES KAPAĞI",
+"code": "F045",
+"cat": "VİTES AKSAMI",
+"desc": "55-46/55-56/60-56/6546/TT65D",
+"img": "b2b/uploads/F45.png"
+},
+{
+"id": 304,
+"name": "VİTES KAPAĞI KOMPLE",
+"code": "F005",
+"cat": "VİTES AKSAMI",
+"desc": "640-70.56",
+"img": "b2b/uploads/F05.png"
+},
+{
+"id": 305,
+"name": "BÜYÜK TAKVİYE ÇATALI",
+"code": "F006",
+"cat": "VİTES AKSAMI",
+"desc": "415-480-540-640-70-56",
+"img": "b2b/uploads/F06.png"
+},
+{
+"id": 306,
+"name": "KÜÇÜK TAKVİYE ÇATALI",
+"code": "F007",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480-640",
+"img": "b2b/uploads/F07.png"
+},
+{
+"id": 307,
+"name": "KÜÇÜK TAKVİYE ÇATALI",
+"code": "F008",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F08.png"
+},
+{
+"id": 308,
+"name": "VİTES KOLU",
+"code": "F009",
+"cat": "VİTES AKSAMI",
+"desc": "110.90",
+"img": "b2b/uploads/F09.png"
+},
+{
+"id": 309,
+"name": "VİTES KOLU",
+"code": "F010",
+"cat": "VİTES AKSAMI",
+"desc": "TT50-TT55-TT65-TT75",
+"img": "b2b/uploads/F10.png"
+},
+{
+"id": 310,
+"name": "VİTES KOLU TAKVİYE -",
+"code": "F038",
+"cat": "VİTES AKSAMI",
+"desc": "TT50-55-65",
+"img": "b2b/uploads/F38.png"
+},
+{
+"id": 311,
+"name": "VİTES KOLU",
+"code": "F011",
+"cat": "VİTES AKSAMI",
+"desc": "TD65-75-85-90-95-L",
+"img": "b2b/uploads/F11.png"
+},
+{
+"id": 312,
+"name": "VİTES KOLU",
+"code": "F012",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F12.png"
+},
+{
+"id": 313,
+"name": "VİTES KOLU",
+"code": "F013",
+"cat": "VİTES AKSAMI",
+"desc": "540-640",
+"img": "b2b/uploads/F13.png"
+},
+{
+"id": 314,
+"name": "VİTES KOLU",
+"code": "F014",
+"cat": "VİTES AKSAMI",
+"desc": "55.46/65.46",
+"img": "b2b/uploads/F14.png"
+},
+{
+"id": 315,
+"name": "VİTES KOLU",
+"code": "F015",
+"cat": "VİTES AKSAMI",
+"desc": "80.66/70-56",
+"img": "b2b/uploads/F15.png"
+},
+{
+"id": 316,
+"name": "TAKVİYE VİTES KOLU",
+"code": "F016",
+"cat": "VİTES AKSAMI",
+"desc": "55.46-65.46-640-70.56",
+"img": "b2b/uploads/F16.png"
+},
+{
+"id": 317,
+"name": "VITES KOLU BOY : 490 mm",
+"code": "F017",
+"cat": "VİTES AKSAMI",
+"desc": "780",
+"img": "b2b/uploads/F17.png"
+},
+{
+"id": 318,
+"name": "VITES KOLU BOY : 540 mm",
+"code": "F018",
+"cat": "VİTES AKSAMI",
+"desc": "TÜMOSAN",
+"img": "b2b/uploads/F18.png"
+},
+{
+"id": 319,
+"name": "VİTES KIZAĞI (SAÇ)",
+"code": "F019",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F19.png"
+},
+{
+"id": 320,
+"name": "VİTES KIZAĞI (SAÇ) DÜĞMELİ",
+"code": "F020",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F20.png"
+},
+{
+"id": 321,
+"name": "1-2 VİTES ÇATALI",
+"code": "F021",
+"cat": "VİTES AKSAMI",
+"desc": "640/55-46/55-56",
+"img": "b2b/uploads/F21.png"
+},
+{
+"id": 322,
+"name": "1.ve 2. VİTES ÇATALI",
+"code": "F047",
+"cat": "VİTES AKSAMI",
+"desc": "70.66/80.66/L95-TD SERİ",
+"img": "b2b/uploads/F47.png"
+},
+{
+"id": 323,
+"name": "3-4 VİTES ÇATALI",
+"code": "F022",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F22.png"
+},
+{
+"id": 324,
+"name": "3. VE 4. VİTES KUMANDA PARÇASI",
+"code": "F023",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F23.png"
+},
+{
+"id": 325,
+"name": "VİTES LEVYESİ",
+"code": "F024",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F24.png"
+},
+{
+"id": 326,
+"name": "VİTES TOPUZU",
+"code": "F025",
+"cat": "VİTES AKSAMI",
+"desc": "Tüm Modeller",
+"img": "b2b/uploads/F25.png"
+},
+{
+"id": 327,
+"name": "1 VE GERİ VİTES MİLİ (1/4 ÇATALA GEÇEN)",
+"code": "F027",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F27.png"
+},
+{
+"id": 328,
+"name": "2-3 VİTES MİLİ",
+"code": "F028",
+"cat": "VİTES AKSAMI",
+"desc": "415-480",
+"img": "b2b/uploads/F28.png"
+},
+{
+"id": 329,
+"name": "TAKVİYE VİTES MİLİ (KÜÇÜK ÇATALIN)",
+"code": "F029",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F29.png"
+},
+{
+"id": 330,
+"name": "TAKVİYE VİTES MİLİ",
+"code": "F030",
+"cat": "VİTES AKSAMI",
+"desc": "415-450-480",
+"img": "b2b/uploads/F30.png"
+},
+{
+"id": 331,
+"name": "TAKVİYE VİTES MİLİ",
+"code": "F031",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F31.png"
+},
+{
+"id": 332,
+"name": "2-3 VİTES MİLİ",
+"code": "F032",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F32.png"
+},
+{
+"id": 333,
+"name": "1 VE GERİ VİTES MİLİ",
+"code": "F033",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F33.png"
+},
+{
+"id": 334,
+"name": "VİTES MİLİ DÜZ (SEK. ÇATALA GEÇEN)",
+"code": "F034",
+"cat": "VİTES AKSAMI",
+"desc": "540-640-55.46-70.56",
+"img": "b2b/uploads/F34.png"
+},
+{
+"id": 335,
+"name": "VİTES KOLU ALT (ILERI-GERI) 173 MM",
+"code": "F036",
+"cat": "VİTES AKSAMI",
+"desc": "TÜMOSAN-7000/7100/8000-8100 SERİLERİ",
+"img": "b2b/uploads/F36.png"
+},
+{
+"id": 336,
+"name": "VİTES KUMANDA MİLİ-183 MM",
+"code": "F037",
+"cat": "VİTES AKSAMI",
+"desc": "TÜMOSAN-7000/8000",
+"img": "b2b/uploads/F37.png"
+},
+{
+"id": 337,
+"name": "DEFRANSİYEL ARKA KAPAK (SFERO DÖKÜM)",
+"code": "G001",
+"cat": "MUHTELİF",
+"desc": "450-480-55.46-60.56",
+"img": "b2b/uploads/G01.png"
+},
+{
+"id": 338,
+"name": "DEFRANSİYEL ARKA KAPAK (SFERO DÖKÜM)",
+"code": "G002",
+"cat": "MUHTELİF",
+"desc": "640-65.46-70.56-TDEX",
+"img": "b2b/uploads/G02.png"
+},
+{
+"id": 339,
+"name": "DEFRANSİYEL ARKA KAPAK (SFERO DÖKÜM)",
+"code": "G176",
+"cat": "MUHTELİF",
+"desc": "65-56S/55-56S TT 55-65-55B-65B TIER",
+"img": "b2b/uploads/G176.png"
+},
+{
+"id": 340,
+"name": "PTO DESTEK KAPAĞI (SFERO DÖKÜM)",
+"code": "G177",
+"cat": "MUHTELİF",
+"desc": "TD 65/ TD110/ TD YENİ SERİ",
+"img": "b2b/uploads/G177.png"
+},
+{
+"id": 341,
+"name": "CER KAPAĞI",
+"code": "G180",
+"cat": "MUHTELİF",
+"desc": "CARRORA",
+"img": "b2b/uploads/G180.png"
+},
+{
+"id": 342,
+"name": "KASNAK KAPAĞI DÖKÜM ( DÖRT KÖŞE )",
+"code": "G003",
+"cat": "MUHTELİF",
+"desc": "480-640-55.46-70.56",
+"img": "b2b/uploads/G03.png"
+},
+{
+"id": 343,
+"name": "MARŞ MUHAFAZA SACI",
+"code": "G004",
+"cat": "MUHTELİF",
+"desc": "480-55.46-70.56-80.66",
+"img": "b2b/uploads/G04.png"
+},
+{
+"id": 344,
+"name": "EKSOZ MANİFOLDU ( ÜÇLÜ )",
+"code": "G005",
+"cat": "MUHTELİF",
+"desc": "450-480-55-46-60.56",
+"img": "b2b/uploads/G05.png"
+},
+{
+"id": 345,
+"name": "EKSOZ ÇEVİRME DİRSEĞİ",
+"code": "G046",
+"cat": "MUHTELİF",
+"desc": "480-640",
+"img": "b2b/uploads/G46.png"
+},
+{
+"id": 346,
+"name": "EKSOZ ÇEVİRME DİRSEĞİ",
+"code": "G047",
+"cat": "MUHTELİF",
+"desc": "55.46",
+"img": "b2b/uploads/G47.png"
+},
+{
+"id": 347,
+"name": "KOLTUK BAĞLANTI DEMİRİ FİAT",
+"code": "G007",
+"cat": "MUHTELİF",
+"desc": "Hepsine",
+"img": "b2b/uploads/G07.png"
+},
+{
+"id": 348,
+"name": "ÇAMURLUK KORKULUĞU İKİ AYAKLI",
+"code": "G008",
+"cat": "MUHTELİF",
+"desc": "Hepsine",
+"img": "b2b/uploads/G08.png"
+},
+{
+"id": 349,
+"name": "ÇAMURLUK KORKULUĞU ÜÇ AYAKLI",
+"code": "G009",
+"cat": "MUHTELİF",
+"desc": "Hepsine",
+"img": "b2b/uploads/G09.png"
+},
+{
+"id": 350,
+"name": "ÇAMURLUK KORKULUĞU SACLI",
+"code": "G073",
+"cat": "MUHTELİF",
+"desc": "Hepsine",
+"img": "b2b/uploads/G73.png"
+},
+{
+"id": 351,
+"name": "VOLANT DİŞLİ",
+"code": "G014",
+"cat": "MUHTELİF",
+"desc": "450-480-540-640-70.56",
+"img": "b2b/uploads/G14.png"
+},
+{
+"id": 352,
+"name": "VOLANT DİŞLİ",
+"code": "G015",
+"cat": "MUHTELİF",
+"desc": "411-415",
+"img": "b2b/uploads/G15.png"
+},
+{
+"id": 353,
+"name": "DEFRANSİYEL KİLİTLEME MAŞONU (MONTAJ)",
+"code": "G016",
+"cat": "MUHTELİF",
+"desc": "480/640/55.46/70.56",
+"img": "b2b/uploads/G16.png"
+},
+{
+"id": 354,
+"name": "MAZOT DEPO MUSLUĞU",
+"code": "G019",
+"cat": "MUHTELİF",
+"desc": "450-480-540-640",
+"img": "b2b/uploads/G19.png"
+},
+{
+"id": 355,
+"name": "MAZOT DEPO MUSLUĞU Y.M",
+"code": "G020",
+"cat": "MUHTELİF",
+"desc": "55.46-65.46-70.56-80.66",
+"img": "b2b/uploads/G20.png"
+},
+{
+"id": 356,
+"name": "GAZ ÇUBUĞU",
+"code": "G021",
+"cat": "MUHTELİF",
+"desc": "415-450-480-640",
+"img": "b2b/uploads/G21.png"
+},
+{
+"id": 357,
+"name": "DAMPER KALDIRMA KOLU",
+"code": "G022",
+"cat": "MUHTELİF",
+"desc": "450-480-640-55.46-70.56",
+"img": "b2b/uploads/G22.png"
+},
+{
+"id": 358,
+"name": "DAMPER KALDIRMA KOLU Y.M (UZUN)",
+"code": "G023",
+"cat": "MUHTELİF",
+"desc": "70-56",
+"img": "b2b/uploads/G23.png"
+},
+{
+"id": 359,
+"name": "DAMPER KALDIRMA KOLU YAYI YUVARLAK",
+"code": "G024",
+"cat": "MUHTELİF",
+"desc": "450-480-640-55.46-70.56",
+"img": "b2b/uploads/G24.png"
+},
+{
+"id": 360,
+"name": "DAMPER KALDIRMA KOLU YAYI KÖŞELİ",
+"code": "G114",
+"cat": "MUHTELİF",
+"desc": "450-480-640-55.46-70.56",
+"img": "b2b/uploads/G114.png"
+},
+{
+"id": 361,
+"name": "RÖMORK BİCONU 5 TONLUK (KALIN)",
+"code": "G026",
+"cat": "MUHTELİF",
+"desc": "5 TONLUK 3/4",
+"img": "b2b/uploads/G26.png"
+},
+{
+"id": 362,
+"name": "RÖMORK BİCONU 3 TONLUK (İNCE)",
+"code": "G027",
+"cat": "MUHTELİF",
+"desc": "3 TONLUK 5/8",
+"img": "b2b/uploads/G27.png"
+},
+{
+"id": 363,
+"name": "KUYRUK MİL FREZE UCU (TEK FREZE) 25-27 CM",
+"code": "G055",
+"cat": "MUHTELİF",
+"desc": "TEK FREZE-NORMAL UZUN",
+"img": "b2b/uploads/G55.png"
+},
+{
+"id": 364,
+"name": "KUYRUK MİL FREZE UCU (TEK FREZE)",
+"code": "G067",
+"cat": "MUHTELİF",
+"desc": "TEK FREZE-NORMAL",
+"img": "b2b/uploads/G67.png"
+},
+{
+"id": 365,
+"name": "KUYRUK MİL FREZE UCU (TEK FREZE)",
+"code": "G035",
+"cat": "MUHTELİF",
+"desc": "ISIL İŞLEMLİ",
+"img": "b2b/uploads/G35.png"
+},
+{
+"id": 366,
+"name": "KUYRUK MİL FREZE UCU (ÇİFT FREZE)",
+"code": "G036",
+"cat": "MUHTELİF",
+"desc": "ISIL İŞLEMLİ",
+"img": "b2b/uploads/G36.png"
+},
+{
+"id": 367,
+"name": "KUYRUK MİL FREZE UCU (ÇİFT FREZE)",
+"code": "G045",
+"cat": "MUHTELİF",
+"desc": "ÇİFT FREZE-NORMAL",
+"img": "b2b/uploads/G45.png"
+},
+{
+"id": 368,
+"name": "KUYRUK MİL FREZE ( DİŞİ )",
+"code": "G037",
+"cat": "MUHTELİF",
+"desc": "8 CM",
+"img": "b2b/uploads/G37.png"
+},
+{
+"id": 369,
+"name": "KUYRUK MİL FREZE ( DİŞİ ) UZUN 160 MM",
+"code": "G044",
+"cat": "MUHTELİF",
+"desc": "16 CM",
+"img": "b2b/uploads/G44.png"
+},
+{
+"id": 370,
+"name": "DÖNER LAMBA APARATI",
+"code": "G050",
+"cat": "MUHTELİF",
+"desc": "UZUN ASANSÖRLÜ",
+"img": "b2b/uploads/G50.png"
+},
+{
+"id": 371,
+"name": "DÖNER LAMBA APARATI",
+"code": "G051",
+"cat": "MUHTELİF",
+"desc": "KISA DÖNERLİ",
+"img": "b2b/uploads/G51.png"
+},
+{
+"id": 372,
+"name": "KABİN AYNASI BÜYÜK",
+"code": "G056",
+"cat": "MUHTELİF",
+"desc": "BÜYÜK",
+"img": "b2b/uploads/G56.png"
+},
+{
+"id": 373,
+"name": "KABİN AYNASI KÜÇÜK",
+"code": "G057",
+"cat": "MUHTELİF",
+"desc": "KÜÇÜK",
+"img": "b2b/uploads/G57.png"
+},
+{
+"id": 374,
+"name": "KABİN AYNASI",
+"code": "G058",
+"cat": "MUHTELİF",
+"desc": "NEWHOLLAND",
+"img": "b2b/uploads/G58.png"
+},
+{
+"id": 375,
+"name": "TAMBUR BIÇAĞI 120 CM",
+"code": "G060",
+"cat": "MUHTELİF",
+"desc": "120 CM-SEMENTELİ",
+"img": "b2b/uploads/G60.png"
+},
+{
+"id": 376,
+"name": "TAMBUR PİMİ",
+"code": "G061",
+"cat": "MUHTELİF",
+"desc": "",
+"img": "b2b/uploads/G61.png"
+},
+{
+"id": 377,
+"name": "KOMPRESÖR FREZESİ",
+"code": "G068",
+"cat": "MUHTELİF",
+"desc": "17 mm",
+"img": "b2b/uploads/G68.png"
+},
+{
+"id": 378,
+"name": "KOMPRESÖR FREZESİ",
+"code": "G069",
+"cat": "MUHTELİF",
+"desc": "25 mm",
+"img": "b2b/uploads/G69.png"
+},
+{
+"id": 379,
+"name": "KOMPRESÖR FREZESİ",
+"code": "G070",
+"cat": "MUHTELİF",
+"desc": "30 mm",
+"img": "b2b/uploads/G70.png"
+},
+{
+"id": 380,
+"name": "KOMPRESÖR FREZESİ",
+"code": "G071",
+"cat": "MUHTELİF",
+"desc": "35 mm",
+"img": "b2b/uploads/G71.png"
+},
+{
+"id": 381,
+"name": "HAVA KOMPRESÖRÜ-8.Bar",
+"code": "G072",
+"cat": "MUHTELİF",
+"desc": "Hepsine",
+"img": "b2b/uploads/G72.png"
+},
+{
+"id": 382,
+"name": "HİD.DİR.YAĞ DEPOSU PLASTİK",
+"code": "G167",
+"cat": "MUHTELİF",
+"desc": "55-65-70",
+"img": "b2b/uploads/G167.png"
+},
+{
+"id": 383,
+"name": "HİD.DİR.YAĞ DEPO KAPAĞI",
+"code": "G168",
+"cat": "MUHTELİF",
+"desc": "55-65-70",
+"img": "b2b/uploads/G168.png"
+},
+{
+"id": 384,
+"name": "REMÖRK BAĞLANTI ÇEKİSİ KISA",
+"code": "G075",
+"cat": "MUHTELİF",
+"desc": "KISA",
+"img": "b2b/uploads/G75.png"
+},
+{
+"id": 385,
+"name": "REMÖRK BAĞLANTI ÇEKİSİ UZUN",
+"code": "G076",
+"cat": "MUHTELİF",
+"desc": "UZUN",
+"img": "b2b/uploads/G76.png"
+},
+{
+"id": 386,
+"name": "TAKIM SANDIĞI -KIRMIZI",
+"code": "G100-K",
+"cat": "MUHTELİF",
+"desc": "480-640-55.46-80.66",
+"img": "b2b/uploads/G100-K.png"
+},
+{
+"id": 387,
+"name": "TAKIM SANDIĞI -TURUNCU",
+"code": "G100-T",
+"cat": "MUHTELİF",
+"desc": "480-640-55.46-80.66",
+"img": "b2b/uploads/G100-T.png"
+},
+{
+"id": 388,
+"name": "TAKIM SANDIĞI -SİYAH",
+"code": "G100-S",
+"cat": "MUHTELİF",
+"desc": "480-640-55.46-80.66",
+"img": "b2b/uploads/G100-S.png"
+},
+{
+"id": 389,
+"name": "TAKIM SANDIĞI -MAVİ",
+"code": "G100-M",
+"cat": "MUHTELİF",
+"desc": "480-640-55.46-80.66",
+"img": "b2b/uploads/G100-M.png"
+},
+{
+"id": 390,
+"name": "KAPI AMORTİSÖRÜ (27 cm) 380N - TD / TT /",
+"code": "G220",
+"cat": "MUHTELİF",
+"desc": "75.56/65.56",
+"img": "b2b/uploads/G220.png"
+},
+{
+"id": 391,
+"name": "ARKA CAM AMORTİSÖRÜ (45 cm) DÜZ BAŞLI -",
+"code": "G221",
+"cat": "MUHTELİF",
+"desc": "TD-TT-75.56/65.56",
+"img": "b2b/uploads/G221.png"
+},
+{
+"id": 392,
+"name": "ARKA CAM AMORTİSÖRÜ (48 cm) DÜZ BAŞLI -",
+"code": "G222",
+"cat": "MUHTELİF",
+"desc": "TD-TT-75.56/65.56",
+"img": "b2b/uploads/G222.png"
+},
+{
+"id": 393,
+"name": "ÖN DEFRANSİYEL ŞAFT SOMUNU-(M75*2*20)",
+"code": "H001",
+"cat": "SOMUN CİVATA",
+"desc": "70.66-80.66 DT",
+"img": "b2b/uploads/H01.png"
+},
+{
+"id": 394,
+"name": "ARKA PORYA SOMUNU (ÇELİK DÖVME)-(M60*20)",
+"code": "H002",
+"cat": "SOMUN CİVATA",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/H02.png"
+},
+{
+"id": 395,
+"name": "ARKA PORYA SOMUNU(563679)- (M55*1.5)",
+"code": "H003",
+"cat": "SOMUN CİVATA",
+"desc": "480-640-55.46-70.56",
+"img": "b2b/uploads/H03.png"
+},
+{
+"id": 396,
+"name": "AYNA MAHRUTİ SOMUN-(M40*1mm)",
+"code": "H004",
+"cat": "SOMUN CİVATA",
+"desc": "480-640-55.46",
+"img": "b2b/uploads/H04.png"
+},
+{
+"id": 397,
+"name": "GRUP MİL SOMUNU-(M22*1,5)",
+"code": "H005",
+"cat": "SOMUN CİVATA",
+"desc": "415-480",
+"img": "b2b/uploads/H05.png"
+},
+{
+"id": 398,
+"name": "UZUN AKİS SOMUNU",
+"code": "H007",
+"cat": "SOMUN CİVATA",
+"desc": "480-640-55.46-70.56",
+"img": "b2b/uploads/H07.png"
+},
+{
+"id": 399,
+"name": "AYNA MAHRUTİ SOMUN-(M45x1,5)",
+"code": "H010",
+"cat": "SOMUN CİVATA",
+"desc": "80-66/L95/95-66",
+"img": "b2b/uploads/H10.png"
+},
+{
+"id": 400,
+"name": "AĞIRLIK CİVATASI KÜÇÜK",
+"code": "H013",
+"cat": "SOMUN CİVATA",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/H13.png"
+},
+{
+"id": 401,
+"name": "AĞIRLIK CİVATASI BÜYÜK",
+"code": "H014",
+"cat": "SOMUN CİVATA",
+"desc": "70.66-80.66",
+"img": "b2b/uploads/H14.png"
+},
+{
+"id": 402,
+"name": "ARKA AĞIRLIK CİVATASI",
+"code": "H035",
+"cat": "SOMUN CİVATA",
+"desc": "TT55/TT55B/TT65/TD65/TD75",
+"img": "b2b/uploads/H35.png"
+},
+{
+"id": 403,
+"name": "GRUP MİL SOMUNU-(M36*1.50)",
+"code": "H015",
+"cat": "SOMUN CİVATA",
+"desc": "110-90",
+"img": "b2b/uploads/H15.png"
+},
+{
+"id": 404,
+"name": "AYNA MAHRUTİ SOMUNU- (M35x1,5)",
+"code": "H042",
+"cat": "SOMUN CİVATA",
+"desc": "110.90",
+"img": "b2b/uploads/H42.png"
+},
+{
+"id": 405,
+"name": "GÜVENLİK SOMUNU-(M32*1,50)",
+"code": "H016",
+"cat": "SOMUN CİVATA",
+"desc": "NEWHOLLAND",
+"img": "b2b/uploads/H16.png"
+},
+{
+"id": 406,
+"name": "GRUP MİL SOMUNU (46=M24*1,5)",
+"code": "H017",
+"cat": "SOMUN CİVATA",
+"desc": "640/55-46/780",
+"img": "b2b/uploads/H17.png"
+},
+{
+"id": 407,
+"name": "ÖN AKSON SOMUNU-(M20*1,5*20)",
+"code": "H018",
+"cat": "SOMUN CİVATA",
+"desc": "480/640",
+"img": "b2b/uploads/H18.png"
+},
+{
+"id": 408,
+"name": "ÖN BİJON (YM) (80-66ARKA BİJONLA AYNIDIR )",
+"code": "H019",
+"cat": "SOMUN CİVATA",
+"desc": "55-46/55-60/70-56/80-66",
+"img": "b2b/uploads/H19.png"
+},
+{
+"id": 409,
+"name": "ARKA BİJON-(M16*1,5*39)",
+"code": "H021",
+"cat": "SOMUN CİVATA",
+"desc": "480/640",
+"img": "b2b/uploads/H21.png"
+},
+{
+"id": 410,
+"name": "JANT CİVATASI 80-66-(M16*1,5) ( 8 cm )",
+"code": "H024",
+"cat": "SOMUN CİVATA",
+"desc": "80.66",
+"img": "b2b/uploads/H24.png"
+},
+{
+"id": 411,
+"name": "JANT CİVATASI 80-66-(M16*1,5) ( 9 cm )",
+"code": "H24-I",
+"cat": "SOMUN CİVATA",
+"desc": "FİAT-MF",
+"img": "b2b/uploads/H24-I.png"
+},
+{
+"id": 412,
+"name": "JANT CİVATASI (SOMUNLU-TIRNAKLI) (M16*1.5*120mm)",
+"code": "H025",
+"cat": "SOMUN CİVATA",
+"desc": "TD SERİSİ",
+"img": "b2b/uploads/H25.png"
+},
+{
+"id": 413,
+"name": "ÖN VE ARKA TEKER BİJONU-(M18*1,5x35)",
+"code": "H026",
+"cat": "SOMUN CİVATA",
+"desc": "80.66-TD85-TD95-T5040-T5050",
+"img": "b2b/uploads/H26.png"
+},
+{
+"id": 414,
+"name": "ARKA JANT CİVATASI TIRNAKLI -(5/8\" 7 cm)",
+"code": "H030",
+"cat": "SOMUN CİVATA",
+"desc": "MF 135-240",
+"img": "b2b/uploads/H30.png"
+},
+{
+"id": 415,
+"name": "ARKA JANT BAĞLANTI CIVATASI (M20x2.5x95)-",
+"code": "H031",
+"cat": "SOMUN CİVATA",
+"desc": "110-90 DT",
+"img": "b2b/uploads/H31.png"
+},
+{
+"id": 416,
+"name": "ÖN DİFERANSİYEL PORYA SOMUNU",
+"code": "H040",
+"cat": "SOMUN CİVATA",
+"desc": "TT55 TIERIITT65 TIERIIT4030 FT4040 FT4050 FT4030 N",
+"img": "b2b/uploads/H40.png"
+},
+{
+"id": 417,
+"name": "ÖN TEKER PORYA SOMUNU-(M90x2 mm)",
+"code": "H041",
+"cat": "SOMUN CİVATA",
+"desc": "140/90 Series-T1600-T1700-TM Series",
+"img": "b2b/uploads/H41.png"
+},
+{
+"id": 418,
+"name": "EMNİYET BRANDASI (NEW HOLLAND ARMALI)",
+"code": "K001",
+"cat": "BRANDA",
+"desc": "HEPSİNE",
+"img": "b2b/uploads/K001.png"
+},
+{
+"id": 419,
+"name": "KOLTUK KILIFI DÜZ 1 KALİTE ( SİYAH )",
+"code": "K003",
+"cat": "BRANDA",
+"desc": "HEPSİNE",
+"img": "b2b/uploads/K003.png"
+},
+{
+"id": 420,
+"name": "KOLTUK KILIFI KOLÇAKLI 1 KALİTE ( SİYAH )",
+"code": "K005",
+"cat": "BRANDA",
+"desc": "HEPSİNE",
+"img": "b2b/uploads/K005.png"
+},
+{
+"id": 421,
+"name": "KİLOMETRE ADAPTÖRÜ",
+"code": "FRD001",
+"cat": "FORD TRAKTÖR",
+"desc": "3600-6600",
+"img": "b2b/uploads/FRD1.png"
+},
+{
+"id": 422,
+"name": "ŞANJUMAN YAĞ KAPAĞI TAPASI",
+"code": "FRD004",
+"cat": "FORD TRAKTÖR",
+"desc": "3000-3600-5000",
+"img": "b2b/uploads/FRD4.png"
+},
+{
+"id": 423,
+"name": "2-6 VİTES ÇATALI",
+"code": "FRD005",
+"cat": "FORD TRAKTÖR",
+"desc": "3000-3600",
+"img": "b2b/uploads/FRD5.png"
+},
+{
+"id": 424,
+"name": "DEB.AYIRMA ÇATALI",
+"code": "FRD006",
+"cat": "FORD TRAKTÖR",
+"desc": "5000",
+"img": "b2b/uploads/FRD6.png"
+},
+{
+"id": 425,
+"name": "ŞANZIMAN YAĞ ÇUBUĞU MİLLİ",
+"code": "FRD011",
+"cat": "FORD TRAKTÖR",
+"desc": "5000-6600",
+"img": "b2b/uploads/FRD11.png"
+},
+{
+"id": 426,
+"name": "HİDROLİK BASTON BORU FORD",
+"code": "FRD012",
+"cat": "FORD TRAKTÖR",
+"desc": "FORD",
+"img": "b2b/uploads/FRD12.png"
+},
+{
+"id": 427,
+"name": "YANGÖVDE ADAPTÖRÜ SAĞ",
+"code": "FRD013",
+"cat": "FORD TRAKTÖR",
+"desc": "3000-3600",
+"img": "b2b/uploads/FRD13.png"
+},
+{
+"id": 428,
+"name": "YANGÖVDE ADAPTÖRÜ SOL",
+"code": "FRD014",
+"cat": "FORD TRAKTÖR",
+"desc": "3000-3600",
+"img": "b2b/uploads/FRD14.png"
+},
+{
+"id": 429,
+"name": "HİDROLİK YAĞ DOLDURMA KAPAĞI ( ÜSTÜ VİDALI)",
+"code": "FRD016",
+"cat": "FORD TRAKTÖR",
+"desc": "5000-6600",
+"img": "b2b/uploads/FRD16.png"
+},
+{
+"id": 430,
+"name": "DEBRİYAJ BASKI AYAĞI",
+"code": "ŞTY001",
+"cat": "ŞTEYR TRAKTÖR",
+"desc": "768",
+"img": "b2b/uploads/ŞTY001.png"
+},
+{
+"id": 431,
+"name": "YAN KOL BAŞI PİMSİZ ( UZUN TİP 29 mm)",
+"code": "MF019",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-285-5000-6610",
+"img": "b2b/uploads/MF19.png"
+},
+{
+"id": 432,
+"name": "HİDROLİK KALDIRMA KOLU",
+"code": "MF023",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240",
+"img": "b2b/uploads/MF23.png"
+},
+{
+"id": 433,
+"name": "HİDROLİK KALDIRMA KOLU",
+"code": "MF024",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "285-398-3105",
+"img": "b2b/uploads/MF24.png"
+},
+{
+"id": 434,
+"name": "ÖN TEKER PORYASI",
+"code": "MF071",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-285",
+"img": "b2b/uploads/MF71.png"
+},
+{
+"id": 435,
+"name": "ÖN TEKER PORYASI",
+"code": "MF072",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240",
+"img": "b2b/uploads/MF72.png"
+},
+{
+"id": 436,
+"name": "ÖN TEKER PORYA KAPAĞI (GLASÖRLÜ)",
+"code": "MF048",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240",
+"img": "b2b/uploads/MF48.png"
+},
+{
+"id": 437,
+"name": "ÖN TEKER PORYA KAPAĞI (GLASÖRLÜ)",
+"code": "MF049",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "285",
+"img": "b2b/uploads/MF49.png"
+},
+{
+"id": 438,
+"name": "EKSOZ MANİFOLDU YANDAN",
+"code": "MF075",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-285",
+"img": "b2b/uploads/MF75.png"
+},
+{
+"id": 439,
+"name": "EKSOZ ÇEVİRME DİRSEĞİ",
+"code": "MF084",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "185-265-285",
+"img": "b2b/uploads/MF84.png"
+},
+{
+"id": 440,
+"name": "PRİZDİREK KOVANI 8.VİT.YM DÜZ TİP",
+"code": "MF085",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "285-398-3075/105",
+"img": "b2b/uploads/MF85.png"
+},
+{
+"id": 441,
+"name": "HİDROLİK KEPÇESİ (SFERO DÖKÜM)",
+"code": "MF034",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240",
+"img": "b2b/uploads/MF34.png"
+},
+{
+"id": 442,
+"name": "HİDROLİK KEPÇESİ",
+"code": "MF035",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF35.png"
+},
+{
+"id": 443,
+"name": "HİDROLİK PİSTON KOLU İTECEĞİ",
+"code": "MF031",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240-285",
+"img": "b2b/uploads/MF31.png"
+},
+{
+"id": 444,
+"name": "HİDROLİK KALIN YAY SEMERİ",
+"code": "MF036",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240",
+"img": "b2b/uploads/MF36.png"
+},
+{
+"id": 445,
+"name": "HİD.KALIN YAY BEYİN ÇATALI SFERO",
+"code": "MF073",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135/240",
+"img": "b2b/uploads/MF73.png"
+},
+{
+"id": 446,
+"name": "ŞANZIMAN YAĞ DOLDURMA KAPAĞI",
+"code": "MF051",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-285",
+"img": "b2b/uploads/MF51.png"
+},
+{
+"id": 447,
+"name": "BASAMAK ÖN DAYANAĞI SAĞ ( R )",
+"code": "MF052",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF52.png"
+},
+{
+"id": 448,
+"name": "BASAMAK ÖN DAYANAĞI SOL ( L )",
+"code": "MF053",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF53.png"
+},
+{
+"id": 449,
+"name": "KUYRUK MİLİ KAPAĞI (ÇAN TİP)",
+"code": "MF054",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "240 – 240S – 255 – 265 -265S – 275 – 285 – 285S",
+"img": "b2b/uploads/MF54.png"
+},
+{
+"id": 450,
+"name": "ALT ÇEKİ SPORTU SAĞ",
+"code": "MF006",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-285",
+"img": "b2b/uploads/MF6.png"
+},
+{
+"id": 451,
+"name": "ALT ÇEKİ SPORTU SOL",
+"code": "MF007",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-285",
+"img": "b2b/uploads/MF7.png"
+},
+{
+"id": 452,
+"name": "GÖVDE KOVAN PERNOSU- (181229M4,181229M5)",
+"code": "MF059",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135",
+"img": "b2b/uploads/MF59.png"
+},
+{
+"id": 453,
+"name": "GÖVDE KOVAN PERNOSU",
+"code": "MF060",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "148-240",
+"img": "b2b/uploads/MF60.png"
+},
+{
+"id": 454,
+"name": "GERGİ MEKANİZMA CİVATASI UZUN",
+"code": "MF044",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF44.png"
+},
+{
+"id": 455,
+"name": "GERGİ MEKANİZMA CİVATASI KISA",
+"code": "MF045",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF45.png"
+},
+{
+"id": 456,
+"name": "ORTA KOL TUTUCU ÇENGEL YAYI UZUN",
+"code": "MF046",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-285",
+"img": "b2b/uploads/MF46.png"
+},
+{
+"id": 457,
+"name": "GOLD TELESKOPİK GERGİ CİVATASI ( 3/4-16 )",
+"code": "MF047",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "240-255-260-276-286-6000",
+"img": "b2b/uploads/MF47.png"
+},
+{
+"id": 458,
+"name": "ÖN AKSON SOMUNU",
+"code": "MF070",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "165-185-285",
+"img": "b2b/uploads/MF70.png"
+},
+{
+"id": 459,
+"name": "DEBRİYAJ PEDAL MİL KOLU İKİ DELİK",
+"code": "MF090",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "240-285",
+"img": "b2b/uploads/MF90.png"
+},
+{
+"id": 460,
+"name": "HİD.DİR.ÖN LİFT UÇ PİMİ SOMUNLU (1/2-16 DİŞ)",
+"code": "MF091",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "265-275-285",
+"img": "b2b/uploads/MF91.png"
+},
+{
+"id": 461,
+"name": "DEBRİYAJ PEDAL MİLİ UZUN",
+"code": "MF093",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240-285",
+"img": "b2b/uploads/MF93.png"
+},
+{
+"id": 462,
+"name": "KUYRUK MİL TUTUCU DİŞLİ 6T Z:6 KERTİKLİ",
+"code": "MF094",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "5400 / 5445 / 5455 / 7600",
+"img": "b2b/uploads/MF94.png"
+},
+{
+"id": 463,
+"name": "ÖN PANJUR KİLİTLEME VİDASI DİŞİ",
+"code": "MF012",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "260-398-3105",
+"img": "b2b/uploads/MF12.png"
+},
+{
+"id": 464,
+"name": "ÖN PANJUR KİLİTLEME VİDASI ERKEK",
+"code": "MF013",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "260-398-3105",
+"img": "b2b/uploads/MF13.png"
+},
+{
+"id": 465,
+"name": "MF BEYAZ GÖLGELİK",
+"code": "MF001",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/MF1.png"
+},
+{
+"id": 466,
+"name": "MF KOLTUK BAĞLANTI DEMİRİ",
+"code": "MF003",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/MF3.png"
+},
+{
+"id": 467,
+"name": "ÇEKİ OKU",
+"code": "MF004",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240-255-240T",
+"img": "b2b/uploads/MF4.png"
+},
+{
+"id": 468,
+"name": "VOLANT DİŞLİ",
+"code": "MF008",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/MF8.png"
+},
+{
+"id": 469,
+"name": "HİDROLİK BASTON BORU 5/8",
+"code": "MF009",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "Hepsine",
+"img": "b2b/uploads/MF9.png"
+},
+{
+"id": 470,
+"name": "RADYATÖR MUSLUĞU MF",
+"code": "MF016",
+"cat": "MASSEY FERGUSON TRAKTÖR",
+"desc": "135-240-285-399",
+"img": "b2b/uploads/MF16.png"
+},
+{
+"id": 471,
+"name": "DİREKSİYON MİLİ SAĞ",
+"code": "U001",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U01.png"
+},
+{
+"id": 472,
+"name": "DİREKSİYON MİLİ SOL",
+"code": "U002",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U02.png"
+},
+{
+"id": 473,
+"name": "DİREKSİYON MİLİ SONSUZU SAĞ",
+"code": "U003",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U03.png"
+},
+{
+"id": 474,
+"name": "DİREKSİYON MİLİ SONSUZU SOL",
+"code": "U004",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U04.png"
+},
+{
+"id": 475,
+"name": "DİREKSİYON SEKTÖRÜ SAĞ",
+"code": "U005",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U05.png"
+},
+{
+"id": 476,
+"name": "DİREKSİYON SEKTÖRÜ SOL",
+"code": "U006",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U06.png"
+},
+{
+"id": 477,
+"name": "DİREKSİYON SEKTÖR MAKARASI",
+"code": "U007",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U07.png"
+},
+{
+"id": 478,
+"name": "DİREKSİYON KUTUSU KOMPLE",
+"code": "U010",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U10.png"
+},
+{
+"id": 479,
+"name": "DİREKSİYON YAN KAPAĞI",
+"code": "U011",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U11.png"
+},
+{
+"id": 480,
+"name": "DİREKSİYON KUTUSU BOŞ",
+"code": "U012",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U12.png"
+},
+{
+"id": 481,
+"name": "DİREKSİYON BORUSU",
+"code": "U015",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U15.png"
+},
+{
+"id": 482,
+"name": "HİDROLİK GÖMLEĞİ 90 mm H:140",
+"code": "U018",
+"cat": "UTB TRAKTÖR",
+"desc": "UTB",
+"img": "b2b/uploads/U18.png"
+},
+{
+"id": 483,
+"name": "ORTA KOL PİMİ",
+"code": "PM001",
+"cat": "PİM GRUBU",
+"desc": "19 mm 13 cm MF 135-240",
+"img": "b2b/uploads/PM01.png"
+},
+{
+"id": 484,
+"name": "ORTA KOL PİMİ",
+"code": "PM002",
+"cat": "PİM GRUBU",
+"desc": "19 mm 15 cm MF 165-175",
+"img": "b2b/uploads/PM02.png"
+},
+{
+"id": 485,
+"name": "ORTAKOL PİMİ",
+"code": "PM003",
+"cat": "PİM GRUBU",
+"desc": "19 mm 13 cm ZİNCİRLİ MF 135-240 / FORD-CASE",
+"img": "b2b/uploads/PM03.png"
+},
+{
+"id": 486,
+"name": "ORTA KOL PİMİ (SEMER)",
+"code": "PM004",
+"cat": "PİM GRUBU",
+"desc": "19 mm LAMALI FİAT",
+"img": "b2b/uploads/PM04.png"
+},
+{
+"id": 487,
+"name": "KIRMALI PİM",
+"code": "PM005",
+"cat": "PİM GRUBU",
+"desc": "19 mm KIRMALI MF 135-185",
+"img": "b2b/uploads/PM05.png"
+},
+{
+"id": 488,
+"name": "ORTA KOL PİMİ",
+"code": "PM006",
+"cat": "PİM GRUBU",
+"desc": "19 mm 18 cm",
+"img": "b2b/uploads/PM06.png"
+},
+{
+"id": 489,
+"name": "ORTA KOL PİMİ",
+"code": "PM007",
+"cat": "PİM GRUBU",
+"desc": "19 mm 25 cm MF 135-185",
+"img": "b2b/uploads/PM07.png"
+},
+{
+"id": 490,
+"name": "ORTA KOL PİMİ",
+"code": "PM008",
+"cat": "PİM GRUBU",
+"desc": "22 mm 13 cm MF 165-240",
+"img": "b2b/uploads/PM08.png"
+},
+{
+"id": 491,
+"name": "ORTA KOL PİMİ",
+"code": "PM009",
+"cat": "PİM GRUBU",
+"desc": "22 mm 15 cm MF 165-240",
+"img": "b2b/uploads/PM09.png"
+},
+{
+"id": 492,
+"name": "ORTA KOL PİMİ",
+"code": "PM010",
+"cat": "PİM GRUBU",
+"desc": "22 mm 18 cm",
+"img": "b2b/uploads/PM10.png"
+},
+{
+"id": 493,
+"name": "ORTA KOL PİMİ",
+"code": "PM011",
+"cat": "PİM GRUBU",
+"desc": "22 mm 20 cm",
+"img": "b2b/uploads/PM11.png"
+},
+{
+"id": 494,
+"name": "ORTA KOL PİMİ",
+"code": "PM012",
+"cat": "PİM GRUBU",
+"desc": "25 mm 13 cm MF 165-285",
+"img": "b2b/uploads/PM12.png"
+},
+{
+"id": 495,
+"name": "ORTA KOL PİMİ",
+"code": "PM013",
+"cat": "PİM GRUBU",
+"desc": "25 mm 15 cm",
+"img": "b2b/uploads/PM13.png"
+},
+{
+"id": 496,
+"name": "ORTA KOL PİMİ",
+"code": "PM014",
+"cat": "PİM GRUBU",
+"desc": "25 mm 18 cm",
+"img": "b2b/uploads/PM14.png"
+},
+{
+"id": 497,
+"name": "ORTA KOL PİMİ",
+"code": "PM015",
+"cat": "PİM GRUBU",
+"desc": "28 mm 13 cm",
+"img": "b2b/uploads/PM15.png"
+},
+{
+"id": 498,
+"name": "ORTA KOL PİMİ",
+"code": "PM016",
+"cat": "PİM GRUBU",
+"desc": "28 mm 15 cm",
+"img": "b2b/uploads/PM16.png"
+},
+{
+"id": 499,
+"name": "ORTA KOL PİMİ",
+"code": "PM017",
+"cat": "PİM GRUBU",
+"desc": "28 mm 18 cm",
+"img": "b2b/uploads/PM17.png"
+},
+{
+"id": 500,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM020",
+"cat": "PİM GRUBU",
+"desc": "22 mm 18 cm",
+"img": "b2b/uploads/PM20.png"
+},
+{
+"id": 501,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM022",
+"cat": "PİM GRUBU",
+"desc": "25 mm 18 cm",
+"img": "b2b/uploads/PM22.png"
+},
+{
+"id": 502,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM024",
+"cat": "PİM GRUBU",
+"desc": "25 mm 25 cm",
+"img": "b2b/uploads/PM24.png"
+},
+{
+"id": 503,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM025",
+"cat": "PİM GRUBU",
+"desc": "25 mm 28 cm",
+"img": "b2b/uploads/PM25.png"
+},
+{
+"id": 504,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM027",
+"cat": "PİM GRUBU",
+"desc": "28 mm 18 cm",
+"img": "b2b/uploads/PM27.png"
+},
+{
+"id": 505,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM028",
+"cat": "PİM GRUBU",
+"desc": "28 mm 20 cm",
+"img": "b2b/uploads/PM28.png"
+},
+{
+"id": 506,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM029",
+"cat": "PİM GRUBU",
+"desc": "28 mm 25 cm",
+"img": "b2b/uploads/PM29.png"
+},
+{
+"id": 507,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM035",
+"cat": "PİM GRUBU",
+"desc": "28 mm 28 cm",
+"img": "b2b/uploads/PM35.png"
+},
+{
+"id": 508,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM030",
+"cat": "PİM GRUBU",
+"desc": "30 mm 18 cm",
+"img": "b2b/uploads/PM30.png"
+},
+{
+"id": 509,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM031",
+"cat": "PİM GRUBU",
+"desc": "30 mm 25 cm",
+"img": "b2b/uploads/PM31.png"
+},
+{
+"id": 510,
+"name": "REMÖRK ÇEKİ PİMİ",
+"code": "PM032",
+"cat": "PİM GRUBU",
+"desc": "32 mm 18 cm",
+"img": "b2b/uploads/PM32.png"
+},
+{
+"id": 511,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM040",
+"cat": "PİM GRUBU",
+"desc": "22*22",
+"img": "b2b/uploads/PM40.png"
+},
+{
+"id": 512,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM041",
+"cat": "PİM GRUBU",
+"desc": "22*28",
+"img": "b2b/uploads/PM41.png"
+},
+{
+"id": 513,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM042",
+"cat": "PİM GRUBU",
+"desc": "25*22",
+"img": "b2b/uploads/PM42.png"
+},
+{
+"id": 514,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM043",
+"cat": "PİM GRUBU",
+"desc": "25*25",
+"img": "b2b/uploads/PM43.png"
+},
+{
+"id": 515,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM044",
+"cat": "PİM GRUBU",
+"desc": "25*28",
+"img": "b2b/uploads/PM44.png"
+},
+{
+"id": 516,
+"name": "PULLUK TİLLER PİMİ (SOMUNLU)",
+"code": "PM045",
+"cat": "PİM GRUBU",
+"desc": "28*28",
+"img": "b2b/uploads/PM45.png"
+},
+{
+"id": 517,
+"name": "MF KULAKLI ALT ÇEKİ PİMİ",
+"code": "PM050",
+"cat": "PİM GRUBU",
+"desc": "UZUN MF 165-285",
+"img": "b2b/uploads/PM50.png"
+},
+{
+"id": 518,
+"name": "MF KULAKLI ALT ÇEKİ PİMİ",
+"code": "PM051",
+"cat": "PİM GRUBU",
+"desc": "ORTA MF 165-285",
+"img": "b2b/uploads/PM51.png"
+},
+{
+"id": 519,
+"name": "MF KULAKLI ALT ÇEKİ PİMİ",
+"code": "PM052",
+"cat": "PİM GRUBU",
+"desc": "KISA MF 135-240",
+"img": "b2b/uploads/PM52.png"
+},
+{
+"id": 520,
+"name": "MF ÇEKİ OKU SABİTLEME PİMİ",
+"code": "PM053",
+"cat": "PİM GRUBU",
+"desc": "MF 240/285 / 16mm 95mm",
+"img": "b2b/uploads/PM53.png"
+},
+{
+"id": 521,
+"name": "MF ASKI KOL PİMİ",
+"code": "PM054",
+"cat": "PİM GRUBU",
+"desc": "MF 135/240 / 16 mm 90 mm",
+"img": "b2b/uploads/PM54.png"
+},
+{
+"id": 522,
+"name": "MF ASKI KOL PİMİ",
+"code": "PM055",
+"cat": "PİM GRUBU",
+"desc": "MF165-285-290 / 19 mm 90 mm",
+"img": "b2b/uploads/PM55.png"
+},
+{
+"id": 523,
+"name": "MF ASKI KOL PİMİ",
+"code": "PM056",
+"cat": "PİM GRUBU",
+"desc": "MF 265/285 / 22 mm 90 mm",
+"img": "b2b/uploads/PM56.png"
+},
+{
+"id": 524,
+"name": "HİDROLİK KOL PİMİ",
+"code": "PM060",
+"cat": "PİM GRUBU",
+"desc": "ŞAPKALI 480 E.M",
+"img": "b2b/uploads/PM60.png"
+},
+{
+"id": 525,
+"name": "HİDROLİK PİMİ",
+"code": "PM061",
+"cat": "PİM GRUBU",
+"desc": "480/55-46/70-56 DÜZ Y.M",
+"img": "b2b/uploads/PM61.png"
+},
+{
+"id": 526,
+"name": "HİDROLİK KOL PİMİ",
+"code": "PM062",
+"cat": "PİM GRUBU",
+"desc": "ŞAPKALI 640 E.M",
+"img": "b2b/uploads/PM62.png"
+},
+{
+"id": 527,
+"name": "HİDROLİK PİMİ",
+"code": "PM063",
+"cat": "PİM GRUBU",
+"desc": "640/65-46 DÜZ Y.M",
+"img": "b2b/uploads/PM63.png"
+},
+{
+"id": 528,
+"name": "TURBO PİM",
+"code": "PM064",
+"cat": "PİM GRUBU",
+"desc": "80-66",
+"img": "b2b/uploads/PM64.png"
+},
+{
+"id": 529,
+"name": "KOMPLE KOVAN PERNOSU",
+"code": "PM065",
+"cat": "PİM GRUBU",
+"desc": "80-66",
+"img": "b2b/uploads/PM65.png"
+},
+{
+"id": 530,
+"name": "ALT ÇEKİ PİMİ",
+"code": "PM066",
+"cat": "PİM GRUBU",
+"desc": "TÜMOSAN",
+"img": "b2b/uploads/PM66.png"
+},
+{
+"id": 531,
+"name": "FİAT ASKI KOL PİMİ",
+"code": "PM067",
+"cat": "PİM GRUBU",
+"desc": "480 (18 mm 75 mm)",
+"img": "b2b/uploads/PM67.png"
+},
+{
+"id": 532,
+"name": "FİAT ASKI KOL PİMİ",
+"code": "PM068",
+"cat": "PİM GRUBU",
+"desc": "640-70.56 (25 mm 75 mm)",
+"img": "b2b/uploads/PM68.png"
+},
+{
+"id": 533,
+"name": "HİDROLİK KOL PİMİ",
+"code": "PM069",
+"cat": "PİM GRUBU",
+"desc": "TT SERİ",
+"img": "b2b/uploads/PM69.png"
+},
+{
+"id": 534,
+"name": "HİD.ASKI KOL PİMİ LAMA BAŞLI (UZUN)",
+"code": "PM070",
+"cat": "PİM GRUBU",
+"desc": "415-450-480",
+"img": "b2b/uploads/PM70.png"
+},
+{
+"id": 535,
+"name": "ASKI KOLU PİMİ ÜST 80-66 /",
+"code": "PM110",
+"cat": "PİM GRUBU",
+"desc": "TD SERİ / T5060",
+"img": "b2b/uploads/PM110.png"
+},
+{
+"id": 536,
+"name": "R PİM (1 MM)",
+"code": "PM082",
+"cat": "PİM GRUBU",
+"desc": "1-1,5 MM",
+"img": "b2b/uploads/PM82.png"
+},
+{
+"id": 537,
+"name": "R PİM (2 MM)",
+"code": "PM083",
+"cat": "PİM GRUBU",
+"desc": "2 MM",
+"img": "b2b/uploads/PM83.png"
+},
+{
+"id": 538,
+"name": "R PİM (3 MM)",
+"code": "PM084",
+"cat": "PİM GRUBU",
+"desc": "3 MM",
+"img": "b2b/uploads/PM84.png"
+},
+{
+"id": 539,
+"name": "R PİM (4 MM)",
+"code": "PM085",
+"cat": "PİM GRUBU",
+"desc": "4 MM",
+"img": "b2b/uploads/PM85.png"
+},
+{
+"id": 540,
+"name": "R PİM (5 MM)",
+"code": "PM086",
+"cat": "PİM GRUBU",
+"desc": "5 MM",
+"img": "b2b/uploads/PM86.png"
+},
+{
+"id": 541,
+"name": "R PİM (6 MM)",
+"code": "PM087",
+"cat": "PİM GRUBU",
+"desc": "6 MM",
+"img": "b2b/uploads/PM87.png"
+},
+{
+"id": 542,
+"name": "R PİM BÜYÜK (6 MM) 14 CM",
+"code": "PM088",
+"cat": "PİM GRUBU",
+"desc": "6 MM -14 CM / TÜMOSAN",
+"img": "b2b/uploads/PM88.png"
+},
+{
+"id": 543,
+"name": "YARIM YUVARLAK FİRKETE (EZMELİ PİM)",
+"code": "PM089",
+"cat": "PİM GRUBU",
+"desc": "EZME-YUVARLAK PİM",
+"img": "b2b/uploads/PM89.png"
+},
+{
+"id": 544,
+"name": "U KİLİT ( MAPA )",
+"code": "PM090",
+"cat": "PİM GRUBU",
+"desc": "10 mm 3/8",
+"img": "b2b/uploads/PM90.png"
+},
+{
+"id": 545,
+"name": "U KİLİT ( MAPA )",
+"code": "PM091",
+"cat": "PİM GRUBU",
+"desc": "12 mm 1/2",
+"img": "b2b/uploads/PM91.png"
+},
+{
+"id": 546,
+"name": "U KİLİT ( MAPA )",
+"code": "PM092",
+"cat": "PİM GRUBU",
+"desc": "14 mm",
+"img": "b2b/uploads/PM92.png"
+},
+{
+"id": 547,
+"name": "U KİLİT (MAPA)",
+"code": "PM093",
+"cat": "PİM GRUBU",
+"desc": "16 mm 5/8",
+"img": "b2b/uploads/PM93.png"
+},
+{
+"id": 548,
+"name": "U KİLİT (MAPA ) YUVARLAK PİMLİ KOPİLYALI",
+"code": "PM094",
+"cat": "PİM GRUBU",
+"desc": "12 mm",
+"img": "b2b/uploads/PM94.png"
+},
+{
+"id": 549,
+"name": "U KİLİT (MAPA ) YUVARLAK PİMLİ KOPİLYALI",
+"code": "PM095",
+"cat": "PİM GRUBU",
+"desc": "16 mm",
+"img": "b2b/uploads/PM95.png"
+},
+{
+"id": 550,
+"name": "YAN KOL ARA ZİNCİRİ",
+"code": "PM102",
+"cat": "PİM GRUBU",
+"desc": "28 MM (DOKUZ DELİK YERİNE)",
+"img": "b2b/uploads/PM102.png"
+},
+{
+"id": 551,
+"name": "TELESKOBİK GOLD PİM 11 mm",
+"code": "PM130",
+"cat": "PİM GRUBU",
+"desc": "70/66-80/66 SERİSİ",
+"img": "b2b/uploads/PM130.png"
+},
+{
+"id": 552,
+"name": "TELESKOBİK GOLD PİM 12 mm",
+"code": "PM131",
+"cat": "PİM GRUBU",
+"desc": "70/66-80/66 SERİSİ",
+"img": "b2b/uploads/PM131.png"
+},
+{
+"id": 553,
+"name": "TELESKOBİK GOLD PİM 14 mm",
+"code": "PM132",
+"cat": "PİM GRUBU",
+"desc": "TT-TD SERİSİ",
+"img": "b2b/uploads/PM132.png"
+},
+{
+"id": 554,
+"name": "TELESKOBİK GOLD PİM 16 mm",
+"code": "PM133",
+"cat": "PİM GRUBU",
+"desc": "70/66-80/66 SERİSİ",
+"img": "b2b/uploads/PM133.png"
+},
+{
+"id": 555,
+"name": "DEBRİYAJ ÇATALI YENİ MODEL",
+"code": "NC003",
+"cat": "50NC GRUBU",
+"desc": "(DAR DELİK)",
+"img": "b2b/uploads/NC3.png"
+},
+{
+"id": 556,
+"name": "DEBRİYAJ ÇATALI YENİ MODEL",
+"code": "NC004",
+"cat": "50NC GRUBU",
+"desc": "(GENİŞ DELİK)",
+"img": "b2b/uploads/NC4.png"
+},
+{
+"id": 557,
+"name": "DEBRİYAJ ÇATALI YENİ MODEL",
+"code": "NC005",
+"cat": "50NC GRUBU",
+"desc": "85-12",
+"img": "b2b/uploads/NC5.png"
+},
+{
+"id": 558,
+"name": "VOLANT DİŞLİ",
+"code": "NC006",
+"cat": "50NC GRUBU",
+"desc": "50 NC",
+"img": "b2b/uploads/NC6.png"
+},
+{
+"id": 559,
+"name": "VOLANT DİŞLİ",
+"code": "NC007",
+"cat": "50NC GRUBU",
+"desc": "85-12",
+"img": "b2b/uploads/NC7.png"
+},
+{
+"id": 560,
+"name": "GERGİ KASNAĞI",
+"code": "NC009",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC9.png"
+},
+{
+"id": 561,
+"name": "SPORT,MOTOR SAĞ ÖN",
+"code": "NC011",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC11.png"
+},
+{
+"id": 562,
+"name": "SPORT,MOTOR SOL ÖN",
+"code": "NC012",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC12.png"
+},
+{
+"id": 563,
+"name": "MOTOR BAĞLANTI BRAKETİ SAĞ",
+"code": "NC013",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC13.png"
+},
+{
+"id": 564,
+"name": "MOTOR BAĞLANTI BRAKETİ SOL",
+"code": "NC014",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC14.png"
+},
+{
+"id": 565,
+"name": "MOTOR SOĞUTUCU KAPAĞI Aliminyüm",
+"code": "NC016",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC16.png"
+},
+{
+"id": 566,
+"name": "MOTOR SOĞUTUCU KOMP Aliminyüm",
+"code": "NC017",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC17.png"
+},
+{
+"id": 567,
+"name": "SENKROMEÇ SARISI E.M.",
+"code": "NC021",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC21.png"
+},
+{
+"id": 568,
+"name": "SENKROMEÇ SARISI Y.M.",
+"code": "NC022",
+"cat": "50NC GRUBU",
+"desc": "İVECO",
+"img": "b2b/uploads/NC22.png"
+},
+{
+"id": 569,
+"name": "ŞANZUMAN KUMANDA KOLU",
+"code": "NC026",
+"cat": "50NC GRUBU",
+"desc": "50 NC",
+"img": "b2b/uploads/NC26.png"
+}
+]

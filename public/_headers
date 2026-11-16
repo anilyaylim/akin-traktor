@@ -1,0 +1,6 @@
+/*
+  X-Robots-Tag: noindex, nofollow
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+/hdr/*
+  Cache-Control: public, max-age=31536000, immutable
