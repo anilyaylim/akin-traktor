@@ -72,7 +72,7 @@ const en: typeof tr = {
   nav: { products: 'Products', finder: 'Part Finder', about: 'About', services: 'Services', contact: 'Contact', quote: 'Quote List', b2b: 'B2B Login', menu: 'Menu', close: 'Close' },
   hero: {
     eyebrow: 'Konya · since 1998',
-    title: ['Precision', 'at the heart of', 'the tractor.'],
+    title: ['Precision at', 'the heart of', 'the tractor.'],
     sub: 'From powertrain to hydraulics: more than 560 spare parts in stock, true to size and on the field fast.',
     cta1: 'Find your part', cta2: 'Browse catalogue', scroll: 'Scroll · take the system apart',
     labels: ['Main shaft', 'Helical gear', 'Synchroniser', 'Clutch disc', 'Brake disc', 'Hydraulic top link'],
@@ -130,4 +130,6 @@ export const DICT = { tr, en };
 export type Dict = typeof tr;
 export const t = (lang: Lang) => DICT[lang];
 export const ROUTES = { products: 'products', about: 'about', services: 'services', contact: 'contact', quote: 'quote', privacy: 'privacy' } as const;
+/** prefix for files in /public (Next adds the base path to links, not to raw asset URLs) */
+export const asset = (p: string) => (process.env.NEXT_PUBLIC_BASE_PATH || '') + p;
 export const href = (lang: Lang, path = '') => `/${lang}/${path ? path.replace(/^\/|\/$/g, '') + '/' : ''}`;

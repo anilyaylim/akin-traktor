@@ -3,6 +3,7 @@
    tagged with its system; picking a system x-rays the rest of the tractor and makes the
    chosen parts glow, the catalogue filters to match. */
 import * as THREE from 'three';
+import { asset } from '@/lib/i18n';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Bounds, ContactShadows, Environment, Html, OrbitControls, RoundedBox } from '@react-three/drei';
 import { useEffect, useMemo, useRef } from 'react';
@@ -125,7 +126,7 @@ const SPOTS: [SystemId, [number, number, number]][] = [
 export default function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => void; labels: Record<SystemId, string> }) {
   return (
     <Canvas shadows dpr={[1, 1.75]} camera={{ fov: 30, position: [7.2, 4.2, 8.2] }} gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}>
-      <Environment files="/hdr/studio.hdr" environmentIntensity={0.85} />
+      <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={0.85} />
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
       <pointLight position={[-6, 3, -4]} intensity={40} color="#ff2a2f" distance={18} />
       <Bounds fit observe margin={1.12}><Tractor sel={sel} /></Bounds>

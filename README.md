@@ -31,3 +31,8 @@ Demo `noindex` yayınlanır (`public/_headers`, `robots.txt`). Müşteriye şifr
 - `data/products.json`: akintraktor.com.tr kataloğundaki 565 ürün (kod, ad, grup, uyumlu modeller).
 - Telefon / WhatsApp numarası `lib/i18n.ts` → `CONTACT` içinde **yer tutucudur**; gerçek numara Akın Traktör'den alınacak.
 - 3D modeller temsilidir; gerçek CAD / fotoğraf geldiğinde `components/three/parts.tsx` değiştirilebilir.
+
+## Test yayını (GitHub Pages)
+
+`main`'e her push'ta `.github/workflows/pages.yml` siteyi `/akin-traktor` alt yoluyla derleyip `gh-pages` dalına yayınlar:
+https://anilyaylim.github.io/akin-traktor/ (noindex, nofollow). Cloudflare Pages için alt yol gerekmez (`NEXT_PUBLIC_BASE_PATH` boş).

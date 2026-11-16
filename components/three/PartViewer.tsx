@@ -1,6 +1,7 @@
 'use client';
 /* Product detail: turntable 3D preview of the part type, drag to rotate. */
 import * as THREE from 'three';
+import { asset } from '@/lib/i18n';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { ContactShadows, Environment, Float, OrbitControls } from '@react-three/drei';
 import { useRef } from 'react';
@@ -23,7 +24,7 @@ function Model({ kind }: { kind: ModelKind }) {
 export default function PartViewer({ kind }: { kind: ModelKind }) {
   return (
     <Canvas shadows dpr={[1, 1.75]} camera={{ fov: 30, position: [0, 1.2, 9.5] }} gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}>
-      <Environment files="/hdr/studio.hdr" environmentIntensity={1} />
+      <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={1} />
       <directionalLight position={[4, 8, 5]} intensity={2} castShadow />
       <pointLight position={[-5, 1, -4]} intensity={45} color="#ff2a2f" distance={16} />
       <Model kind={kind} />
