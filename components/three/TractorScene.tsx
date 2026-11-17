@@ -42,7 +42,7 @@ const stepTw = (w: Tw, t: number) => {
   return (w.v = w.from + (w.to - w.from) * k);
 };
 
-function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) => void; labels: Record<SystemId, string>; onReady: () => void }) {
+function Tractor({ sel, onSel, labels, onReady, ready }: { sel: Sel; onSel: (s: Sel) => void; labels: Record<SystemId, string>; onReady: () => void; ready: boolean }) {
   const m = useMats();
   const sys = useRef<Partial<Record<SystemId | 'body', THREE.Group>>>({});
   const reg = (k: SystemId | 'body') => (g: THREE.Group | null) => { if (g) { g.userData.sys = k; sys.current[k] = g; } };
@@ -177,7 +177,9 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
   return (
     <group ref={root} position={[-0.2, 0, 0]}>
       <primitive object={line} /><primitive object={dotA} /><primitive object={ringB} />
-        {SPOTS.map(([id, p]) => (
+        {/* hotspots mount once the scene is ready: mounted earlier, drei's Html can lose its first portal
+            when the canvas event layer connects (the powertrain spot rendered empty) */}
+        {ready && SPOTS.map(([id, p]) => (
         <Html key={id} position={p} center zIndexRange={[6, 0]}>
           <button className={'tspot' + (sel === id ? ' on' : '')} onClick={() => onSel(sel === id ? null : id)} aria-pressed={sel === id}>
             <i /><span>{labels[id]}</span>
@@ -265,7 +267,7 @@ function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => voi
       </Environment>
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
       <pointLight position={[-6, 3, -4]} intensity={40} color={ACC3D} distance={18} />
-      <Bounds fit margin={1.12} maxDuration={0}><Tractor sel={sel} onSel={onSel} labels={labels} onReady={onReady} /></Bounds>
+      <Bounds fit margin={1.12} maxDuration={0}><Tractor sel={sel} onSel={onSel} labels={labels} onReady={onReady} ready={ready} /></Bounds>
       <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
       <OrbitControls makeDefault target={[0, 1.3, 0]} enablePan={false} enableZoom={false} autoRotate={!sel} autoRotateSpeed={0.6} minPolarAngle={0.6} maxPolarAngle={1.45} enableDamping />
     </Canvas>
