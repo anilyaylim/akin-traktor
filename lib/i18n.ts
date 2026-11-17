@@ -11,7 +11,7 @@ export const CONTACT = {
 };
 
 const tr = {
-  nav: { products: 'Ürünler', finder: 'Parça Bulucu', about: 'Hakkımızda', services: 'Hizmetler', contact: 'İletişim', quote: 'Teklif Sepeti', b2b: 'B2B Giriş', menu: 'Menü', close: 'Kapat' },
+  nav: { products: 'Ürünler', finder: 'Parça Bulucu', about: 'Hakkımızda', services: 'Hizmetler', contact: 'İletişim', refs: 'Referanslar', news: 'Haberler', quote: 'Teklif Sepeti', b2b: 'B2B Giriş', menu: 'Menü', close: 'Kapat' },
   hero: {
     eyebrow: 'Konya · 1998’den beri',
     title: ['Traktörün', 'kalbindeki', 'hassasiyet.'],
@@ -69,7 +69,7 @@ const tr = {
 };
 
 const en: typeof tr = {
-  nav: { products: 'Products', finder: 'Part Finder', about: 'About', services: 'Services', contact: 'Contact', quote: 'Quote List', b2b: 'B2B Login', menu: 'Menu', close: 'Close' },
+  nav: { products: 'Products', finder: 'Part Finder', about: 'About', services: 'Services', contact: 'Contact', refs: 'References', news: 'News', quote: 'Quote List', b2b: 'B2B Login', menu: 'Menu', close: 'Close' },
   hero: {
     eyebrow: 'Konya · since 1998',
     title: ['Precision at', 'the heart of', 'the tractor.'],

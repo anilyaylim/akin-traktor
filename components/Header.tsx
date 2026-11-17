@@ -23,7 +23,8 @@ export default function Header({ lang }: { lang: Lang }) {
   useEffect(() => setMenu(false), [path]);
   const other: Lang = lang === 'tr' ? 'en' : 'tr';
   const swap = path.replace(/^\/(tr|en)(?=\/|$)/, '/' + other);
-  const items: [string, string][] = [['products', d.nav.products], ['products/#finder', d.nav.finder], ['about', d.nav.about], ['services', d.nav.services], ['contact', d.nav.contact]];
+  const items: [string, string][] = [['products', d.nav.products], ['about', d.nav.about], ['services', d.nav.services], ['references', d.nav.refs], ['news', d.nav.news], ['contact', d.nav.contact]];
+  const mitems: [string, string][] = [['products', d.nav.products], ['products/#finder', d.nav.finder], ...items.slice(1)];
   const on = (p: string) => path.startsWith(href(lang, p.split('/#')[0])) && !p.includes('#');
   return (
     <>
@@ -43,7 +44,7 @@ export default function Header({ lang }: { lang: Lang }) {
         </div>
       </header>
       <nav className={'mnav' + (menu ? ' open' : '')} aria-hidden={!menu}>
-        {items.map(([p, l], i) => <Link key={p} className="big" href={href(lang, p.split('#')[0]) + (p.includes('#') ? '#finder' : '')}>{l}<span>0{i + 1}</span></Link>)}
+        {mitems.map(([p, l], i) => <Link key={p} className="big" href={href(lang, p.split('#')[0]) + (p.includes('#') ? '#finder' : '')}>{l}<span>0{i + 1}</span></Link>)}
         <div style={{ display: 'flex', gap: 10, marginTop: 24 }}>
           <Link href={swap} className="btn btn-ghost btn-sm">{other.toUpperCase()}</Link>
           <button className="btn btn-red btn-sm" onClick={() => { setMenu(false); setOpen(true); }}>{d.nav.quote} ({count})</button>
