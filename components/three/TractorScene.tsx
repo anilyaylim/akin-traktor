@@ -5,7 +5,7 @@
 import * as THREE from 'three';
 import { ACC3D, LIGHT } from '@/lib/theme';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Bounds, ContactShadows, Environment, Html, Lightformer, OrbitControls, RoundedBox } from '@react-three/drei';
+import { Bounds, useBounds, ContactShadows, Environment, Html, Lightformer, OrbitControls, RoundedBox } from '@react-three/drei';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { SystemId } from '@/lib/catalog';
 import { BrakeDisc, TopLink, useMats, type Mats } from './parts';
@@ -51,7 +51,18 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
   const glows = useRef<THREE.MeshPhysicalMaterial[]>([]);
   // compile every material variant (original, ghost, glow) before the scene is shown, so the first
   // selection doesn't stall on shader compilation
-  const { gl, scene, camera, size } = useThree();
+  // narrow selectors: R3F's size object also changes on page scroll (top/left), which must not re-render or refit
+  const gl = useThree(s => s.gl); const scene = useThree(s => s.scene); const camera = useThree(s => s.camera);
+  const vw = useThree(s => s.size.width); const vh = useThree(s => s.size.height);
+  // camera fit: once at rest, then only on a real resize – always against the tractor's REST box, so rotating,
+  // scrolling or a detached part flying out never zooms the camera out
+  const bounds = useBounds(); const restBox = useRef<THREE.Box3 | null>(null); const fitFor = useRef('');
+  useEffect(() => {
+    const key = vw + 'x' + vh; if (!root.current) return;
+    if (!restBox.current) { restBox.current = new THREE.Box3().setFromObject(root.current); fitFor.current = key; return; }
+    if (key === fitFor.current) return; fitFor.current = key;
+    bounds.refresh(restBox.current).fit();
+  }, [vw, vh, bounds]);
   useEffect(() => {
     const meshes: THREE.Mesh[] = []; Object.values(sys.current).forEach(g => g?.traverse(o => { if ((o as THREE.Mesh).isMesh) meshes.push(o as THREE.Mesh); }));
     meshes.forEach(m => { m.userData.orig ??= m.material; const o = m.userData.orig as THREE.MeshPhysicalMaterial; if (!glowCache.has(o)) { const gm = o.clone(); gm.emissive = new THREE.Color(ACC3D); glowCache.set(o, gm); } });
@@ -111,7 +122,7 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
   const ringB = useMemo(() => new THREE.Mesh(new THREE.RingGeometry(0.16, 0.2, 40), new THREE.MeshBasicMaterial({ color: ACC3D, depthTest: false, transparent: true, side: THREE.DoubleSide })), []);
   useEffect(() => { [line, dotA, ringB].forEach(o => { o.renderOrder = 10; o.visible = false; }); }, [line, dotA, ringB]);
   const tmp = useMemo(() => new THREE.Vector3(), []);
-  useFrame(({ clock }) => {
+  useFrame(({ clock, size }) => {
     const t = clock.elapsedTime; clockRef.current = t; const since = t - selAt.current;
     // 1) blink: three quick flashes after selection, then a calm pulse
     const k = since < 0.9 ? 0.15 + 0.95 * Math.abs(Math.sin(since * Math.PI * 3.3)) : 0.35 + Math.sin(t * 3) * 0.15;
@@ -179,7 +190,7 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
         {box(0.5, 0.42, 0.7, m.body, [0.42, 1.68, 0], 0.08)}
         {box(1.5, 0.08, 1.0, m.dark, [1.55, 1.38, 0])}
         <mesh position={[1.25, 2.25, 0.32]} castShadow material={m.dark}><cylinderGeometry args={[0.06, 0.07, 1.3, 16]} /></mesh>
-        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color={LIGHT ? "#14365e" : "#e3e8ee"} metalness={0.5} roughness={0.3} clearcoat={0.7} side={THREE.DoubleSide} /></mesh>)}
+        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color={LIGHT ? "#dfe5ec" : "#e3e8ee"} metalness={0.5} roughness={0.3} clearcoat={0.7} side={THREE.DoubleSide} /></mesh>)}
         {box(0.5, 0.12, 0.5, m.black, [-1.05, 1.82, 0], 0.05)}{box(0.1, 0.5, 0.5, m.black, [-1.32, 2.05, 0], 0.04)}
         <mesh position={[-0.35, 1.95, 0]} rotation-z={0.5} material={m.dark}><cylinderGeometry args={[0.035, 0.035, 0.7, 12]} /></mesh>
         <mesh position={[-0.52, 2.27, 0]} rotation={[0, Math.PI / 2, 0.5]} material={m.black}><torusGeometry args={[0.22, 0.03, 10, 36]} /></mesh>
@@ -254,7 +265,7 @@ function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => voi
       </Environment>
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
       <pointLight position={[-6, 3, -4]} intensity={40} color={ACC3D} distance={18} />
-      <Bounds fit observe margin={1.12} maxDuration={0}><Tractor sel={sel} onSel={onSel} labels={labels} onReady={onReady} /></Bounds>
+      <Bounds fit margin={1.12} maxDuration={0}><Tractor sel={sel} onSel={onSel} labels={labels} onReady={onReady} /></Bounds>
       <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
       <OrbitControls makeDefault target={[0, 1.3, 0]} enablePan={false} enableZoom={false} autoRotate={!sel} autoRotateSpeed={0.6} minPolarAngle={0.6} maxPolarAngle={1.45} enableDamping />
     </Canvas>

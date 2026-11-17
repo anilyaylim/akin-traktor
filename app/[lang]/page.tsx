@@ -7,12 +7,15 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   return (
     <>
       <Hero lang={lang} />
-      <Marquee lang={lang} />
-      <Stats lang={lang} />
-      <Systems lang={lang} />
+      {/* light band between the navy sections (dark version); a no-op in the light version */}
+      <div className="sec-lt">
+        <Marquee lang={lang} />
+        <Stats lang={lang} />
+        <Systems lang={lang} />
+      </div>
       <FinderTeaser lang={lang} />
       <Process lang={lang} />
-      <B2B lang={lang} />
+      <div className="sec-lt"><B2B lang={lang} /></div>
       <ContactCta lang={lang} />
     </>
   );

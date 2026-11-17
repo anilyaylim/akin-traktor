@@ -16,9 +16,9 @@ export function useMats() {
     dark: new THREE.MeshPhysicalMaterial({ color: 0x3a3f46, metalness: 0.9, roughness: 0.42 }),
     black: new THREE.MeshPhysicalMaterial({ color: 0x15171a, metalness: 0.5, roughness: 0.55 }),
     brass: new THREE.MeshPhysicalMaterial({ color: 0xc9a46a, metalness: 1, roughness: 0.3 }),
-    // light: technical-blue accents, navy bodywork · dark (navy page): pearl bodywork, signal-turquoise rims and accents
-    body: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0x14365e : 0xe3e8ee, metalness: LIGHT ? 0.5 : 0.35, roughness: 0.3, clearcoat: 0.8, clearcoatRoughness: 0.15 }),
-    rim: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0xe9edf2 : 0x16aebd, metalness: LIGHT ? 0.2 : 0.55, roughness: 0.35, clearcoat: 0.6 }),
+    // two-tone tractor in both versions: pearl bodywork + accent rims (light: technical blue · dark: signal turquoise)
+    body: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0xdfe5ec : 0xe3e8ee, metalness: 0.35, roughness: 0.3, clearcoat: 0.8, clearcoatRoughness: 0.15 }),
+    rim: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0x2d6bff : 0x16aebd, metalness: 0.55, roughness: 0.35, clearcoat: 0.6 }),
     red: new THREE.MeshPhysicalMaterial({ color: LIGHT ? 0x2d6bff : 0x16aebd, metalness: 0.55, roughness: 0.32, clearcoat: 0.6, clearcoatRoughness: 0.2 }),
     friction: new THREE.MeshStandardMaterial({ color: 0x2b2724, metalness: 0.05, roughness: 0.95 }),
     zinc: new THREE.MeshPhysicalMaterial({ color: 0xd8d2c0, metalness: 1, roughness: 0.25 }),
