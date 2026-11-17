@@ -6,5 +6,5 @@ const alt = process.env.NEXT_PUBLIC_ALT_BASE || '';
 export const ALT_ON = alt !== '';
 export const ALT_BASE = alt === '/' ? '' : alt;   // '/' = the other build lives at the domain root
 
-/* 3D accent: technical blue (light) / signal turquoise (dark) */
-export const ACC3D = LIGHT ? '#2d6bff' : '#1ec8d6';
+/* 3D accent: technical blue (light) / electric blue (dark) */
+export const ACC3D = LIGHT ? '#2d6bff' : '#3d7bff';

@@ -261,7 +261,7 @@ function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => voi
         <Lightformer intensity={1.4} position={[-6, 2, 0]} rotation-y={Math.PI / 2} scale={[12, 3, 1]} />
         <Lightformer intensity={1.4} position={[6, 2, 2]} rotation-y={-Math.PI / 2} scale={[12, 3, 1]} />
         <Lightformer intensity={0.9} position={[0, 2, 7]} scale={[12, 3, 1]} />
-        <Lightformer intensity={0.6} color={LIGHT ? '#9fb8ff' : '#8fe6ee'} position={[0, 1, -7]} scale={[12, 3, 1]} />
+        <Lightformer intensity={0.6} color={LIGHT ? '#9fb8ff' : '#a9c4ff'} position={[0, 1, -7]} scale={[12, 3, 1]} />
       </Environment>
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
       <pointLight position={[-6, 3, -4]} intensity={40} color={ACC3D} distance={18} />
