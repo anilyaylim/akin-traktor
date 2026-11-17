@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
-import PostCover from '@/components/PostCover';
+import Blueprint from '@/components/Blueprint';
 import { Arrow, Split } from '@/components/ui';
 import type { Lang } from '@/lib/catalog';
 import { COMPAT_BRANDS, c } from '@/lib/content';
@@ -18,10 +18,14 @@ export default async function References({ params }: { params: Promise<{ lang: s
         <div className="rstats">{d.stats.map(([v, l], i) => <div key={l} className="fade" style={{ transitionDelay: i * 70 + 'ms' }}><b>{v}</b><span>{l}</span></div>)}</div>
       </div></section>
       <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
+        <div className="brands-h"><span className="eyebrow">{d.brandsT}</span><span className="mono muted">{d.brandsNote}</span></div>
+        <div className="brands">{COMPAT_BRANDS.map(b => <span key={b}>{b}</span>)}</div>
+      </div></section>
+      <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
         <div className="sec-head"><div><span className="eyebrow">{d.eyebrow}</span><Split className="h2" lines={d.projectsT} /></div></div>
         <div className="cases">{d.projects.map((p, i) => (
           <article key={p.t} className="case fade" style={{ transitionDelay: i * 90 + 'ms' }}>
-            <div className="case-img"><PostCover kind={p.art} label={p.t} /></div>
+            <div className="case-img"><Blueprint kind={p.art === 'fleet' ? 'fleet' : 'tractor'} label={p.t} /></div>
             <div className="case-top"><span className="case-y mono">{p.y}</span><span className="tag">{p.loc}</span></div>
             <h3 className="h3">{p.t}</h3><p className="muted">{p.d}</p>
             <div className="case-k">{p.k.map(([v, l]) => <div key={l}><b>{v}</b><span>{l}</span></div>)}</div>
@@ -38,10 +42,6 @@ export default async function References({ params }: { params: Promise<{ lang: s
       <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
         <div className="sec-head"><div><span className="eyebrow">{d.eyebrow}</span><Split className="h2" lines={d.sectorsT} /></div></div>
         <div className="sectors">{d.sectors.map(([h, t], i) => <div key={h} className="sector fade" style={{ transitionDelay: i * 60 + 'ms' }}><span className="mono">0{i + 1}</span><h3>{h}</h3><p className="muted">{t}</p></div>)}</div>
-      </div></section>
-      <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
-        <div className="brands-h"><span className="eyebrow">{d.brandsT}</span><span className="mono muted">{d.brandsNote}</span></div>
-        <div className="brands">{COMPAT_BRANDS.map(b => <span key={b}>{b}</span>)}</div>
       </div></section>
       <section className="section cta-band"><div className="wrap" style={{ textAlign: 'center' }}>
         <Split className="h1" lines={d.ctaT} />

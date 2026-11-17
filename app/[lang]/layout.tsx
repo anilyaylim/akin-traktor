@@ -6,6 +6,7 @@ import Providers from '@/components/Providers';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Assistant from '@/components/Assistant';
+import ScrollTop from '@/components/ScrollTop';
 import { LANGS } from '@/lib/i18n';
 import type { Lang } from '@/lib/catalog';
 import { LIGHT } from '@/lib/theme';
@@ -33,6 +34,7 @@ export default async function RootLayout({ children, params }: { children: React
           <Header lang={lang} />
           <main>{children}</main>
           <Footer lang={lang} />
+          <ScrollTop lang={lang} />
           <Assistant lang={lang} />
         </Providers>
       </body>
