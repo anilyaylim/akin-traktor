@@ -11,7 +11,7 @@ export default async function Products({ params }: { params: Promise<{ lang: str
   return (
     <>
       <PageHero eyebrow={x.eyebrow} title={x.title} lead={x.lead} kind="shaft" />
-      <section className="section" style={{ paddingTop: 10 }}><div className="wrap"><Catalog lang={lang} /></div></section>
+      <section className="section sec-lt" style={{ paddingTop: 56 }}><div className="wrap"><Catalog lang={lang} /></div></section>
     </>
   );
 }

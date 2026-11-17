@@ -69,7 +69,7 @@ export default function Finder({ lang, mode = 'full' }: { lang: Lang; mode?: 'fu
       </div>
 
       {mode === 'full' && (
-        <div className="flist" ref={listRef}>
+        <div className="flist sec-lt bleed" ref={listRef}>
           <div className="fbar">
             <div className="fbar-row">
               <label className="finder-search">
