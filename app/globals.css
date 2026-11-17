@@ -818,3 +818,11 @@ html.light .b2bp-card { background: #fff; box-shadow: 0 30px 70px -40px rgba(15,
 html.light .b2bp-feats span { color: #7fb0ff; }
 @media (max-width: 980px) { .b2bp-in { grid-template-columns: 1fr; } .b2bp-card { order: -1; } }
 @media (max-width: 600px) { .b2bp { padding-top: 100px; } .b2bp-feats { grid-template-columns: 1fr; } }
+
+/* compatible-brands strip: inverted against the page (dark → white strip, navy names · light → navy strip, white names) */
+.brands { background: #fff; border-color: #fff; box-shadow: 0 24px 50px -30px rgba(0,0,0,.55); }
+.brands span { color: #0f2a4a; font-weight: 700; border-color: rgba(15,42,74,.12); }
+.brands span:hover { color: #fff; background: var(--red); }
+html.light .brands { background: linear-gradient(135deg, #0f2a4a, #163a63); border-color: #0f2a4a; box-shadow: 0 24px 50px -30px rgba(15,42,74,.6); }
+html.light .brands span { color: #fff; border-color: rgba(255,255,255,.14); }
+html.light .brands span:hover { color: #fff; background: rgba(255,255,255,.1); }
