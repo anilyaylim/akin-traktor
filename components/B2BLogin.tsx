@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 import type { Lang } from '@/lib/catalog';
 import { href } from '@/lib/i18n';
-import { LOGO_B_ICON, WHEEL, WHEEL_VB } from '@/lib/logos';
+import { LOGO_B_ICON, LOGO_C4_ICON, LOGO_C4_ICON_VB, withIds } from '@/lib/logos';
 import { LIGHT } from '@/lib/theme';
 import { Arrow } from './ui';
 
@@ -62,7 +62,7 @@ export default function B2BLogin({ lang }: { lang: Lang }) {
         </aside>
 
         <div className="b2bp-card">
-          <span className="b2bp-ic" aria-hidden>{LIGHT ? <svg viewBox={WHEEL_VB} className="wheel" dangerouslySetInnerHTML={{ __html: WHEEL }} /> : <svg viewBox="0 0 100 100" className="tread" dangerouslySetInnerHTML={{ __html: LOGO_B_ICON }} />}</span>
+          <span className="b2bp-ic" aria-hidden>{LIGHT ? <svg viewBox={LOGO_C4_ICON_VB} className="c4i" dangerouslySetInnerHTML={{ __html: withIds(LOGO_C4_ICON, 'b2b') }} /> : <svg viewBox="0 0 100 100" className="tread" dangerouslySetInnerHTML={{ __html: LOGO_B_ICON }} />}</span>
           <h2 className="h3">{x.h}</h2><p className="muted">{x.sub}</p>
           <form onSubmit={submit} noValidate>
             <div className="field"><label htmlFor="b2b-u">{x.user}</label><input id="b2b-u" name="u" autoComplete="username" placeholder={x.userPh} onChange={() => state === 'err' && setState('idle')} /></div>

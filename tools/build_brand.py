@@ -14,7 +14,7 @@ LOCK = {
   'C': ('-8 -10 310 168', HYB + D('TRAKTÖR · YEDEK PARÇA', 2, 152, 270, 12)),
   'C2': ('-12 -30 298 194', HYB_CAPS + D('TRAKTÖR · YEDEK PARÇA', 0, 158, 270, 12.5)),
   'C3': ('-16 -8 312 214', C3 + D('TRAKTÖR · YEDEK PARÇA', 4, 196, 280, 12.5)),
-  'C4': ('-16 -8 378 214', C4 + D('TRAKTÖR · YEDEK PARÇA', 4, 196, 344, 12.5)),
+  'C4': ('-16 -8 370 214', C4 + D('TRAKTÖR · YEDEK PARÇA', 4, 196, 336, 12.5)),
   'D': ('-4 -4 312 112', D_V3 + D('TRAKTÖR · YEDEK PARÇA', 126, 98, 174, 10.5)),
 }
 ICON = {

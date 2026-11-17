@@ -828,3 +828,14 @@ html.light .b2bp-feats span { color: #7fb0ff; }
 html.light .brands { background: linear-gradient(135deg, #0f2a4a, #163a63); border-color: #0f2a4a; box-shadow: 0 24px 50px -30px rgba(15,42,74,.6); }
 html.light .brands span { color: #fff; border-color: rgba(255,255,255,.14); }
 html.light .brands span:hover { color: #fff; background: rgba(255,255,255,.1); }
+
+/* light version logo C4: AKIN on the tractor hood (navy line work, red details, spinning wheels) */
+.logo .c4 { height: 58px; width: auto; overflow: visible; }
+.logo .c4 .c1 { fill: currentColor; } .logo .c4 .acc { fill: #e3262a; } .logo .c4 .bg { fill: var(--ink); } .logo .c4 .ln { stroke: currentColor; }
+.ftr .logo .c4 { height: 66px; } .ftr .logo .c4 .bg { fill: #fff; }
+.logo .c4 .spin { animation: wheel 7s linear infinite; } .logo .c4 .spin.f { animation-duration: 3.4s; }
+@media (prefers-reduced-motion: reduce) { .logo .c4 .spin { animation: none; } }
+@media (max-width: 600px) { .logo .c4 { height: 46px; } }
+.c4i .c1 { fill: var(--navy); } .c4i .acc { fill: #e3262a; } .c4i .bg { fill: #fff; } .c4i .ln { stroke: var(--navy); } .c4i .spin { animation: wheel 7s linear infinite; }
+.asst-ava .c4i { border-radius: 50%; background: #fff; border: 1px solid var(--line-2); }
+.b2bp-ic .c4i { border-radius: 50%; background: #fff; border: 1px solid var(--line-2); }

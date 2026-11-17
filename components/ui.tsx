@@ -2,7 +2,7 @@
 import { Fragment } from 'react';
 import type { SystemId } from '@/lib/catalog';
 import { LIGHT } from '@/lib/theme';
-import { HYBRID, HYBRID_VB, LOGO_B, LOGO_B_VB } from '@/lib/logos';
+import { LOGO_B, LOGO_B_VB, LOGO_C4, LOGO_C4_VB, withIds } from '@/lib/logos';
 
 export function Split({ lines, className = '', as: Tag = 'h2' }: { lines: string[] | string; className?: string; as?: 'h1' | 'h2' | 'h3' | 'p' | 'div' }) {
   const ls = Array.isArray(lines) ? lines : [lines]; let i = 0;
@@ -29,10 +29,10 @@ export const CartIcon = () => (
 
 /* New identity proposal: a nut-shaped mark (hexagon = engineering) cut by the "A" arrow,
    paired with a wide geometric wordmark. */
-export function Logo({ sub }: { sub?: string }) {
+export function Logo({ sub, k = 'h' }: { sub?: string; k?: string }) {
   if (LIGHT) return (
     <span className="logo">
-      <svg className="hyb" viewBox={HYBRID_VB} aria-label="akın" dangerouslySetInnerHTML={{ __html: HYBRID }} />
+      <svg className="c4" viewBox={LOGO_C4_VB} aria-label="AKIN" dangerouslySetInnerHTML={{ __html: withIds(LOGO_C4, k) }} />
       {sub && <small>{sub}</small>}
     </span>
   );
