@@ -105,3 +105,60 @@ def _hyb_caps_icon():
     clip = '<clipPath id="cl-hci"><rect x="-6" y="-10" width="92" height="160"/></clipPath>'
     return clip + f'<g clip-path="url(#cl-hci)">{full}</g>'
 HYB_CAPS_ICON = _hyb_caps_icon()
+
+# 3c · C3 — the whole word is a tractor in side view, with real proportions: tall cab "A" over a big rear
+#      wheel with its fender, low hood made of K-I-N (I = exhaust stack), front weight, small front wheel.
+#      (≈ 300 × 165 + tagline)
+_WM_K = '<path d="M92 0H112V80H92Z"/><path d="M112 30L135 0H161L112 62Z"/><path d="M127 45L141 29L166 80H141Z"/>'
+_WM_N = '<path d="M208 0H228L250 44V0H270V80H250L228 36V80H208Z"/>'
+def _c3(mid='m-c3'):
+    rw, fw = (59, 108, 42), (240, 132, 20)
+    mask = (f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="-30" y="-30" width="360" height="230">'
+            '<rect x="-30" y="-30" width="360" height="230" fill="#fff"/>'
+            f'<circle cx="{rw[0]}" cy="{rw[1]}" r="{rw[2] + 7}" fill="#000"/><circle cx="{fw[0]}" cy="{fw[1]}" r="{fw[2] + 5}" fill="#000"/></mask>')
+    cab = ('<path d="M8 0H114V10H8Z"/>'                                              # roof with overhang
+           '<path d="M28 10H44L31 72H13Z"/>'                                          # rear post
+           '<path d="M66 10H82L106 72H88Z"/>')                                        # windscreen post (raked forward)
+    hood = (f'<g transform="translate(124 48) scale(.68 .65) translate(-92 0)">{_WM_K}</g>'
+            '<path d="M184 30L199 20V100H184Z"/>'                                      # I = exhaust stack, slanted cap
+            f'<g transform="translate(210 48) scale(.68 .65) translate(-208 0)">{_WM_N}</g>'
+            '<path d="M256 60H272L280 70V108H256Z"/>'                                  # front weight / grille block
+            '<path d="M110 98H280V108H110Z"/>')                                        # chassis rail
+    fender = f'<path class="c1" d="M{rw[0]-58} {rw[1]}A58 58 0 0 1 {rw[0]+58} {rw[1]}H{rw[0]+49}A49 49 0 0 0 {rw[0]-49} {rw[1]}Z"/>'
+    grille = ''.join(f'<rect class="bg" x="260" y="{y}" width="16" height="3"/>' for y in (74, 82, 90))
+    wheel = lambda c, n, lug, hub, f='': (f'<g class="spin{f}" style="transform-origin:{c[0]}px {c[1]}px">'
+        f'<g class="c1">{lugs(c[0], c[1], c[2] - 2, c[2] + lug, n, .1 if not f else .13, .062 if not f else .08)}</g>'
+        f'<circle class="c1" cx="{c[0]}" cy="{c[1]}" r="{c[2]}"/><circle class="bg" cx="{c[0]}" cy="{c[1]}" r="{c[2] - hub}"/>'
+        + (''.join(f'<rect class="c1" x="{c[0]-2}" y="{c[1]-c[2]+hub-1}" width="4" height="{c[2]-hub-8}" transform="rotate({k*60} {c[0]} {c[1]})"/>' for k in range(6)) if not f else '')
+        + f'<circle class="acc" cx="{c[0]}" cy="{c[1]}" r="{max(4.5, c[2] * .22):.1f}"/></g>')
+    return (mask + f'<g class="c1" mask="url(#{mid})">{cab}{hood}</g>' + fender + grille +
+            '<path class="acc" d="M37.2 40H76.9L79.9 48H35.4Z"/>'                       # red crossbar = dashboard
+            '<path class="acc" d="M272 60H276L280 64V70H272Z"/>'                         # headlight
+            + wheel(rw, 22, 7, 12) + wheel(fw, 15, 5, 7, ' f')
+            + '<path class="c1" d="M-12 159H292V162H-12Z" opacity=".35"/>')              # ground line
+C3 = _c3()
+def _c3_icon():
+    clip = '<clipPath id="cl-c3i"><rect x="-4" y="-4" width="126" height="170"/></clipPath>'
+    return clip + f'<g clip-path="url(#cl-c3i)">{_c3("m-c3i")}</g>'
+C3_ICON = _c3_icon()
+
+# 4c · D (new) — front-view emblem: two big tyres either side, the cab between them reads as an "A"
+#      (roof bar + raked posts, red dashboard crossbar), grille + headlights below; stacked wordmark. (100 × 100)
+def _front(x=0, y=0):
+    tread = lambda tx: ''.join(f'<rect class="bg" x="{tx + 3}" y="{yy}" width="14" height="2.6" rx="1"/>' for yy in range(47, 92, 7))
+    return (f'<g transform="translate({x} {y})">'
+            '<rect class="c1" x="4" y="40" width="20" height="56" rx="6"/><rect class="c1" x="76" y="40" width="20" height="56" rx="6"/>'
+            + tread(4) + tread(76) +
+            '<rect class="c1" x="2" y="32" width="26" height="5" rx="2"/><rect class="c1" x="72" y="32" width="26" height="5" rx="2"/>'   # fenders
+            '<rect class="c1" x="20" y="6" width="60" height="8" rx="2"/>'                                                              # roof
+            '<path class="c1" d="M33 14H43L35 60H24Z"/><path class="c1" d="M57 14H67L76 60H65Z"/>'                                     # posts = A legs
+            '<path class="acc" d="M38.6 33H61.4L62.7 40H37.3Z"/>'                                                                       # crossbar
+            '<rect class="c1" x="34" y="58" width="32" height="30" rx="4"/>'                                                            # hood front / grille
+            + ''.join(f'<rect class="bg" x="39" y="{yy}" width="22" height="2.4" rx="1"/>' for yy in (68, 74, 80)) +
+            '<circle class="acc" cx="40" cy="63" r="2.6"/><circle class="acc" cx="60" cy="63" r="2.6"/>'                             # headlights
+            '<rect class="c1" x="24" y="76" width="10" height="4"/><rect class="c1" x="66" y="76" width="10" height="4"/>'              # axle
+            '</g>')
+FRONT = _front()
+D_NEW = (_front(85, 0) +
+         f'<g transform="translate(27 120) scale(.8)"><g class="c1">{WM}</g><g class="acc">{WM_ACC}</g></g>'
+         '<rect class="acc" x="27" y="196" width="216" height="3"/>')
