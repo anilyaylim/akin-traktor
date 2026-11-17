@@ -597,8 +597,9 @@ html.light .tip { border-left-color: var(--blue); }
 /* marquee with label; model series as small captions */
 .marquee-l { margin-bottom: 14px; }
 .marquee-t span small { font-size: .5em; font-family: var(--mono); letter-spacing: .04em; color: var(--steel); margin-left: 12px; font-weight: 400; }
-/* light: third colour = harvest amber for markers (no red markers in the light design) */
-html.light { --amber: #f2a630; --red: #f2a630; --red-2: #b7790b; --red-glow: rgba(242,166,48,.28); }
+/* light: third colour = turquoise for markers (no red markers in the light design) */
+html.light { --amber: #13b5c4; --red: #13b5c4; --red-2: #0b7c88; --red-glow: rgba(19,181,196,.3); }
+html.light .tspot.on, html.light .amsg.me p { color: var(--navy); } html.light .tspot.on i { background: var(--navy); }
 html.light .logo .hyb .acc, html.light .asst-ava .wheel .acc { fill: #e3262a; }
 html.light .cart-btn b { background: var(--amber); color: var(--navy); }
 html.light .cursor { mix-blend-mode: normal; background: var(--navy); opacity: .55; }
@@ -699,3 +700,7 @@ html.light .gcard:hover { box-shadow: 0 30px 60px -36px rgba(15,42,74,.4); }
 /* references / events extras */
 .case-img { margin: calc(clamp(24px, 3vw, 40px) * -1) calc(clamp(24px, 3vw, 40px) * -1) 6px; aspect-ratio: 16/8.5; overflow: hidden; border-bottom: 1px solid var(--line); }
 .art-cover { aspect-ratio: 21/8; border-radius: 24px; overflow: hidden; border: 1px solid var(--line); margin-top: -10px; }
+
+/* finder 3D: reveal the canvas only once lights + shaders are ready (no late pop / flicker) */
+.tcanvas { position: absolute; inset: 0; opacity: 0; transform: scale(.985); transition: opacity .7s ease, transform 1.1s cubic-bezier(.2,.7,.2,1); }
+.tcanvas.ready { opacity: 1; transform: none; }

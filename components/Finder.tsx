@@ -4,7 +4,7 @@
    real 565-code catalogue, with quote-list integration. mode="teaser" shows only the stage (home page). */
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { BRANDS, GROUPS, PRODUCTS, SYSTEMS, groupName, type Lang, type SystemId } from '@/lib/catalog';
 import { href, t } from '@/lib/i18n';
 import { p as pages } from '@/lib/pages';
@@ -42,7 +42,7 @@ export default function Finder({ lang, mode = 'full' }: { lang: Lang; mode?: 'fu
   }, [sys, group, brand, query]);
   const groupsHere = useMemo(() => Object.keys(GROUPS).filter(k => !sys || GROUPS[k].system === sys), [sys]);
   const reset = () => { setSys(null); setGroup(null); setBrand(null); setQuery(''); };
-  const pick = (s: SystemId | null) => { setSys(s); setGroup(null); };
+  const pick = useCallback((s: SystemId | null) => { setSys(s); setGroup(null); }, []);
   const seeParts = () => mode === 'full' ? listRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }) : undefined;
 
   return (
