@@ -18,7 +18,7 @@ const tr = {
   catalog: {
     eyebrow: 'Ürün kataloğu', title: ['565 parça,', '15 ürün grubu.'], lead: 'Tüm stokumuz ürün gruplarına göre düzenli. Bir grup seçin, listeyi inceleyin; parçanın yerini bilmiyorsanız Parça Bulucu’yu kullanın.',
     groups: 'Ürün grupları', browse: 'Grubu incele', all: 'Tüm ürünler', search: 'Bu listede ara…', sort: 'Sırala', byCode: 'Stok koduna göre', byName: 'Ada göre',
-    finderT: 'Parçanın yerini mi biliyorsunuz?', finderP: 'Traktör üzerinde sistemi seçin, parça kendini göstersin.', finderB: 'Parça Bulucu’yu aç',
+    finderT: 'Parçanın yerini bilmiyor musunuz?', finderP: 'Traktör üzerinde sistemi seçin, parça kendini göstersin.', finderB: 'Parça Bulucu’yu aç',
   },
   finderPage: { eyebrow: 'Parça Bulucu', title: ['Parçanı traktörün', 'üzerinde bul.'], lead: 'Traktörde bir noktaya dokunun: sistem parlar, traktörden ayrılır ve yakından görünür. Aşağıdan kod, model ya da ada göre arayın.' },
   about: {
@@ -68,7 +68,7 @@ const en: typeof tr = {
   catalog: {
     eyebrow: 'Product catalogue', title: ['565 parts,', '15 product groups.'], lead: 'Our whole stock, organised by product group. Pick a group and browse; if you don’t know where the part sits, use the Part Finder.',
     groups: 'Product groups', browse: 'Browse group', all: 'All products', search: 'Search this list…', sort: 'Sort', byCode: 'By stock code', byName: 'By name',
-    finderT: 'Know where the part sits?', finderP: 'Pick the system on the tractor and let the part show itself.', finderB: 'Open the Part Finder',
+    finderT: 'Not sure where the part sits?', finderP: 'Pick the system on the tractor and let the part show itself.', finderB: 'Open the Part Finder',
   },
   finderPage: { eyebrow: 'Part Finder', title: ['Find your part', 'on the tractor.'], lead: 'Tap a point on the tractor: the system lights up, detaches and comes closer. Search below by code, model or name.' },
   about: {

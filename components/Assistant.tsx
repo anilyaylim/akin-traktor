@@ -10,7 +10,7 @@ import { PRODUCTS, groupName, type Lang, type Product, type SystemId } from '@/l
 import { CONTACT, href } from '@/lib/i18n';
 import { useQuote } from './Providers';
 import { LIGHT } from '@/lib/theme';
-import { WHEEL, WHEEL_VB } from '@/lib/logos';
+import { LOGO_B_ICON, WHEEL, WHEEL_VB } from '@/lib/logos';
 
 type L = { l: string; h: string };
 type Msg = { who: 'bot' | 'me'; text: string; links?: L[]; parts?: Product[]; more?: { q: string; n: number }; chips?: boolean };
@@ -107,7 +107,7 @@ export default function Assistant({ lang }: { lang: Lang }) {
     <div className={'asst' + (open ? ' open' : '')}>
       <div className="asst-panel" role="dialog" aria-label={u.name} aria-hidden={!open} data-lenis-prevent>
         <div className="asst-head">
-          <span className="asst-ava" aria-hidden>{LIGHT ? <svg viewBox={WHEEL_VB} className="wheel" dangerouslySetInnerHTML={{ __html: WHEEL }} /> : <svg viewBox="0 0 100 100"><path d="M50 4 89.8 27v46L50 96 10.2 73V27z" fill="var(--red)" /><path d="M31 74 50 24l19 50M38.5 56h23" fill="none" stroke="#fff" strokeWidth="9" strokeLinejoin="round" /></svg>}<i /></span>
+          <span className="asst-ava" aria-hidden>{LIGHT ? <svg viewBox={WHEEL_VB} className="wheel" dangerouslySetInnerHTML={{ __html: WHEEL }} /> : <svg viewBox="0 0 100 100" className="tread" dangerouslySetInnerHTML={{ __html: LOGO_B_ICON }} />}<i /></span>
           <div><b>{u.name}</b><span>{u.sub}</span></div>
           <button className="asst-x" onClick={() => setOpen(false)} aria-label={u.close}>✕</button>
         </div>
