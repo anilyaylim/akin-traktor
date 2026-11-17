@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import PageHero from '@/components/PageHero';
+import PostCover from '@/components/PostCover';
 import { Arrow, Split } from '@/components/ui';
 import type { Lang } from '@/lib/catalog';
 import { COMPAT_BRANDS, c } from '@/lib/content';
@@ -20,6 +21,7 @@ export default async function References({ params }: { params: Promise<{ lang: s
         <div className="sec-head"><div><span className="eyebrow">{d.eyebrow}</span><Split className="h2" lines={d.projectsT} /></div></div>
         <div className="cases">{d.projects.map((p, i) => (
           <article key={p.t} className="case fade" style={{ transitionDelay: i * 90 + 'ms' }}>
+            <div className="case-img"><PostCover kind={p.art} label={p.t} /></div>
             <div className="case-top"><span className="case-y mono">{p.y}</span><span className="tag">{p.loc}</span></div>
             <h3 className="h3">{p.t}</h3><p className="muted">{p.d}</p>
             <div className="case-k">{p.k.map(([v, l]) => <div key={l}><b>{v}</b><span>{l}</span></div>)}</div>
@@ -44,7 +46,7 @@ export default async function References({ params }: { params: Promise<{ lang: s
       <section className="section cta-band"><div className="wrap" style={{ textAlign: 'center' }}>
         <Split className="h1" lines={d.ctaT} />
         <div className="fade" style={{ marginTop: 32, display: 'flex', gap: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
-          <Link className="btn btn-red" href={href(lang, 'products') + '#finder'}>{d.cta} <Arrow /></Link>
+          <Link className="btn btn-red" href={href(lang, 'finder')}>{d.cta} <Arrow /></Link>
           <Link className="btn btn-ghost" href={href(lang, 'contact')}>{d.cta2}</Link>
         </div>
       </div></section>

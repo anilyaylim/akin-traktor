@@ -23,7 +23,7 @@ const tr = {
   stats: { title: 'Rakamlarla Akın', items: ['Kuruluş', 'Stok kodu', 'Ürün grubu', 'Mutlu müşteri', 'Uzman personel'] },
   systems: { eyebrow: 'Ürün sistemleri', title: ['Sekiz sistem.', 'Tek tedarikçi.'], sub: 'Her parça bir sisteme ait. Kataloğumuz da öyle düzenlendi: traktörün neresinde arıza varsa, parçası bir tık uzakta.', count: 'ürün', all: 'Tümünü gör' },
   finder: {
-    eyebrow: 'Parça Bulucu', title: ['Parçanı', 'traktörün üzerinde bul.'], sub: 'Sistemi seç, modeli yaz ya da ürün kodunu gir. 565 stok kodu anında filtrelenir; istediklerini teklif sepetine ekle.',
+    eyebrow: 'Parça Bulucu', title: ['Parçanı traktörün', 'üzerinde bul.'], sub: 'Sistemi seç, modeli yaz ya da ürün kodunu gir. 565 stok kodu anında filtrelenir; istediklerini teklif sepetine ekle.',
     search: 'Ürün adı, kod veya model (ör. 70.56, E007)…', systems: 'Sistem', brands: 'Marka', all: 'Tümü', results: 'sonuç', empty: 'Bu kriterlere uygun parça bulunamadı.', reset: 'Filtreleri temizle',
     add: 'Sepete ekle', added: 'Sepette', details: 'Detay', models: 'Uyumlu', code: 'Kod', tap: 'Sisteme dokun', more: 'Daha fazla göster', open: 'Parça Bulucu’yu aç',
   },

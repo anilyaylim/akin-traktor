@@ -17,7 +17,7 @@ export default function QuoteForm({ lang }: { lang: Lang }) {
   const who = `${f.name}${f.company ? ' · ' + f.company : ''}\n${f.email}${f.phone ? ' · ' + f.phone : ''}${f.note ? '\n\n' + f.note : ''}`;
   const submit = (e: React.FormEvent) => { e.preventDefault(); setSent(true); location.href = `mailto:${CONTACT.email}?subject=${encodeURIComponent((lang === 'tr' ? 'Teklif talebi – ' : 'Quote request – ') + (f.company || f.name))}&body=${encodeURIComponent(quoteText(lang, q.lines, who))}`; };
   if (!q.lines.length) return (
-    <div style={{ padding: '40px 0 80px' }}><p className="lead" style={{ marginBottom: 26 }}>{d.empty}</p><Link className="btn btn-red" href={href(lang, 'products') + '#finder'}>{d.browse} <Arrow /></Link></div>
+    <div style={{ padding: '40px 0 80px' }}><p className="lead" style={{ marginBottom: 26 }}>{d.empty}</p><Link className="btn btn-red" href={href(lang, 'finder')}>{d.browse} <Arrow /></Link></div>
   );
   return (
     <div className="cgrid" style={{ gridTemplateColumns: '1.2fr 1fr' }}>

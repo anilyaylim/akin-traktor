@@ -24,7 +24,7 @@ export default async function About({ params }: { params: Promise<{ lang: string
         <span className="eyebrow">{d.timelineTitle}</span>
         <Timeline rows={d.timeline} />
       </div></section>
-      <Marquee />
+      <Marquee lang={lang} />
       <section className="section"><div className="wrap">
         <div className="sec-head"><div><span className="eyebrow">{d.valuesTitle}</span><Split className="h2" lines={[x.why]} /></div></div>
         <div className="vgrid">{x.reasons.map(([h, t], i) => <div className="vcard fade" key={h} style={{ transitionDelay: i * 80 + 'ms' }}><span>0{i + 1}</span><h3 className="h3">{h}</h3><p className="muted">{t}</p></div>)}</div>
@@ -32,7 +32,7 @@ export default async function About({ params }: { params: Promise<{ lang: string
       </div></section>
       <section className="section cta-band"><div className="wrap" style={{ textAlign: 'center' }}>
         <Split className="h1" lines={x.ctaT} />
-        <div className="fade" style={{ marginTop: 32 }}><Link className="btn btn-red" href={href(lang, 'products') + '#finder'}>{x.ctaB} <Arrow /></Link></div>
+        <div className="fade" style={{ marginTop: 32 }}><Link className="btn btn-red" href={href(lang, 'finder')}>{x.ctaB} <Arrow /></Link></div>
       </div></section>
     </>
   );

@@ -7,7 +7,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
   return (
     <>
       <Hero lang={lang} />
-      <Marquee />
+      <Marquee lang={lang} />
       <Stats lang={lang} />
       <Systems lang={lang} />
       <FinderTeaser lang={lang} />

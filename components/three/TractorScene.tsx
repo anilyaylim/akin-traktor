@@ -34,7 +34,7 @@ function Tire({ r, w, lugs, m }: { r: number; w: number; lugs: number; m: Mats }
   );
 }
 
-function Tractor({ sel }: { sel: Sel }) {
+function Tractor({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => void; labels: Record<SystemId, string> }) {
   const m = useMats();
   const sys = useRef<Partial<Record<SystemId | 'body', THREE.Group>>>({});
   const reg = (k: SystemId | 'body') => (g: THREE.Group | null) => { if (g) { g.userData.sys = k; sys.current[k] = g; } };
@@ -57,7 +57,7 @@ function Tractor({ sel }: { sel: Sel }) {
   /* selection sequence: 1) the system glows and blinks, 2) it detaches from the tractor, flies towards the
      camera and grows, 3) a dashed vector line keeps pointing at the place it came from. Deselect = reverse. */
   const root = useRef<THREE.Group>(null!);
-  const { camera } = useThree();
+  const { camera, size } = useThree();
   const st = useRef<Partial<Record<SystemId, { c: THREE.Vector3; S: number; q: number; tgt: THREE.Vector3 }>>>({});
   const selAt = useRef(0); const clockRef = useRef(0);
   useEffect(() => { selAt.current = clockRef.current; }, [sel]);
@@ -70,33 +70,48 @@ function Tractor({ sel }: { sel: Sel }) {
   const ringB = useMemo(() => new THREE.Mesh(new THREE.RingGeometry(0.16, 0.2, 40), new THREE.MeshBasicMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, depthTest: false, transparent: true, side: THREE.DoubleSide })), []);
   useEffect(() => { [line, dotA, ringB].forEach(o => { o.renderOrder = 10; o.visible = false; }); }, [line, dotA, ringB]);
   const tmp = useMemo(() => new THREE.Vector3(), []);
+  const selQ = useRef(0);
   useFrame(({ clock }, dt) => {
     const t = clock.elapsedTime; clockRef.current = t; const since = t - selAt.current;
-    // glow: three quick blinks after selection, then a calm pulse
+    // 1) blink: three quick flashes after selection, then a calm pulse
     const k = since < 0.9 ? 0.15 + 0.95 * Math.abs(Math.sin(since * Math.PI * 3.3)) : 0.35 + Math.sin(t * 3) * 0.15;
     glows.current.forEach(g => { g.emissiveIntensity = k; });
     const r = root.current; if (!r) return;
+    const mobile = size.width < 760;
+    // 2) stage: the tractor steps back (smaller, aside) so the detached part has room
+    const goalG = sel && since > 0.9 ? 1 : 0;
+    selQ.current += (goalG - selQ.current) * Math.min(1, dt * (goalG ? 2.6 : 4));
+    const E = selQ.current * selQ.current * (3 - 2 * selQ.current);
+    const right = tmp.set(1, 0, 0).applyQuaternion(camera.quaternion).setY(0).normalize();
+    r.position.set(-0.2, 0, 0).addScaledVector(right, -(mobile ? 0.2 : 1.9) * E);
+    r.position.y = (mobile ? 1.9 : 0) * E;
+    r.scale.setScalar(1 - (mobile ? 0.3 : 0.24) * E);
     // rest centres (tractor-local) – measured once while everything is assembled
     (Object.keys(sys.current) as (SystemId | 'body')[]).forEach(key => {
       if (key === 'body' || st.current[key]) return; const g = sys.current[key]!;
-      const b = new THREE.Box3().setFromObject(g); const c = b.getCenter(new THREE.Vector3()); r.worldToLocal(c);
-      const size = b.getSize(new THREE.Vector3()).length() / r.getWorldScale(tmp).x;
-      st.current[key] = { c, S: THREE.MathUtils.clamp(1.5 / Math.max(size, 0.3), 1.25, 1.9), q: 0, tgt: new THREE.Vector3() };
+      const box3 = new THREE.Box3().setFromObject(g); const c = box3.getCenter(new THREE.Vector3()); r.worldToLocal(c);
+      const sz = box3.getSize(new THREE.Vector3()).length() / r.getWorldScale(new THREE.Vector3()).x;
+      st.current[key] = { c, S: Math.max(sz, 0.3), q: 0, tgt: new THREE.Vector3() };
     });
+    // 3) the part flies to the free side of the stage (screen-space anchor, so it stays put while orbiting)
+    const look = new THREE.Vector3(0, 1.3, 0); const dist = camera.position.distanceTo(look) * 0.6;
+    const anchor = new THREE.Vector3(mobile ? 0.12 : 0.44, mobile ? -0.1 : 0.24, 0.5).unproject(camera).sub(camera.position).normalize().multiplyScalar(dist).add(camera.position);
+    const viewH = 2 * Math.tan(THREE.MathUtils.degToRad((camera as THREE.PerspectiveCamera).fov / 2)) * dist;
+    const rs = r.scale.x;
     let shown: { c: THREE.Vector3; cur: THREE.Vector3; q: number } | null = null;
     (Object.keys(st.current) as SystemId[]).forEach(key => {
       const s = st.current[key]!; const g = sys.current[key]!;
       const goal = key === sel && since > 0.9 ? 1 : 0;
-      if (key === sel && goal && s.q < 0.001) {
-        // fly-to point: between the look target and the camera, a little above → converted to tractor space
-        const look = new THREE.Vector3(0, 1.3, 0); const w = look.clone().lerp(camera.position, 0.26).add(new THREE.Vector3(0, 0.6, 0));
-        s.tgt.copy(r.worldToLocal(w));
-      }
-      s.q += (goal - s.q) * Math.min(1, dt * (goal ? 3.2 : 5));
-      const e = s.q * s.q * (3 - 2 * s.q), sc = 1 + (s.S - 1) * e;
+      if (key === sel) s.tgt.copy(r.worldToLocal(anchor.clone()));
+      s.q += (goal - s.q) * Math.min(1, dt * (goal ? 2.6 : 5));
+      const e = s.q * s.q * (3 - 2 * s.q);
+      const viewW = viewH * (size.width / Math.max(size.height, 1));
+      const fit = Math.min(viewH * (mobile ? 0.17 : 0.36), viewW * (mobile ? 0.62 : 0.27));
+      const want = THREE.MathUtils.clamp(fit / (s.S * rs), 0.4, 4.5);   // zoom-in: part fills the frame, never wider than it
+      const sc = 1 + (want - 1) * e;
       const cur = s.c.clone().lerp(s.tgt, e);
       g.position.copy(cur).addScaledVector(s.c, -sc); g.scale.setScalar(sc);
-      if (key === sel || s.q > 0.02) g.rotation.y = e * Math.sin(t * 0.8) * 0.25;
+      if (key === sel || s.q > 0.02) g.rotation.y = e * (0.35 + Math.sin(t * 0.7) * 0.3);
       if (s.q > 0.02 && (!shown || key === sel)) shown = { c: s.c, cur, q: s.q };
     });
     const on = !!shown; line.visible = dotA.visible = ringB.visible = on;
@@ -114,6 +129,13 @@ function Tractor({ sel }: { sel: Sel }) {
   return (
     <group ref={root} position={[-0.2, 0, 0]}>
       <primitive object={line} /><primitive object={dotA} /><primitive object={ringB} />
+        {SPOTS.map(([id, p]) => (
+        <Html key={id} position={p} center zIndexRange={[6, 0]}>
+          <button className={'tspot' + (sel === id ? ' on' : '')} onClick={() => onSel(sel === id ? null : id)} aria-pressed={sel === id}>
+            <i /><span>{labels[id]}</span>
+          </button>
+        </Html>
+      ))}
       {/* chassis & bodywork */}
       <group ref={reg('body')}>
         {box(1.85, 0.5, 0.95, m.body, [1.55, 1.62, 0], 0.12)}
@@ -185,14 +207,7 @@ export default function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: 
       <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={0.85} />
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
       <pointLight position={[-6, 3, -4]} intensity={40} color={LIGHT ? "#2d6bff" : "#ff2a2f"} distance={18} />
-      <Bounds fit observe margin={1.12}><Tractor sel={sel} /></Bounds>
-      {SPOTS.map(([id, p]) => (
-        <Html key={id} position={p} center zIndexRange={[6, 0]}>
-          <button className={'tspot' + (sel === id ? ' on' : '')} onClick={() => onSel(sel === id ? null : id)} aria-pressed={sel === id}>
-            <i /><span>{labels[id]}</span>
-          </button>
-        </Html>
-      ))}
+      <Bounds fit observe margin={1.12}><Tractor sel={sel} onSel={onSel} labels={labels} /></Bounds>
       <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
       <OrbitControls makeDefault target={[0, 1.3, 0]} enablePan={false} enableZoom={false} autoRotate={!sel} autoRotateSpeed={0.6} minPolarAngle={0.6} maxPolarAngle={1.45} enableDamping />
     </Canvas>

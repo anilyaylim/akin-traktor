@@ -34,7 +34,7 @@ export default function Hero({ lang }: { lang: Lang }) {
             <Split as="h1" className="h-mega" lines={d.title} />
             <p className="lead">{d.sub}</p>
             <div className="hero-cta">
-              <Link href={href(lang, 'products') + '#finder'} className="btn btn-red">{d.cta1} <Arrow /></Link>
+              <Link href={href(lang, 'finder')} className="btn btn-red">{d.cta1} <Arrow /></Link>
               <Link href={href(lang, 'products')} className="btn btn-ghost">{d.cta2}</Link>
             </div>
           </div>

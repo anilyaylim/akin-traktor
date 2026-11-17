@@ -25,7 +25,7 @@ export default async function ProductPage({ params }: { params: Params }) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       <div className="wrap">
         <nav className="breadcrumb" style={{ marginBottom: 28 }}>
-          <Link href={href(lang, 'products')}>← {d.back}</Link><span>/</span><Link href={href(lang, 'products') + `?g=${g.slug}#finder`}>{groupName(p.group, lang)}</Link><span>/</span><span>{p.code}</span>
+          <Link href={href(lang, 'products')}>← {d.back}</Link><span>/</span><Link href={href(lang, 'products') + `?g=${g.slug}`}>{groupName(p.group, lang)}</Link><span>/</span><span>{p.code}</span>
         </nav>
         <div className="pd-grid">
           <div className="pd-view" data-cursor>
@@ -48,7 +48,7 @@ export default async function ProductPage({ params }: { params: Params }) {
         </div>
         {related.length > 0 && (
           <div style={{ marginTop: 90 }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 22 }}><h2 className="h3">{d.related}</h2><Link className="pcard-more" href={href(lang, 'products') + `?g=${g.slug}#finder`}>{t(lang).systems.all} <Arrow /></Link></div>
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: 22 }}><h2 className="h3">{d.related}</h2><Link className="pcard-more" href={href(lang, 'products') + `?g=${g.slug}`}>{t(lang).systems.all} <Arrow /></Link></div>
             <div className="pgrid">
               {related.map(r => (
                 <Link key={r.code} href={href(lang, `products/${r.slug}`)} className="pcard">

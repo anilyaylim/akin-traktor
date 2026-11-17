@@ -3,10 +3,11 @@
    reframed as "brands we supply parts for" (the old page claimed official distributorship). The
    testimonials and project texts are the client's current-site content and must be confirmed by
    Akın Traktör before going live. */
-import type { Lang, ModelKind } from './catalog';
+import type { Lang } from './catalog';
+import type { ArtKind } from '@/components/PostCover';
 
 type Block = { h?: string; p?: string; ul?: string[]; tip?: string };
-export type Post = { slug: string; date: string; cat: 'guide' | 'news'; kind: ModelKind; group?: string; title: string; excerpt: string; body: Block[] };
+export type Post = { slug: string; date: string; cat: 'guide' | 'news' | 'event'; kind: ArtKind; group?: string; loc?: string; title: string; excerpt: string; body: Block[] };
 
 const tr = {
   refs: {
@@ -17,8 +18,8 @@ const tr = {
     sectors: [['Tarım işletmeleri', 'Büyük ve orta ölçekli tarım işletmelerine ekipman ve yedek parça tedariki.'], ['Kooperatifler', 'Tarım kooperatiflerine özel fiyatlandırma ve toplu sipariş.'], ['Belediyeler', 'Kamu kurumlarına yönelik ekipman, parça ve servis hizmetleri.'], ['Eğitim kurumları', 'Tarım fakülteleri ve meslek yüksekokullarına destek.'], ['Servis & bayiler', 'B2B platformu üzerinden fiyat listesi, toplu sipariş ve takip.']],
     projectsT: ['Başarılı', 'projeler'],
     projects: [
-      { y: '2023', loc: 'Konya', t: 'Konya Tarım Kooperatifi Mekanizasyon Projesi', d: '500 üyeli tarım kooperatifine 25 traktör ve 50 tarım ekipmanı tedariki. Proje kapsamında teknik eğitim ve 5 yıllık bakım sözleşmesi sağlandı.', k: [['25', 'traktör'], ['50', 'ekipman'], ['5 yıl', 'bakım']] },
-      { y: '2024', loc: 'Türkiye geneli', t: 'Tarım Holding Filo Yenileme Projesi', d: 'Ulusal ölçekte faaliyet gösteren bir tarım holdinginin ekipman filosunun yenilenmesi ve modernizasyonu. 100’ü aşkın ekipman tedarik edildi.', k: [['100+', 'ekipman'], ['Ulusal', 'ölçek'], ['Tek', 'tedarikçi']] },
+      { y: '2023', art: 'tractor' as ArtKind, loc: 'Konya', t: 'Konya Tarım Kooperatifi Mekanizasyon Projesi', d: '500 üyeli tarım kooperatifine 25 traktör ve 50 tarım ekipmanı tedariki. Proje kapsamında teknik eğitim ve 5 yıllık bakım sözleşmesi sağlandı.', k: [['25', 'traktör'], ['50', 'ekipman'], ['5 yıl', 'bakım']] },
+      { y: '2024', art: 'fleet' as ArtKind, loc: 'Türkiye geneli', t: 'Tarım Holding Filo Yenileme Projesi', d: 'Ulusal ölçekte faaliyet gösteren bir tarım holdinginin ekipman filosunun yenilenmesi ve modernizasyonu. 100’ü aşkın ekipman tedarik edildi.', k: [['100+', 'ekipman'], ['Ulusal', 'ölçek'], ['Tek', 'tedarikçi']] },
     ],
     quotesT: ['Müşterilerimiz', 'ne diyor?'],
     quotes: [
@@ -33,11 +34,31 @@ const tr = {
   news: {
     eyebrow: 'Haberler & Blog', title: ['Sahadan haberler,', 'atölyeden rehberler.'],
     lead: 'Traktör bakımı, doğru parça seçimi ve Akın Traktör’den haberler.',
-    all: 'Tümü', cats: { guide: 'Teknik rehber', news: 'Haber' }, read: 'Okumaya devam et', min: 'dk okuma', back: 'Tüm yazılar',
+    all: 'Tümü', cats: { guide: 'Teknik rehber', news: 'Haber', event: 'Fuar & Etkinlik' }, where: 'Yer', read: 'Okumaya devam et', min: 'dk okuma', back: 'Tüm yazılar',
     related: 'Bu yazıdaki parçalar', relatedAll: 'Gruptaki tüm parçalar', more: 'Diğer yazılar', share: 'Paylaş',
     ctaT: 'Doğru parçayı birlikte bulalım.', ctaP: 'Stok kodunu ya da parçanın fotoğrafını gönderin, uzmanlarımız eşleştirsin.', cta: 'Parça Bulucu’yu aç',
   },
   posts: [
+    {
+      slug: 'konya-tarim-fuari-akin-standi', date: '2026-09-24', cat: 'event', kind: 'stand', loc: 'Konya',
+      title: 'Konya Tarım Fuarı’nda AKIN standı',
+      excerpt: 'Güç aktarmadan hidroliğe parça gruplarımızı, yeni dijital kataloğumuzu ve bayi platformumuzu standımızda tanıttık.',
+      body: [
+        { p: 'Konya Tarım Fuarı, bölgenin en çok ziyaret edilen tarım ve tarım makineleri buluşmalarından biri. AKIN olarak standımızda çiftçilerle, servislerle ve bayilerimizle bir araya geldik.' },
+        { h: 'Standımızda neler vardı?', ul: ['Debriyaj, şanzıman ve hidrolik gruplarından örnek parçalar', 'Parça Bulucu’nun canlı demosu: stok kodu ve modelle arama', 'Bayiler için B2B platform tanıtımı', 'Fotoğrafla parça eşleştirme hizmeti'] },
+        { tip: 'Fuarda tanıştığımız ziyaretçilerimiz teklif taleplerini Teklif Sepeti üzerinden bize iletebilir.' },
+      ],
+    },
+    {
+      slug: 'bayi-bulusmasi-2027', date: '2027-01-20', cat: 'event', kind: 'meet', loc: 'Konya · Akın Traktör',
+      title: 'Bayi Buluşması 2027: dijital katalog ve yeni sezon',
+      excerpt: 'Bayi ve servis ortaklarımızla yeni sezon stok planını, B2B platformunu ve sipariş süreçlerini konuşacağız.',
+      body: [
+        { p: 'Her yıl sezon öncesinde bayi ve servis ortaklarımızla bir araya geliyoruz. Bu yılın gündemi dijital katalog ve hızlı sipariş.' },
+        { h: 'Gündem', ul: ['2027 sezonu stok ve ürün grubu planı', 'B2B platform: fiyat listeleri, toplu sipariş, takip', 'Parça Bulucu ve teklif sepetinin bayilerle kullanımı', 'Soru-cevap ve öneriler'] },
+        { tip: 'Katılım için iletişim formundan “Bayilik” konusuyla bize yazabilirsiniz.' },
+      ],
+    },
     {
       slug: 'debriyaj-baski-ayagi-belirtiler', date: '2026-11-10', cat: 'guide', kind: 'clutch', group: 'DEBRİYAJ & ŞANZIMAN',
       title: 'Debriyaj baskı ayağı ne zaman değişir? 5 belirti',
@@ -101,8 +122,8 @@ const en: typeof tr = {
     sectors: [['Farm businesses', 'Equipment and spare parts for large and mid-sized farms.'], ['Co-operatives', 'Special pricing and bulk orders for agricultural co-operatives.'], ['Municipalities', 'Equipment, parts and service for public institutions.'], ['Education', 'Support for agricultural faculties and vocational schools.'], ['Workshops & dealers', 'Price lists, bulk orders and tracking on the B2B platform.']],
     projectsT: ['Successful', 'projects'],
     projects: [
-      { y: '2023', loc: 'Konya', t: 'Konya Agricultural Co-operative Mechanisation Project', d: '25 tractors and 50 implements supplied to a 500-member agricultural co-operative, with technical training and a 5-year maintenance contract.', k: [['25', 'tractors'], ['50', 'implements'], ['5 yrs', 'maintenance']] },
-      { y: '2024', loc: 'Nationwide', t: 'Agricultural Holding Fleet Renewal', d: 'Renewal and modernisation of the equipment fleet of a nationwide agricultural holding. More than 100 units supplied.', k: [['100+', 'units'], ['National', 'scale'], ['Single', 'supplier']] },
+      { y: '2023', art: 'tractor' as ArtKind, loc: 'Konya', t: 'Konya Agricultural Co-operative Mechanisation Project', d: '25 tractors and 50 implements supplied to a 500-member agricultural co-operative, with technical training and a 5-year maintenance contract.', k: [['25', 'tractors'], ['50', 'implements'], ['5 yrs', 'maintenance']] },
+      { y: '2024', art: 'fleet' as ArtKind, loc: 'Nationwide', t: 'Agricultural Holding Fleet Renewal', d: 'Renewal and modernisation of the equipment fleet of a nationwide agricultural holding. More than 100 units supplied.', k: [['100+', 'units'], ['National', 'scale'], ['Single', 'supplier']] },
     ],
     quotesT: ['What our customers', 'say'],
     quotes: [
@@ -117,11 +138,31 @@ const en: typeof tr = {
   news: {
     eyebrow: 'News & Blog', title: ['News from the field,', 'guides from the workshop.'],
     lead: 'Tractor maintenance, choosing the right part and news from Akın Traktör.',
-    all: 'All', cats: { guide: 'Technical guide', news: 'News' }, read: 'Read more', min: 'min read', back: 'All articles',
+    all: 'All', cats: { guide: 'Technical guide', news: 'News', event: 'Fairs & Events' }, where: 'Venue', read: 'Read more', min: 'min read', back: 'All articles',
     related: 'Parts in this article', relatedAll: 'All parts in the group', more: 'More articles', share: 'Share',
     ctaT: 'Let’s find the right part together.', ctaP: 'Send the stock code or a photo of the part and our specialists will match it.', cta: 'Open the Part Finder',
   },
   posts: [
+    {
+      slug: 'konya-tarim-fuari-akin-standi', date: '2026-09-24', cat: 'event', kind: 'stand', loc: 'Konya',
+      title: 'The AKIN stand at the Konya Agriculture Fair',
+      excerpt: 'We presented our part groups from powertrain to hydraulics, the new digital catalogue and our dealer platform at our stand.',
+      body: [
+        { p: 'The Konya Agriculture Fair is one of the most visited agriculture and farm machinery events in the region. At our stand we met farmers, workshops and dealers.' },
+        { h: 'What was on our stand?', ul: ['Sample parts from the clutch, gearbox and hydraulics groups', 'Live demo of the Part Finder: search by stock code and model', 'Introduction to the B2B platform for dealers', 'Part matching from a photo'] },
+        { tip: 'Visitors we met at the fair can send their quote requests through the Quote List.' },
+      ],
+    },
+    {
+      slug: 'bayi-bulusmasi-2027', date: '2027-01-20', cat: 'event', kind: 'meet', loc: 'Konya · Akın Traktör',
+      title: 'Dealer Meeting 2027: digital catalogue and the new season',
+      excerpt: 'With our dealers and workshop partners we will discuss the new season’s stock plan, the B2B platform and ordering.',
+      body: [
+        { p: 'Every year before the season we meet our dealers and workshop partners. This year’s agenda: the digital catalogue and fast ordering.' },
+        { h: 'Agenda', ul: ['2027 season stock and product group plan', 'B2B platform: price lists, bulk orders, tracking', 'Using the Part Finder and quote list with dealers', 'Q&A and suggestions'] },
+        { tip: 'To join, write to us via the contact form with the subject “Dealership”.' },
+      ],
+    },
     {
       slug: 'debriyaj-baski-ayagi-belirtiler', date: '2026-11-10', cat: 'guide', kind: 'clutch', group: 'DEBRİYAJ & ŞANZIMAN',
       title: 'When should a clutch pressure plate be replaced? 5 signs',

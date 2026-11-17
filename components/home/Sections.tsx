@@ -17,9 +17,15 @@ export function Lazy({ children, h = 600 }: { children: React.ReactNode; h?: num
   return <div ref={ref} style={{ minHeight: on ? undefined : h }}>{on && children}</div>;
 }
 
-export function Marquee() {
-  const items = ['Ford', 'Massey Ferguson', 'UTB', 'Steyr', '50NC', 'Tümosan', '480 · 540 · 640', '55.46 · 70.56', 'TT50 · TD95'];
-  return <div className="marquee" aria-hidden><div className="marquee-t">{[...items, ...items].map((x, i) => <span key={i}>{x}</span>)}</div></div>;
+/** compatible brands with example model series (the numbers are tractor model names, e.g. Fiat 480) */
+export function Marquee({ lang = 'tr' }: { lang?: Lang }) {
+  const items: [string, string][] = [['Ford', ''], ['Massey Ferguson', ''], ['Fiat', '480 · 540 · 640'], ['Fiat', '55.46 · 70.56'], ['New Holland', 'TT50 · TD95'], ['UTB', ''], ['Steyr', ''], ['Tümosan', ''], ['50NC', '']];
+  return (
+    <div className="marquee-w">
+      <div className="wrap marquee-l"><span className="eyebrow">{lang === 'tr' ? 'Parça sağladığımız marka ve modeller' : 'Brands and model series we supply'}</span></div>
+      <div className="marquee" aria-hidden><div className="marquee-t">{[...items, ...items].map(([b, m], i) => <span key={i}>{b}{m && <small>{lang === 'tr' ? 'modeller' : 'models'} {m}</small>}</span>)}</div></div>
+    </div>
+  );
 }
 
 function Count({ to, pad = 0 }: { to: number; pad?: number }) {
@@ -65,7 +71,7 @@ export function Systems({ lang }: { lang: Lang }) {
         </div>
         <div className="bento">
           {ids.map((s, i) => (
-            <Link key={s} href={href(lang, 'products') + `?s=${s}#finder`} className={'bento-c fade b' + i} style={{ transitionDelay: (i % 4) * 70 + 'ms' }}>
+            <Link key={s} href={href(lang, 'finder') + `?s=${s}`} className={'bento-c fade b' + i} style={{ transitionDelay: (i % 4) * 70 + 'ms' }}>
               <span className="bento-ic"><SysIcon id={s} /></span>
               <span className="bento-n mono">{String(cnt(s)).padStart(3, '0')} <small>{d.count}</small></span>
               <h3 className="h3">{SYSTEMS[s][lang]}</h3>
@@ -86,9 +92,9 @@ export function FinderTeaser({ lang }: { lang: Lang }) {
       <div className="wrap">
         <div className="sec-head">
           <div><span className="eyebrow">{d.eyebrow}</span><Split className="h2" lines={d.title} /></div>
-          <div><p className="lead fade">{d.sub}</p><Link href={href(lang, 'products') + '#finder'} className="btn btn-red fade" style={{ marginTop: 26 }}>{d.open} <Arrow /></Link></div>
+          <div><p className="lead fade">{d.sub}</p><Link href={href(lang, 'finder')} className="btn btn-red fade" style={{ marginTop: 26 }}>{d.open} <Arrow /></Link></div>
         </div>
-        <Lazy h={620}><Finder lang={lang} compact /></Lazy>
+        <Lazy h={620}><Finder lang={lang} mode="teaser" /></Lazy>
       </div>
     </section>
   );
