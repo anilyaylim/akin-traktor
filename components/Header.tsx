@@ -24,7 +24,7 @@ export default function Header({ lang }: { lang: Lang }) {
   const other: Lang = lang === 'tr' ? 'en' : 'tr';
   const swap = path.replace(/^\/(tr|en)(?=\/|$)/, '/' + other);
   const items: [string, string][] = [['products', d.nav.products], ['about', d.nav.about], ['services', d.nav.services], ['references', d.nav.refs], ['news', d.nav.news], ['contact', d.nav.contact]];
-  const mitems: [string, string][] = [['products', d.nav.products], ['products/#finder', d.nav.finder], ...items.slice(1)];
+  const mitems: [string, string][] = [['products', d.nav.products], ['finder', d.nav.finder], ...items.slice(1)];
   const on = (p: string) => path.startsWith(href(lang, p.split('/#')[0])) && !p.includes('#');
   return (
     <>
@@ -38,7 +38,7 @@ export default function Header({ lang }: { lang: Lang }) {
             <div className="lang"><Link href={lang === 'tr' ? path : swap} className={lang === 'tr' ? 'on' : ''}>TR</Link><Link href={lang === 'en' ? path : swap} className={lang === 'en' ? 'on' : ''}>EN</Link></div>
             {ALT_ON && <a className="ver" href={ALT_BASE + path} title={LIGHT ? (lang === 'tr' ? 'Koyu versiyon' : 'Dark version') : (lang === 'tr' ? 'Açık versiyon' : 'Light version')}><i /><span>{LIGHT ? (lang === 'tr' ? 'Koyu' : 'Dark') : (lang === 'tr' ? 'Açık' : 'Light')}</span></a>}
             <button className={'cart-btn' + (bump ? ' bump' : '')} onClick={() => setOpen(true)} aria-label={d.nav.quote}><CartIcon />{count > 0 && <b>{count}</b>}</button>
-            <Link href={href(lang, 'products') + '#finder'} className="btn btn-red btn-sm">{d.nav.finder} <Arrow /></Link>
+            <Link href={href(lang, 'finder')} className="btn btn-red btn-sm">{d.nav.finder} <Arrow /></Link>
             <button className={'burger' + (menu ? ' open' : '')} onClick={() => setMenu(!menu)} aria-label={menu ? d.nav.close : d.nav.menu} aria-expanded={menu}><i /><i /></button>
           </div>
         </div>

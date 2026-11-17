@@ -42,6 +42,7 @@ CONCEPTS = [
 PALETTE = [
   ('Akın Lacivert', '#0F2A4A', 'Ana renk · güven, kurumsal ağırlık'), ('Derin Lacivert', '#0A1C33', 'Başlıklar, koyu yüzeyler'),
   ('Sinyal Kırmızı', '#E3262A', 'Marka vurgusu · mevcut logodan'), ('Teknik Mavi', '#2D6BFF', 'Etkileşim, bağlantı, veri'),
+  ('Hasat Sarısı', '#F2A630', 'Açık temada işaret ve vurgu'),
   ('Çelik', '#5B6B7F', 'Yardımcı metin, ikonlar'), ('Bulut', '#F3F5F8', 'Açık zemin'), ('Beyaz', '#FFFFFF', 'Kartlar, yüzeyler'),
 ]
 
@@ -134,7 +135,7 @@ h2 {{ font-size:clamp(32px,4vw,58px); letter-spacing:-.035em; line-height:1; fon
 @media (prefers-reduced-motion:reduce) {{ .lg .spin {{ animation:none; }} }}
 .tile.hero .lg {{ animation:rise 1.2s cubic-bezier(.2,.7,0,1) both; }}
 @keyframes rise {{ from {{ opacity:0; transform:translateY(24px) scale(.97); }} }}
-.pal {{ display:grid; grid-template-columns:repeat(7,1fr); gap:10px; margin-top:34px; }}
+.pal {{ display:grid; grid-template-columns:repeat(8,1fr); gap:10px; margin-top:34px; }}
 .sw {{ border-radius:18px; overflow:hidden; border:1px solid var(--line); background:#fff; }}
 .sw i {{ display:block; height:150px; }} .sw div {{ padding:14px; font-size:13px; display:grid; gap:3px; }}
 .sw b {{ font-weight:600; }} .sw .mono {{ font-size:11.5px; color:var(--steel); }}
@@ -202,7 +203,7 @@ footer h3 {{ font-size:clamp(26px,3vw,40px); letter-spacing:-.03em; color:var(--
 
 <section id="renk"><div class="wrap">
   <span class="eyebrow">Renk sistemi · açık tema (v2)</span>
-  <h2 style="margin-top:16px">Lacivert güven, kırmızı imza, mavi teknoloji.</h2>
+  <h2 style="margin-top:16px">Lacivert güven, kırmızı imza, mavi teknoloji, sarı işaret.</h2>
   <p class="lead" style="margin-top:18px">Mevcut logodaki kırmızı ve lacivert korunur. Açık zeminler, çelik griler ve etkileşimde kullanılan teknik mavi ile 28 yıllık bir firmanın güveni modern bir dijital dile taşınır.</p>
   <div class="pal">{''.join(f'<div class="sw"><i style="background:{h}"></i><div><b>{n}</b><span class="mono">{h} · RGB {hex2rgb(h)}</span><span style="color:var(--steel)">{d}</span></div></div>' for n, h, d in PALETTE)}</div>
 </div></section>

@@ -3,6 +3,24 @@
 import type { Lang } from './catalog';
 
 const tr = {
+  sysDetail: {
+    powertrain: 'Motorun gücünü tekerlere taşıyan zincir: debriyaj baskı ayağı ve diski, şanzıman dişlileri, senkromeçler ve vites kumanda parçaları.',
+    hydraulics: 'Ekipmanı kaldıran ve taşıyan üç nokta askı sistemi: hidrolik orta kol, alt çeki kolları, kaldırma kolları ve bağlantı pimleri.',
+    brakes: 'Traktörü güvenle durduran sistem: fren diskleri ve balataları, pedal mekanizması, yaylar ve el freni parçaları.',
+    steering: 'Ön aks ve direksiyon: dingil pernoları, diferansiyel kovanları, direksiyon pistonu ve bağlantı parçaları.',
+    cooling: 'Motoru ideal sıcaklıkta tutan sistem: radyatör kapakları, muslukları ve bağlantı parçaları.',
+    fasteners: 'Her şeyi bir arada tutan elemanlar: pimler, emniyet maşaları, somun ve cıvatalar.',
+    cab: 'Sürücüyü güneşten ve yağmurdan koruyan branda ve kabin aksamı.',
+    misc: 'Ford, Massey Ferguson, UTB ve Steyr’e özel parçalar ile çeki demiri, kuyruk mili ve muhtelif ekipman parçaları.',
+  },
+  frame: { parts: 'parça', see: 'Bu sistemdeki parçaları gör', close: 'Kapat', hint: 'Sürükleyerek çevir · başka bir sisteme dokun' },
+  filters: { group: 'Ürün grubu', brand: 'Marka', allGroups: 'Tüm gruplar', allBrands: 'Tüm markalar', active: 'Aktif filtreler' },
+  catalog: {
+    eyebrow: 'Ürün kataloğu', title: ['565 parça,', '15 ürün grubu.'], lead: 'Tüm stokumuz ürün gruplarına göre düzenli. Bir grup seçin, listeyi inceleyin; parçanın yerini bilmiyorsanız Parça Bulucu’yu kullanın.',
+    groups: 'Ürün grupları', browse: 'Grubu incele', all: 'Tüm ürünler', search: 'Bu listede ara…', sort: 'Sırala', byCode: 'Stok koduna göre', byName: 'Ada göre',
+    finderT: 'Parçanın yerini mi biliyorsunuz?', finderP: 'Traktör üzerinde sistemi seçin, parça kendini göstersin.', finderB: 'Parça Bulucu’yu aç',
+  },
+  finderPage: { eyebrow: 'Parça Bulucu', title: ['Parçanı traktörün', 'üzerinde bul.'], lead: 'Traktörde bir noktaya dokunun: sistem parlar, traktörden ayrılır ve yakından görünür. Aşağıdan kod, model ya da ada göre arayın.' },
   about: {
     storyEyebrow: 'Hikâyemiz',
     story: ['Konya’da bir tezgâhla başladı.', 'Bugün Türkiye’nin dört bir yanına parça yetiştiriyor.'],
@@ -35,6 +53,24 @@ const tr = {
 };
 
 const en: typeof tr = {
+  sysDetail: {
+    powertrain: 'The chain that carries engine power to the wheels: clutch pressure plate and disc, gearbox gears, synchronisers and gearshift parts.',
+    hydraulics: 'The three-point hitch that lifts and carries implements: hydraulic top link, lower links, lift arms and hitch pins.',
+    brakes: 'The system that stops the tractor safely: brake discs and linings, pedal mechanism, springs and hand-brake parts.',
+    steering: 'Front axle and steering: king pins, differential housings, steering cylinder and linkage.',
+    cooling: 'Keeps the engine at the right temperature: radiator caps, drain taps and fittings.',
+    fasteners: 'What holds everything together: pins, linch pins, nuts and bolts.',
+    cab: 'Canopy and cab parts that protect the driver from sun and rain.',
+    misc: 'Parts specific to Ford, Massey Ferguson, UTB and Steyr, plus drawbar, PTO shaft and other implement parts.',
+  },
+  frame: { parts: 'parts', see: 'See the parts of this system', close: 'Close', hint: 'Drag to rotate · tap another system' },
+  filters: { group: 'Product group', brand: 'Brand', allGroups: 'All groups', allBrands: 'All brands', active: 'Active filters' },
+  catalog: {
+    eyebrow: 'Product catalogue', title: ['565 parts,', '15 product groups.'], lead: 'Our whole stock, organised by product group. Pick a group and browse; if you don’t know where the part sits, use the Part Finder.',
+    groups: 'Product groups', browse: 'Browse group', all: 'All products', search: 'Search this list…', sort: 'Sort', byCode: 'By stock code', byName: 'By name',
+    finderT: 'Know where the part sits?', finderP: 'Pick the system on the tractor and let the part show itself.', finderB: 'Open the Part Finder',
+  },
+  finderPage: { eyebrow: 'Part Finder', title: ['Find your part', 'on the tractor.'], lead: 'Tap a point on the tractor: the system lights up, detaches and comes closer. Search below by code, model or name.' },
   about: {
     storyEyebrow: 'Our story',
     story: ['It started at a counter in Konya.', 'Today it supplies parts across Turkey.'],
