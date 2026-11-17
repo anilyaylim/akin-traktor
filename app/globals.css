@@ -417,7 +417,9 @@ html.light, .sec-lt {
 :is(html.light, .sec-lt) .marquee-t span::after { border-color: var(--blue); }
 
 /* hybrid logo (light version) */
-.logo .hyb { height: 40px; width: auto; }
+.logo .hyb { height: 50px; width: auto; }
+@media (max-width: 600px) { .logo .hyb { height: 42px; } }
+.ftr .logo .hyb { height: 56px; }
 .logo .hyb .c1 { fill: currentColor; } .logo .hyb .acc { fill: var(--red); } .logo .hyb .bg { fill: var(--ink); }
 .hdr.scrolled .logo .hyb .bg { fill: var(--ink); }
 .ftr .logo .hyb .bg { fill: #fff; }
