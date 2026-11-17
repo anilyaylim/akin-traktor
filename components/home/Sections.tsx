@@ -141,7 +141,7 @@ export function B2B({ lang }: { lang: Lang }) {
           <div className="b2b-grid grid-bg" aria-hidden />
           <div><span className="eyebrow">{d.eyebrow}</span><Split className="h2" lines={d.title} /><p className="lead">{d.sub}</p></div>
           <div className="b2b-cta">
-            <a href="https://akintraktor.com.tr/b2b/login.php" target="_blank" rel="noopener" className="btn btn-white">{d.cta} <Arrow /></a>
+            <Link href={href(lang, 'b2b')} className="btn btn-white">{d.cta} <Arrow /></Link>
             <Link href={href(lang, 'contact')} className="btn btn-ghost">{d.cta2}</Link>
           </div>
         </div>

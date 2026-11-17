@@ -9,7 +9,6 @@ import { Arrow, CartIcon, Logo } from './ui';
 import QuoteDrawer from './QuoteDrawer';
 import { ALT_BASE, ALT_ON, LIGHT } from '@/lib/theme';
 
-const B2B_URL = 'https://akintraktor.com.tr/b2b/login.php';
 const LockIcon = () => <svg className="lock-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" aria-hidden><rect x="5" y="11" width="14" height="9" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>;
 
 export default function Header({ lang }: { lang: Lang }) {
@@ -40,7 +39,7 @@ export default function Header({ lang }: { lang: Lang }) {
           <div className="hdr-r">
             <div className="lang"><Link href={lang === 'tr' ? path : swap} className={lang === 'tr' ? 'on' : ''}>TR</Link><Link href={lang === 'en' ? path : swap} className={lang === 'en' ? 'on' : ''}>EN</Link></div>
             {ALT_ON && <a className="ver" href={ALT_BASE + path} title={LIGHT ? (lang === 'tr' ? 'Koyu versiyon' : 'Dark version') : (lang === 'tr' ? 'Açık versiyon' : 'Light version')}><i /><span>{LIGHT ? (lang === 'tr' ? 'Koyu' : 'Dark') : (lang === 'tr' ? 'Açık' : 'Light')}</span></a>}
-            <a className="b2b-btn" href={B2B_URL} target="_blank" rel="noopener" title={d.b2b.cta}><LockIcon /><span>{d.nav.b2b}</span></a>
+            <Link className={'b2b-btn' + (on('b2b') ? ' on' : '')} href={href(lang, 'b2b')} title={d.b2b.cta}><LockIcon /><span>{d.nav.b2b}</span></Link>
             <button className={'cart-btn' + (bump ? ' bump' : '')} onClick={() => setOpen(true)} aria-label={d.nav.quote}><CartIcon />{count > 0 && <b>{count}</b>}</button>
             <Link href={href(lang, 'finder')} className="btn btn-red btn-sm">{d.nav.finder} <Arrow /></Link>
             <button className={'burger' + (menu ? ' open' : '')} onClick={() => setMenu(!menu)} aria-label={menu ? d.nav.close : d.nav.menu} aria-expanded={menu}><i /><i /></button>
@@ -52,7 +51,7 @@ export default function Header({ lang }: { lang: Lang }) {
         <div style={{ display: 'flex', gap: 10, marginTop: 24 }}>
           <Link href={swap} className="btn btn-ghost btn-sm">{other.toUpperCase()}</Link>
           <button className="btn btn-red btn-sm" onClick={() => { setMenu(false); setOpen(true); }}>{d.nav.quote} ({count})</button>
-          <a className="btn btn-ghost btn-sm" href={B2B_URL} target="_blank" rel="noopener"><LockIcon /> {d.nav.b2b}</a>
+          <Link className="btn btn-ghost btn-sm" href={href(lang, 'b2b')}><LockIcon /> {d.nav.b2b}</Link>
         </div>
       </nav>
       <QuoteDrawer lang={lang} />
