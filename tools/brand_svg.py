@@ -167,32 +167,32 @@ D_NEW = (_front(85, 0) +
 #      real operator station: canopy, two posts, seat and steering wheel over the big rear wheel. (≈ 350 × 165)
 _WM_A = '<path d="M0 80L28 0H52L80 80H59L40 24L21 80Z"/>'
 def _c4(mid='m-c4', with_hood=True):
-    rw, fw = (59, 108, 42), (300, 132, 20)
+    rw, fw = (59, 108, 42), (293, 132, 20)
     mask = (f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="-30" y="-30" width="440" height="230">'
             '<rect x="-30" y="-30" width="440" height="230" fill="#fff"/>'
-            f'<circle cx="{rw[0]}" cy="{rw[1]}" r="{rw[2] + 7}" fill="#000"/><circle cx="{fw[0]}" cy="{fw[1]}" r="{fw[2] + 5}" fill="#000"/></mask>')
+            f'<circle cx="{rw[0]}" cy="{rw[1]}" r="{rw[2] + 7}" fill="#000"/><circle cx="{fw[0]}" cy="{fw[1]}" r="{fw[2] + 9}" fill="#000"/></mask>')
     cab = ('<path d="M6 0H106V9H6Z"/>'                                    # canopy
            '<path d="M16 9H27L25 76H12Z"/>'                               # rear post
-           '<path d="M86 9H97L100 76H89Z"/>'                             # front post, raked
+           '<path d="M86 9H97L111 74H100Z"/>'                             # front post, raked
            '<path d="M33 18L43 16L48 46H38Z"/><path d="M36 42H70V50H36Z"/>'  # seat back + cushion
            '')
     hood = ''
     if with_hood:
         sx, sy = .72, .7
-        hood = (f'<g transform="translate(126 44) scale({sx} {sy})">{_WM_A}</g>'
-                f'<g transform="translate(192 44) scale({sx} {sy}) translate(-92 0)">{_WM_K}</g>'
-                '<path d="M253 28L267 19V100H253Z"/>'                             # I = exhaust stack
-                f'<g transform="translate(275 44) scale({sx} {sy}) translate(-208 0)">{_WM_N}</g>'
-                '<path d="M324 62H340L348 72V108H324Z"/>'                         # front weight / grille
-                '<path d="M108 98H348V108H108Z"/>')                               # chassis rail
+        hood = (f'<g transform="translate(119 44) scale({sx} {sy})">{_WM_A}</g>'
+                f'<g transform="translate(185 44) scale({sx} {sy}) translate(-92 0)">{_WM_K}</g>'
+                '<path d="M246 28L260 19V100H246Z"/>'                             # I = exhaust stack
+                f'<g transform="translate(268 44) scale({sx} {sy}) translate(-208 0)">{_WM_N}</g>'
+                '<path d="M317 62H333L341 72V108H317Z"/>'                         # front weight / grille
+                '<path d="M108 98H341V108H108Z"/>')                               # chassis rail
     fender = f'<path class="c1" d="M{rw[0]-58} {rw[1]}A58 58 0 0 1 {rw[0]+58} {rw[1]}H{rw[0]+49}A49 49 0 0 0 {rw[0]-49} {rw[1]}Z"/>'
     steer = ('<g fill="none" class="ln" stroke-width="4.5" stroke-linecap="round">'
              '<path d="M88 56L80 34"/><path d="M68 30L92 36"/></g>')            # column + wheel rim (side view)
     extra = ''
     if with_hood:
-        extra = (''.join(f'<rect class="bg" x="328" y="{y}" width="16" height="3"/>' for y in (76, 84, 92)) +
-                 f'<g transform="translate(126 44) scale(.72 .7)"><g class="acc">{WM_ACC}</g></g>' +   # A crossbar, red
-                 '<path class="acc" d="M340 62H344L348 66V72H340Z"/>')                                # headlight
+        extra = (''.join(f'<rect class="bg" x="321" y="{y}" width="16" height="3"/>' for y in (76, 84, 92)) +
+                 f'<g transform="translate(119 44) scale(.72 .7)"><g class="acc">{WM_ACC}</g></g>' +   # A crossbar, red
+                 '<path class="acc" d="M333 62H337L341 66V72H333Z"/>')                                # headlight
     wheel = lambda c, n, lug, hub, f='': (f'<g class="spin{f}" style="transform-origin:{c[0]}px {c[1]}px">'
         f'<g class="c1">{lugs(c[0], c[1], c[2] - 2, c[2] + lug, n, .1 if not f else .13, .062 if not f else .08)}</g>'
         f'<circle class="c1" cx="{c[0]}" cy="{c[1]}" r="{c[2]}"/><circle class="bg" cx="{c[0]}" cy="{c[1]}" r="{c[2] - hub}"/>'
@@ -200,7 +200,8 @@ def _c4(mid='m-c4', with_hood=True):
         + f'<circle class="acc" cx="{c[0]}" cy="{c[1]}" r="{max(4.5, c[2] * .22):.1f}"/></g>')
     out = mask + f'<g class="c1" mask="url(#{mid})">{cab}{hood}</g>' + fender + steer + extra + wheel(rw, 22, 7, 12)
     if with_hood:
-        out += wheel(fw, 15, 5, 7, ' f') + '<path class="c1" d="M-12 159H360V162H-12Z" opacity=".35"/>'
+        ff = f'<path class="c1" d="M{fw[0]-36} {fw[1]}A36 36 0 0 1 {fw[0]+36} {fw[1]}H{fw[0]+31}A31 31 0 0 0 {fw[0]-31} {fw[1]}Z"/>'   # front wheel arch
+        out += ff + wheel(fw, 15, 5, 7, ' f') + '<path class="c1" d="M-12 159H352V162H-12Z" opacity=".35"/>'
     return out
 C4 = _c4()
 def _c4_icon():
