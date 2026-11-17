@@ -2,7 +2,7 @@
 /* Product detail: turntable 3D preview of the part type, drag to rotate. */
 import * as THREE from 'three';
 import { asset } from '@/lib/i18n';
-import { LIGHT } from '@/lib/theme';
+import { ACC3D, LIGHT } from '@/lib/theme';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { ContactShadows, Environment, Float, OrbitControls } from '@react-three/drei';
 import { useRef } from 'react';
@@ -27,7 +27,7 @@ export default function PartViewer({ kind }: { kind: ModelKind }) {
     <Canvas shadows dpr={[1, 1.75]} camera={{ fov: 30, position: [0, 1.2, 9.5] }} gl={{ alpha: true, antialias: true, toneMapping: THREE.ACESFilmicToneMapping }}>
       <Environment files={asset('/hdr/studio.hdr')} environmentIntensity={1} />
       <directionalLight position={[4, 8, 5]} intensity={2} castShadow />
-      <pointLight position={[-5, 1, -4]} intensity={45} color={LIGHT ? "#2d6bff" : "#ff2a2f"} distance={16} />
+      <pointLight position={[-5, 1, -4]} intensity={45} color={ACC3D} distance={16} />
       <Model kind={kind} />
       <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, -2.4, 0]} opacity={0.5} scale={12} blur={2.4} far={5} />
       <OrbitControls enablePan={false} enableZoom={false} minPolarAngle={0.5} maxPolarAngle={2.2} />

@@ -2,7 +2,7 @@
 import { Fragment } from 'react';
 import type { SystemId } from '@/lib/catalog';
 import { LIGHT } from '@/lib/theme';
-import { HYBRID, HYBRID_VB } from '@/lib/logos';
+import { HYBRID, HYBRID_VB, LOGO_B, LOGO_B_VB } from '@/lib/logos';
 
 export function Split({ lines, className = '', as: Tag = 'h2' }: { lines: string[] | string; className?: string; as?: 'h1' | 'h2' | 'h3' | 'p' | 'div' }) {
   const ls = Array.isArray(lines) ? lines : [lines]; let i = 0;
@@ -38,13 +38,7 @@ export function Logo({ sub }: { sub?: string }) {
   );
   return (
     <span className="logo">
-      <svg viewBox="0 0 132 30" aria-label="AKIN">
-        <g>
-          <path d="M15 1.5 27.2 8.5v13L15 28.5 2.8 21.5v-13z" fill="#e3232a" />
-          <path d="M9 21.5 15 7l6 14.5M11.6 16.2h6.8" fill="none" stroke="#fff" strokeWidth="2.6" strokeLinejoin="round" />
-        </g>
-        <text x="38" y="22.5" fill="currentColor" style={{ font: '700 21px var(--font-geist-sans)', letterSpacing: '.16em' }}>AKIN</text>
-      </svg>
+      <svg className="lgb" viewBox={LOGO_B_VB} aria-label="AKIN" dangerouslySetInnerHTML={{ __html: LOGO_B }} />
       {sub && <small>{sub}</small>}
     </span>
   );

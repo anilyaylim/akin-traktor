@@ -3,7 +3,7 @@
    tagged with its system; picking a system x-rays the rest of the tractor and makes the
    chosen parts glow, the catalogue filters to match. */
 import * as THREE from 'three';
-import { LIGHT } from '@/lib/theme';
+import { ACC3D, LIGHT } from '@/lib/theme';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Bounds, ContactShadows, Environment, Html, Lightformer, OrbitControls, RoundedBox } from '@react-three/drei';
 import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -54,7 +54,7 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
   const { gl, scene, camera, size } = useThree();
   useEffect(() => {
     const meshes: THREE.Mesh[] = []; Object.values(sys.current).forEach(g => g?.traverse(o => { if ((o as THREE.Mesh).isMesh) meshes.push(o as THREE.Mesh); }));
-    meshes.forEach(m => { m.userData.orig ??= m.material; const o = m.userData.orig as THREE.MeshPhysicalMaterial; if (!glowCache.has(o)) { const gm = o.clone(); gm.emissive = new THREE.Color(LIGHT ? 0x2d6bff : 0xff2a30); glowCache.set(o, gm); } });
+    meshes.forEach(m => { m.userData.orig ??= m.material; const o = m.userData.orig as THREE.MeshPhysicalMaterial; if (!glowCache.has(o)) { const gm = o.clone(); gm.emissive = new THREE.Color(ACC3D); glowCache.set(o, gm); } });
     const pass = (pick: (m: THREE.Mesh) => THREE.Material) => { meshes.forEach(m => { m.material = pick(m); }); gl.render(scene, camera); };   // a real draw: linking finishes on first use, not in compile()
     // wait two frames (the studio environment map is rendered by then), compile, then reveal
     let n = 0; let id = 0;
@@ -79,7 +79,7 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
       const orig = mesh.userData.orig as THREE.MeshPhysicalMaterial;
       if (!sel) { mesh.material = orig; mesh.castShadow = true; return; }
       if (g.userData.sys === sel) {
-        let gm = glowCache.get(orig); if (!gm) { gm = orig.clone(); gm.emissive = new THREE.Color(LIGHT ? 0x2d6bff : 0xff2a30); glowCache.set(orig, gm); }
+        let gm = glowCache.get(orig); if (!gm) { gm = orig.clone(); gm.emissive = new THREE.Color(ACC3D); glowCache.set(orig, gm); }
         mesh.material = gm; glows.current.push(gm); mesh.castShadow = true;
       } else { mesh.material = ghost; mesh.castShadow = false; }
     }));
@@ -104,11 +104,11 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
   }, [sel]);
   const line = useMemo(() => {
     const g = new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(), new THREE.Vector3()]);
-    const l = new THREE.Line(g, new THREE.LineDashedMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, dashSize: 0.12, gapSize: 0.08, transparent: true, depthTest: false }));
+    const l = new THREE.Line(g, new THREE.LineDashedMaterial({ color: ACC3D, dashSize: 0.12, gapSize: 0.08, transparent: true, depthTest: false }));
     l.renderOrder = 10; l.frustumCulled = false; return l;
   }, []);
-  const dotA = useMemo(() => new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), new THREE.MeshBasicMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, depthTest: false, transparent: true })), []);
-  const ringB = useMemo(() => new THREE.Mesh(new THREE.RingGeometry(0.16, 0.2, 40), new THREE.MeshBasicMaterial({ color: LIGHT ? 0x2d6bff : 0xff3b3f, depthTest: false, transparent: true, side: THREE.DoubleSide })), []);
+  const dotA = useMemo(() => new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), new THREE.MeshBasicMaterial({ color: ACC3D, depthTest: false, transparent: true })), []);
+  const ringB = useMemo(() => new THREE.Mesh(new THREE.RingGeometry(0.16, 0.2, 40), new THREE.MeshBasicMaterial({ color: ACC3D, depthTest: false, transparent: true, side: THREE.DoubleSide })), []);
   useEffect(() => { [line, dotA, ringB].forEach(o => { o.renderOrder = 10; o.visible = false; }); }, [line, dotA, ringB]);
   const tmp = useMemo(() => new THREE.Vector3(), []);
   useFrame(({ clock }) => {
@@ -179,7 +179,7 @@ function Tractor({ sel, onSel, labels, onReady }: { sel: Sel; onSel: (s: Sel) =>
         {box(0.5, 0.42, 0.7, m.body, [0.42, 1.68, 0], 0.08)}
         {box(1.5, 0.08, 1.0, m.dark, [1.55, 1.38, 0])}
         <mesh position={[1.25, 2.25, 0.32]} castShadow material={m.dark}><cylinderGeometry args={[0.06, 0.07, 1.3, 16]} /></mesh>
-        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color={LIGHT ? "#14365e" : "#d0242b"} metalness={0.5} roughness={0.3} clearcoat={0.7} side={THREE.DoubleSide} /></mesh>)}
+        {[-1, 1].map(s => <mesh key={s} position={[-1.6, 1.15, s * 1.05]} rotation-x={Math.PI / 2} castShadow><cylinderGeometry args={[1.36, 1.36, 0.66, 48, 1, true, Math.PI - 1.3, 2.6]} /><meshPhysicalMaterial color={LIGHT ? "#14365e" : "#e3e8ee"} metalness={0.5} roughness={0.3} clearcoat={0.7} side={THREE.DoubleSide} /></mesh>)}
         {box(0.5, 0.12, 0.5, m.black, [-1.05, 1.82, 0], 0.05)}{box(0.1, 0.5, 0.5, m.black, [-1.32, 2.05, 0], 0.04)}
         <mesh position={[-0.35, 1.95, 0]} rotation-z={0.5} material={m.dark}><cylinderGeometry args={[0.035, 0.035, 0.7, 12]} /></mesh>
         <mesh position={[-0.52, 2.27, 0]} rotation={[0, Math.PI / 2, 0.5]} material={m.black}><torusGeometry args={[0.22, 0.03, 10, 36]} /></mesh>
@@ -250,10 +250,10 @@ function TractorScene({ sel, onSel, labels }: { sel: Sel; onSel: (s: Sel) => voi
         <Lightformer intensity={1.4} position={[-6, 2, 0]} rotation-y={Math.PI / 2} scale={[12, 3, 1]} />
         <Lightformer intensity={1.4} position={[6, 2, 2]} rotation-y={-Math.PI / 2} scale={[12, 3, 1]} />
         <Lightformer intensity={0.9} position={[0, 2, 7]} scale={[12, 3, 1]} />
-        <Lightformer intensity={0.6} color={LIGHT ? '#9fb8ff' : '#ff6b6b'} position={[0, 1, -7]} scale={[12, 3, 1]} />
+        <Lightformer intensity={0.6} color={LIGHT ? '#9fb8ff' : '#8fe6ee'} position={[0, 1, -7]} scale={[12, 3, 1]} />
       </Environment>
       <directionalLight position={[5, 9, 5]} intensity={2} castShadow shadow-mapSize={[1024, 1024]} />
-      <pointLight position={[-6, 3, -4]} intensity={40} color={LIGHT ? "#2d6bff" : "#ff2a2f"} distance={18} />
+      <pointLight position={[-6, 3, -4]} intensity={40} color={ACC3D} distance={18} />
       <Bounds fit observe margin={1.12} maxDuration={0}><Tractor sel={sel} onSel={onSel} labels={labels} onReady={onReady} /></Bounds>
       <ContactShadows color={LIGHT ? "#0f2a4a" : "#000000"} position={[0, 0.001, 0]} opacity={0.6} scale={14} blur={2.2} far={4} />
       <OrbitControls makeDefault target={[0, 1.3, 0]} enablePan={false} enableZoom={false} autoRotate={!sel} autoRotateSpeed={0.6} minPolarAngle={0.6} maxPolarAngle={1.45} enableDamping />
