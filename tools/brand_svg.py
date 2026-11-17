@@ -162,3 +162,70 @@ FRONT = _front()
 D_NEW = (_front(85, 0) +
          f'<g transform="translate(27 120) scale(.8)"><g class="c1">{WM}</g><g class="acc">{WM_ACC}</g></g>'
          '<rect class="acc" x="27" y="196" width="216" height="3"/>')
+
+# 3d · C4 — like C3, but the whole word AKIN rides on the hood; where the "A" was, the tractor keeps its
+#      real operator station: canopy, two posts, seat and steering wheel over the big rear wheel. (≈ 350 × 165)
+_WM_A = '<path d="M0 80L28 0H52L80 80H59L40 24L21 80Z"/>'
+def _c4(mid='m-c4', with_hood=True):
+    rw, fw = (59, 108, 42), (300, 132, 20)
+    mask = (f'<mask id="{mid}" maskUnits="userSpaceOnUse" x="-30" y="-30" width="440" height="230">'
+            '<rect x="-30" y="-30" width="440" height="230" fill="#fff"/>'
+            f'<circle cx="{rw[0]}" cy="{rw[1]}" r="{rw[2] + 7}" fill="#000"/><circle cx="{fw[0]}" cy="{fw[1]}" r="{fw[2] + 5}" fill="#000"/></mask>')
+    cab = ('<path d="M6 0H106V9H6Z"/>'                                    # canopy
+           '<path d="M16 9H27L25 76H12Z"/>'                               # rear post
+           '<path d="M86 9H97L100 76H89Z"/>'                             # front post, raked
+           '<path d="M33 18L43 16L48 46H38Z"/><path d="M36 42H70V50H36Z"/>'  # seat back + cushion
+           '')
+    hood = ''
+    if with_hood:
+        sx, sy = .72, .7
+        hood = (f'<g transform="translate(126 44) scale({sx} {sy})">{_WM_A}</g>'
+                f'<g transform="translate(192 44) scale({sx} {sy}) translate(-92 0)">{_WM_K}</g>'
+                '<path d="M253 28L267 19V100H253Z"/>'                             # I = exhaust stack
+                f'<g transform="translate(275 44) scale({sx} {sy}) translate(-208 0)">{_WM_N}</g>'
+                '<path d="M324 62H340L348 72V108H324Z"/>'                         # front weight / grille
+                '<path d="M108 98H348V108H108Z"/>')                               # chassis rail
+    fender = f'<path class="c1" d="M{rw[0]-58} {rw[1]}A58 58 0 0 1 {rw[0]+58} {rw[1]}H{rw[0]+49}A49 49 0 0 0 {rw[0]-49} {rw[1]}Z"/>'
+    steer = ('<g fill="none" class="ln" stroke-width="4.5" stroke-linecap="round">'
+             '<path d="M88 56L80 34"/><path d="M68 30L92 36"/></g>')            # column + wheel rim (side view)
+    extra = ''
+    if with_hood:
+        extra = (''.join(f'<rect class="bg" x="328" y="{y}" width="16" height="3"/>' for y in (76, 84, 92)) +
+                 f'<g transform="translate(126 44) scale(.72 .7)"><g class="acc">{WM_ACC}</g></g>' +   # A crossbar, red
+                 '<path class="acc" d="M340 62H344L348 66V72H340Z"/>')                                # headlight
+    wheel = lambda c, n, lug, hub, f='': (f'<g class="spin{f}" style="transform-origin:{c[0]}px {c[1]}px">'
+        f'<g class="c1">{lugs(c[0], c[1], c[2] - 2, c[2] + lug, n, .1 if not f else .13, .062 if not f else .08)}</g>'
+        f'<circle class="c1" cx="{c[0]}" cy="{c[1]}" r="{c[2]}"/><circle class="bg" cx="{c[0]}" cy="{c[1]}" r="{c[2] - hub}"/>'
+        + (''.join(f'<rect class="c1" x="{c[0]-2}" y="{c[1]-c[2]+hub-1}" width="4" height="{c[2]-hub-8}" transform="rotate({k*60} {c[0]} {c[1]})"/>' for k in range(6)) if not f else '')
+        + f'<circle class="acc" cx="{c[0]}" cy="{c[1]}" r="{max(4.5, c[2] * .22):.1f}"/></g>')
+    out = mask + f'<g class="c1" mask="url(#{mid})">{cab}{hood}</g>' + fender + steer + extra + wheel(rw, 22, 7, 12)
+    if with_hood:
+        out += wheel(fw, 15, 5, 7, ' f') + '<path class="c1" d="M-12 159H360V162H-12Z" opacity=".35"/>'
+    return out
+C4 = _c4()
+def _c4_icon():
+    clip = '<clipPath id="cl-c4i"><rect x="-4" y="-4" width="128" height="170"/></clipPath>'
+    return clip + f'<g clip-path="url(#cl-c4i)">{_c4("m-c4i", with_hood=False)}</g>'
+C4_ICON = _c4_icon()
+
+# 4d · D (v3, refined) — a fine-line emblem: thin double ring, the front-view tractor drawn in clean strokes
+#      (cab posts + roof draw the "A", red dashboard line, grille, headlights), light spaced wordmark.
+def _emblem(x=0, y=0):
+    s = lambda d, w=4, extra='': f'<path d="{d}" stroke-width="{w}"{extra}/>'
+    return (f'<g transform="translate({x} {y})" fill="none" stroke-linecap="round" stroke-linejoin="round">'
+            '<g class="ln">'
+            '<circle cx="50" cy="50" r="46" stroke-width="3"/><circle cx="50" cy="50" r="41" stroke-width="1.2" opacity=".45"/>'
+            + s('M30 24H70') + s('M40 24L33 58') + s('M60 24L67 58') +                          # roof + posts = "A"
+            '<rect x="18.5" y="47" width="13" height="30" rx="5" stroke-width="3.5"/><rect x="68.5" y="47" width="13" height="30" rx="5" stroke-width="3.5"/>'
+            + ''.join(s(f'M22 {yy}H28 M72 {yy}H78', 2) for yy in (54, 60, 66, 72)) +            # tread
+            s('M15 42H34 M66 42H85', 3.5) +                                                     # fenders
+            '<rect x="40.5" y="54" width="19" height="20" rx="3" stroke-width="3"/>' + s('M45 64H55 M45 69H55', 2) +   # grille
+            s('M31.5 66H40.5 M59.5 66H68.5', 3) + s('M24 84H76', 1.6, ' opacity=".5"') +
+            '</g>'
+            '<path d="M37.4 39H62.6" stroke-width="3.6" style="stroke:var(--a)"/>'
+            '</g>'
+            '<circle class="acc" cx="' + str(x + 45) + '" cy="' + str(y + 58.8) + '" r="1.9"/><circle class="acc" cx="' + str(x + 55) + '" cy="' + str(y + 58.8) + '" r="1.9"/>')
+EMBLEM = _emblem()
+D_V3 = (_emblem(0, 0) +
+        '<text class="wm" x="124" y="64" font-size="54" letter-spacing="9">AKIN</text>'
+        '<path class="c1" d="M126 77H300V78.4H126Z" opacity=".3"/>')

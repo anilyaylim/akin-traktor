@@ -2,7 +2,7 @@
 type, applications). Run: python3 tools/build_brand.py"""
 import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
-from brand_svg import WM, WM_ACC, TREAD, HYB, RWG, HYB_CAPS, HYB_CAPS_ICON, C3, C3_ICON, FRONT, D_NEW
+from brand_svg import WM, WM_ACC, TREAD, HYB, RWG, HYB_CAPS, HYB_CAPS_ICON, C3, C3_ICON, C4, C4_ICON, EMBLEM, D_V3
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 D = lambda t, x, y, w, size=11, anchor='start': f'<text class="d" x="{x}" y="{y}" font-size="{size}" textLength="{w}" lengthAdjust="spacing" text-anchor="{anchor}">{t}</text>'
@@ -14,7 +14,8 @@ LOCK = {
   'C': ('-8 -10 310 168', HYB + D('TRAKTÖR · YEDEK PARÇA', 2, 152, 270, 12)),
   'C2': ('-12 -30 298 194', HYB_CAPS + D('TRAKTÖR · YEDEK PARÇA', 0, 158, 270, 12.5)),
   'C3': ('-16 -8 312 214', C3 + D('TRAKTÖR · YEDEK PARÇA', 4, 196, 280, 12.5)),
-  'D': ('0 -4 270 230', D_NEW + D('TRAKTÖR · YEDEK PARÇA', 27, 222, 216, 12)),
+  'C4': ('-16 -8 378 214', C4 + D('TRAKTÖR · YEDEK PARÇA', 4, 196, 344, 12.5)),
+  'D': ('-4 -4 312 112', D_V3 + D('TRAKTÖR · YEDEK PARÇA', 126, 98, 174, 10.5)),
 }
 ICON = {
   'A': f'<g transform="translate(14 14) scale(.9)"><g class="c1"><path d="M0 80L28 0H52L80 80H59L40 24L21 80Z"/></g><g class="acc"><rect x="31" y="51" width="18" height="10"/></g></g>',
@@ -22,7 +23,8 @@ ICON = {
   'C': f'<g transform="translate(-16 -16)">{RWG}</g>',
   'C2': f'<g transform="translate(23 2) scale(.7)">{HYB_CAPS_ICON}</g>',
   'C3': f'<g transform="translate(13 1) scale(.6)">{C3_ICON}</g>',
-  'D': FRONT,
+  'C4': f'<g transform="translate(13 1) scale(.6)">{C4_ICON}</g>',
+  'D': EMBLEM,
 }
 def svg(key, kind='lock', cls=''):
     if kind == 'lock': vb, body = LOCK[key]
@@ -40,8 +42,10 @@ CONCEPTS = [
    ['A’nın tepesi “–” tente (kabin tavanı), iki bacağı “/ \\” kabin direkleri; kırmızı ara çizgi gösterge paneli.', 'Dönen arka teker A’nın tam altında ortalı; teker, direklere çamurluk kavisi açar. “I” egzoz bacası, “N”nin altında ön teker.', 'Tek başına ikon: tenteli A ve altındaki teker. Uzaktan okunur, dijitalde tekerlekler döner.']),
   ('C3', 'Hybrid · traktör silüeti', 'AKIN, yandan bir traktör.',
    ['Gerçek traktör oranları: yüksek kabin “A”, büyük arka teker ve çamurluk; K-I-N daha alçak motor kaputu.', '“I” egzoz bacası, “N”nin önünde ağırlık bloğu ve ızgara, kırmızı far; küçük ön teker N’nin altında.', 'Tek başına ikon: çamurluklu arka teker üstünde kabin. Tekerlekler dijitalde döner.']),
-  ('D', 'Amblem · önden traktör', 'Önden bakınca A, aslında traktör.',
-   ['Simge traktörü önden gösterir: iki yanda büyük lastikler, ortada kabin; kabin direkleri ve tavanı bir “A” çizer.', 'Kırmızı ara çizgi gösterge paneli, altında ızgara ve iki far; lastik dişleri ve çamurluklar sade çizgilerle.', 'Simge üstte, güçlü AKIN yazısı altta: tabela, araç kapısı ve uygulama ikonu için dengeli, simetrik bir amblem.'])
+  ('C4', 'Hybrid · kaputta AKIN', 'Kabin boş, AKIN kaputta.',
+   ['AKIN’ın dört harfi de motor kaputunda: “A” en başta, kırmızı ara çizgisiyle; “I” egzoz bacası, “N”nin önünde ızgara ve far.', 'A’nın çıktığı yerde traktörün gerçek sürücü alanı kalır: tente, iki direk, koltuk ve direksiyon, büyük arka tekerin üstünde.', 'Tek başına ikon: koltuklu kabin ve arka teker. Okunurluk yazıdan, traktör hissi silüetten gelir.']),
+  ('D', 'Amblem · ince çizgi', 'Rozet içinde önden traktör.',
+   ['İnce çift halka içinde, temiz çizgilerle önden bir traktör: tavan ve iki direk bir “A” çizer, kırmızı çizgi gösterge paneli.', 'Lastik dişleri, çamurluklar, ızgara ve farlar sade ve hafif; kaba bloklar yerine teknik çizim inceliği.', 'Yanında geniş aralıklı, hafif AKIN yazısı: kurumsal, sakin ve premium bir amblem.'])
 ]
 PALETTE = [
   ('Akın Lacivert', '#0F2A4A', 'Ana renk · güven, kurumsal ağırlık'), ('Derin Lacivert', '#0A1C33', 'Başlıklar, koyu yüzeyler'),
@@ -101,7 +105,7 @@ header.hero {{ padding:110px 0 70px; }}
 h1 {{ font-size:clamp(44px,7vw,104px); line-height:.95; letter-spacing:-.045em; font-weight:600; margin:22px 0 26px; max-width:14ch; }}
 .lead {{ font-size:clamp(17px,1.4vw,21px); line-height:1.55; color:var(--steel); max-width:58ch; }}
 .meta {{ display:flex; gap:28px; flex-wrap:wrap; margin-top:34px; font-size:13px; color:var(--steel); }} .meta b {{ color:var(--ink); font-weight:500; display:block; }}
-.toc {{ display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin-top:56px; }}
+.toc {{ display:grid; grid-template-columns:repeat(7,1fr); gap:12px; margin-top:56px; }}
 .toc a {{ background:#fff; border:1px solid var(--line); border-radius:18px; padding:18px; text-decoration:none; color:inherit; display:grid; gap:14px; transition:transform .5s cubic-bezier(.2,.7,0,1), box-shadow .4s; }}
 .toc a:hover {{ transform:translateY(-4px); box-shadow:0 24px 50px -28px rgba(15,42,74,.35); }}
 .toc .mono {{ font-size:11px; color:var(--steel); letter-spacing:.1em; }} .toc .tile-like {{ height:84px; display:flex; align-items:center; }} .toc .lg {{ max-height:84px; width:auto; max-width:100%; }}
@@ -133,6 +137,7 @@ h2 {{ font-size:clamp(32px,4vw,58px); letter-spacing:-.035em; line-height:1; fon
 .s40 {{ height:40px; width:auto; }} .s24 {{ height:24px; width:auto; }} .s16 {{ height:16px; width:16px; }}
 @media (max-width:900px) {{ .c-grid, .current {{ grid-template-columns:1fr; }} .c-head {{ flex-direction:column; align-items:flex-start; }} }}
 .lg .c1 {{ fill:var(--c); }} .lg .ln {{ stroke:var(--c); }} .lg .acc {{ fill:var(--a); }} .lg .bg {{ fill:var(--b); }}
+.lg text.wm {{ fill:var(--c); font-family:Geist, sans-serif; font-weight:600; }}
 .lg text.d {{ fill:var(--c); font-family:Geist, sans-serif; font-weight:600; letter-spacing:.2em; }}
 .lg .spin {{ animation:spin 6s linear infinite; }} .lg .spin.f {{ animation-duration:3.2s; }}
 @keyframes spin {{ to {{ transform:rotate(360deg); }} }}
@@ -180,7 +185,7 @@ footer h3 {{ font-size:clamp(26px,3vw,40px); letter-spacing:-.03em; color:var(--
 </style>
 </head>
 <body>
-<nav class="top"><div class="wrap"><b>AKIN<span>.</span> Marka Kimliği</b><div class="links"><a href="#current">Bugün</a><a href="#cA">A</a><a href="#cB">B</a><a href="#cC">C</a><a href="#cC2">C2</a><a href="#cC3">C3</a><a href="#cD">D</a><a href="#renk">Renkler</a><a href="#tipo">Tipografi</a><a href="#uygulama">Uygulamalar</a></div></div></nav>
+<nav class="top"><div class="wrap"><b>AKIN<span>.</span> Marka Kimliği</b><div class="links"><a href="#current">Bugün</a><a href="#cA">A</a><a href="#cB">B</a><a href="#cC">C</a><a href="#cC2">C2</a><a href="#cC3">C3</a><a href="#cC4">C4</a><a href="#cD">D</a><a href="#renk">Renkler</a><a href="#tipo">Tipografi</a><a href="#uygulama">Uygulamalar</a></div></div></nav>
 <header class="hero"><div class="wrap">
   <span class="eyebrow">Marka kimliği · konsept önerileri</span>
   <h1>Yeni AKIN kimliği için beş yön.</h1>
@@ -242,7 +247,7 @@ footer h3 {{ font-size:clamp(26px,3vw,40px); letter-spacing:-.03em; color:var(--
 
 <footer><div class="wrap">
   <h3>Hangi yön size daha yakın?</h3>
-  <p>Beğendiğiniz öneriyi (A, B, C, C2, C3 veya D) ya da birleştirmek istediğiniz özellikleri iletin; seçilen yön renk, tipografi ve tüm uygulamalarla kurumsal kimlik rehberine dönüştürülür. · No7 Software</p>
+  <p>Beğendiğiniz öneriyi (A, B, C, C2, C3, C4 veya D) ya da birleştirmek istediğiniz özellikleri iletin; seçilen yön renk, tipografi ve tüm uygulamalarla kurumsal kimlik rehberine dönüştürülür. · No7 Software</p>
 </div></footer>
 <script>
 const L = {json.dumps({k: svg(k) for k in LOCK})}, I = {json.dumps({k: svg(k, 'icon') for k in ICON})};
