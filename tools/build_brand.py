@@ -42,7 +42,7 @@ CONCEPTS = [
 PALETTE = [
   ('Akın Lacivert', '#0F2A4A', 'Ana renk · güven, kurumsal ağırlık'), ('Derin Lacivert', '#0A1C33', 'Başlıklar, koyu yüzeyler'),
   ('Sinyal Kırmızı', '#E3262A', 'Marka vurgusu · mevcut logodan'), ('Teknik Mavi', '#2D6BFF', 'Etkileşim, bağlantı, veri'),
-  ('Hasat Sarısı', '#F2A630', 'Açık temada işaret ve vurgu'),
+  ('Turkuaz', '#13B5C4', 'Açık temada işaret ve vurgu'),
   ('Çelik', '#5B6B7F', 'Yardımcı metin, ikonlar'), ('Bulut', '#F3F5F8', 'Açık zemin'), ('Beyaz', '#FFFFFF', 'Kartlar, yüzeyler'),
 ]
 
