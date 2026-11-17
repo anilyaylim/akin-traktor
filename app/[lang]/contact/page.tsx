@@ -17,7 +17,7 @@ const ICON: Record<string, React.ReactNode> = {
 
 export default async function Contact({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = (await params) as { lang: Lang }; const d = t(lang).contact; const x = p(lang).contact;
-  const ld = { '@context': 'https://schema.org', '@type': 'AutoPartsStore', name: 'Akın Traktör', foundingDate: '1998', email: CONTACT.email, address: { '@type': 'PostalAddress', streetAddress: 'Fevziçakmak Mah. 10763 Sk. No: 1/C', addressLocality: 'Karatay', addressRegion: 'Konya', postalCode: '42050', addressCountry: 'TR' } };
+  const ld = { '@context': 'https://schema.org', '@type': 'AutoPartsStore', name: 'Akın Traktör', foundingDate: '1998', email: CONTACT.email, address: { '@type': 'PostalAddress', streetAddress: 'Fevziçakmak Mah. 10763 Sk. No: 1/C', addressLocality: 'Karatay', addressRegion: 'Konya', postalCode: '42050', addressCountry: 'TR' }, geo: { '@type': 'GeoCoordinates', latitude: CONTACT.geo.lat, longitude: CONTACT.geo.lng }, hasMap: CONTACT.map };
   const hrefOf = (k: string) => k === 'wa' ? `https://wa.me/${CONTACT.whatsapp}` : k === 'tel' ? `tel:${CONTACT.phone.replace(/\s/g, '')}` : k === 'mail' ? `mailto:${CONTACT.email}` : CONTACT.map;
   const val = (k: string) => k === 'wa' || k === 'tel' ? CONTACT.phone : k === 'mail' ? CONTACT.email : 'Fevziçakmak, Karatay';
   return (
@@ -41,7 +41,7 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
       </div></section>
       <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
         <div className="mapw fade">
-          <iframe title={x.mapT} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://maps.google.com/maps?q=${encodeURIComponent('Fevziçakmak 10763 Sk. No:1 Karatay Konya')}&z=15&output=embed`} />
+          <iframe title={x.mapT} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://maps.google.com/maps?q=${CONTACT.geo.lat},${CONTACT.geo.lng}&z=17&hl=${lang}&output=embed`} />
           <div className="mapw-card"><span className="eyebrow">{x.mapT}</span><p>{CONTACT.address}</p><a className="btn btn-red btn-sm" href={CONTACT.map} target="_blank" rel="noopener">{x.open} ↗</a></div>
         </div>
       </div></section>
