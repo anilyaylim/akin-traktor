@@ -17,7 +17,8 @@ export default function Footer({ lang }: { lang: Lang }) {
           </ul></div>
           <div><h5>{d.footer.cols[2]}</h5><ul>
             <li className="muted" style={{ maxWidth: 260 }}>{CONTACT.address}</li>
-            <li><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a></li><li><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
+            <li><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a></li><li><a href={`tel:${CONTACT.phone2.replace(/\s/g, '')}`}>{CONTACT.phone2}</a></li>
+            <li><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li><li><a href={`mailto:${CONTACT.email2}`}>{CONTACT.email2}</a></li>
             <li className="mono muted" style={{ fontSize: 12 }}>{CONTACT.hours[lang]}</li>
           </ul></div>
         </div>
