@@ -1,0 +1,33 @@
+3:"$Sreact.fragment"
+4:"/akin-traktor/_next/static/chunks/3qfy96eoyh-ek.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:"/akin-traktor/_next/static/chunks/438t_py7vgjuk.js"
+c:"/akin-traktor/_next/static/chunks/1zkqvkjlq5x86.js"
+d:"/akin-traktor/_next/static/chunks/1o6ons5yiscy9.js"
+e:"/akin-traktor/_next/static/chunks/3eqzjbwbjdxz1.js"
+f:"/akin-traktor/_next/static/chunks/3z4x6bwzwitfq.js"
+10:"/akin-traktor/_next/static/chunks/14i3fc13eyc-3.js"
+11:I[35561,["$b","$c","$d","$e","$f","$10"],"default"]
+12:I[34087,["$b","$c","$d","$e","$f","$10"],"default"]
+13:I[97367,["$4"],"OutletBoundary"]
+14:"$Sreact.suspense"
+17:"ViewportBoundary"
+18:I[97367,["$4"],"$17"]
+19:"MetadataBoundary"
+1a:I[97367,["$4"],"$19"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","section",null,{"className":"phero phero-3d","children":["$","div",null,{"className":"wrap phero-in","children":[["$","div",null,{"children":[["$","span",null,{"className":"eyebrow","children":"Product catalogue"}],["$","h1",null,{"className":"split h1","children":[["$","span","0",{"style":{"display":"block"},"children":[["$","$3","0",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":0},"children":"565"}]}]," "]}],["$","$3","1",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":1},"children":"parts,"}]}]," "]}]]}],["$","span","1",{"style":{"display":"block"},"children":[["$","$3","0",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":2},"children":"15"}]}]," "]}],["$","$3","1",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":3},"children":"product"}]}]," "]}],["$","$3","2",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":4},"children":"groups."}]}]," "]}]]}]]}],["$","p",null,{"className":"lead fade","children":"Our whole stock, organised by product group. Pick a group and browse; if you don’t know where the part sits, use the Part Finder."}],"$undefined"]}],["$","div",null,{"className":"phero-vis","aria-hidden":true,"children":["$","$L11",null,{"kind":"shaft"}]}]]}]}],["$","section",null,{"className":"section sec-lt","style":{"paddingTop":56},"children":["$","div",null,{"className":"wrap","children":["$","$L12",null,{"lang":"en"}]}]}]],[["$","script","script-0",{"src":"/akin-traktor/_next/static/chunks/3z4x6bwzwitfq.js","async":true}],["$","script","script-1",{"src":"/akin-traktor/_next/static/chunks/14i3fc13eyc-3.js","async":true}]],["$","$L13",null,{"children":["$","$14",null,{"name":"Next.MetadataOutlet","children":"$@15"}]}]]}],"p":"$@16","v":null,"s":"$9"}}]]
+2:[["children",{"s":"products","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":[]},"h":65584,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L18",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0a0b0d"}]]}],["$","$L1a",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$14",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Product Catalogue · AKIN"}],["$","meta","1",{"name":"description","content":"Tractor powertrain, hydraulic and brake spare parts. 565 stock codes, Part Finder and online quotes. Konya, since 1998."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"tr","href":"/tr/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"/en/"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1b","v":null,"s":"$9"}},"a":"$@1c","u":"$@1d","b":"71_MMtih2Fxh2O7iDf5sZ"}
+15:null
+1d:true
+9:300
+9:C
+1c:0
+7:"$undefined"
+1b:"$undefined"
+16:"$undefined"

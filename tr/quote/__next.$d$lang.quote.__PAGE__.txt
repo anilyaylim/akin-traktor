@@ -1,0 +1,31 @@
+3:"$Sreact.fragment"
+4:"/akin-traktor/_next/static/chunks/3qfy96eoyh-ek.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:"/akin-traktor/_next/static/chunks/438t_py7vgjuk.js"
+c:"/akin-traktor/_next/static/chunks/1zkqvkjlq5x86.js"
+d:"/akin-traktor/_next/static/chunks/1o6ons5yiscy9.js"
+e:"/akin-traktor/_next/static/chunks/3eqzjbwbjdxz1.js"
+f:"/akin-traktor/_next/static/chunks/2ie7z3lsltxop.js"
+10:I[10595,["$b","$c","$d","$e","$f"],"default"]
+11:I[97367,["$4"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[97367,["$4"],"$15"]
+17:"MetadataBoundary"
+18:I[97367,["$4"],"$17"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[[["$","section",null,{"className":"phero","children":["$","div",null,{"className":"wrap","children":[["$","span",null,{"className":"eyebrow","children":"B2B"}],["$","h1",null,{"className":"split h1","children":[["$","span","0",{"style":{"display":"block"},"children":[["$","$3","0",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":0},"children":"Teklif"}]}]," "]}],["$","$3","1",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":1},"children":"Sepeti"}]}]," "]}]]}]]}]]}]}],["$","section",null,{"className":"section","style":{"paddingTop":50},"children":["$","div",null,{"className":"wrap","children":["$","$L10",null,{"lang":"tr"}]}]}]],[["$","script","script-0",{"src":"/akin-traktor/_next/static/chunks/2ie7z3lsltxop.js","async":true}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":"$@14","v":null,"s":"$9"}}]]
+2:[["children",{"s":"quote","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"tr","s":[]},"h":65584,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0a0b0d"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Teklif Sepeti · AKIN"}],["$","meta","1",{"name":"description","content":"Traktör güç aktarma, hidrolik ve fren yedek parçaları. 565 stok kodu, Parça Bulucu ve çevrim içi teklif. Konya, 1998’den beri."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"tr","href":"/tr/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"/en/"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@19","v":null,"s":"$9"}},"a":"$@1a","u":"$@1b","b":"71_MMtih2Fxh2O7iDf5sZ"}
+13:null
+1b:true
+9:300
+9:C
+1a:0
+7:"$undefined"
+19:"$undefined"
+14:"$undefined"

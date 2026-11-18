@@ -1,0 +1,42 @@
+3:"$Sreact.fragment"
+4:"/akin-traktor/light/_next/static/chunks/3qfy96eoyh-ek.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+d:"/akin-traktor/light/_next/static/chunks/1enfjkeujpp_n.js"
+e:"/akin-traktor/light/_next/static/chunks/1zkqvkjlq5x86.js"
+f:"/akin-traktor/light/_next/static/chunks/1o6ons5yiscy9.js"
+10:"/akin-traktor/light/_next/static/chunks/3eqzjbwbjdxz1.js"
+11:"/akin-traktor/light/_next/static/chunks/3j2sfx--uyn5j.js"
+12:I[22016,["$d","$e","$f","$10","$11"],""]
+13:I[98906,["$d","$e","$f","$10","$11"],"Viewer"]
+14:I[98906,["$d","$e","$f","$10","$11"],"default"]
+1d:"ViewportBoundary"
+1e:I[97367,["$4"],"$1d"]
+1f:"MetadataBoundary"
+20:I[97367,["$4"],"$1f"]
+21:"$Sreact.suspense"
+8:X
+8:C
+9:X
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","section",null,{"className":"pd","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"Delikli Demir Köprülü 60x25 22 Mm\",\"sku\":\"D097\",\"category\":\"Hydraulics & Linkage\",\"brand\":{\"@type\":\"Brand\",\"name\":\"AKIN\"},\"description\":\"Hepsine\"}"}}],["$","div",null,{"className":"wrap","children":[["$","nav",null,{"className":"breadcrumb","style":{"marginBottom":28},"children":[["$","$L12",null,{"href":"/en/products/","children":["← ","Back to catalogue"]}],["$","span",null,{"children":"/"}],["$","$L12",null,{"href":"/en/products/?g=hidrolik-aksam","children":"Hydraulics & Linkage"}],["$","span",null,{"children":"/"}],["$","span",null,{"children":"D097"}]]}],["$","div",null,{"className":"pd-grid","children":[["$","div",null,{"className":"pd-view","data-cursor":true,"children":[["$","$L13",null,{"kind":"toplink"}],["$","span",null,{"className":"code-big mono","aria-hidden":true,"children":"D097"}],["$","span",null,{"className":"cap mono","children":"3D preview · drag to rotate"}]]}],["$","div",null,{"className":"pd-info","children":[["$","span",null,{"className":"eyebrow","children":"Hydraulics & Linkage"}],["$","h1",null,{"children":"Delikli Demir Köprülü 60x25 22 Mm"}],["$","$L14",null,{"lang":"en","code":"D097","name":"Delikli Demir Köprülü 60x25 22 Mm"}],["$","dl",null,{"className":"spec","children":[["$","div",null,{"children":[["$","dt",null,{"children":"Stock code"}],["$","dd",null,{"className":"mono","children":"D097"}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"Product group"}],["$","dd",null,{"children":"Hydraulics & Linkage"}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"System"}],["$","dd",null,{"style":{"display":"flex","gap":10,"alignItems":"center"},"children":[["$","span",null,{"style":{"width":20,"color":"var(--red-2)","display":"inline-flex"},"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M3 17h4l3-10h4l3 10h4M8 12h8M10 7V4M14 7V4"}]}]}],"Hydraulics & 3-Point"]}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"Compatible models"}],["$","dd",null,{"children":["$","span",null,{"className":"muted","children":"Fits all models"}]}]]}]]}],["$","p",null,{"className":"muted","style":{"fontSize":13.5},"children":"Image is illustrative. Quote the stock code to confirm size and fit."}]]}]]}],["$","div",null,{"style":{"marginTop":90},"children":[["$","div",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"end","marginBottom":22},"children":[["$","h2",null,{"className":"h3","children":"From the same group"}],["$","$L12",null,{"className":"pcard-more","href":"/en/products/?g=hidrolik-aksam","children":["See all"," ",["$","svg",null,{"viewBox":"0 0 16 16","fill":"none","stroke":"currentColor","strokeWidth":"1.6","aria-hidden":true,"children":["$","path",null,{"d":"M2 8h11M9 4l4 4-4 4"}]}]]}]]}],["$","div",null,{"className":"pgrid","children":[["$","$L12","D001",{"href":"/en/products/d001/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M3 17h4l3-10h4l3 10h4M8 12h8M10 7V4M14 7V4"}]}]}],["$","span",null,{"className":"tag","children":"D001"}]]}],["$","h3",null,{"children":"Hidrolik Emme Borusu (Montaj)"}],["$","p",null,{"className":"mono muted","children":"450-480"}]]}],["$","$L12","D002",{"href":"/en/products/d002/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M3 17h4l3-10h4l3 10h4M8 12h8M10 7V4M14 7V4"}]}]}],["$","span",null,{"className":"tag","children":"D002"}]]}],["$","h3",null,{"children":"Hidrolik Emme Borusu (Montaj)"}],["$","p",null,{"className":"mono muted","children":"640"}]]}],["$","$L12","D003",{"href":"/en/products/d003/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":"$L15"}],"$L16"]}],"$L17","$L18"]}],"$L19"]}]]}]]}]]}],["$L1a"],"$L1b"]}],"p":"$@1c","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"code","t":"d","k":"d097","s":[]},"h":65632,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"products","h":131136,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"en","s":[]},"h":196656,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#f3f5f8"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Delikli Demir Köprülü 60x25 22 Mm · D097 · AKIN"}],["$","meta","1",{"name":"description","content":"Delikli Demir Köprülü 60x25 22 Mm (D097) – Hydraulics & Linkage. Hepsine"}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"tr","href":"/tr/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"/en/"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@22","v":null,"s":"$9"}},"a":"$@23","u":"$@24","b":"F5wDaY9mU8hkAwcpj4flV"}
+25:I[97367,["$4"],"OutletBoundary"]
+15:["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M3 17h4l3-10h4l3 10h4M8 12h8M10 7V4M14 7V4"}]}]
+16:["$","span",null,{"className":"tag","children":"D003"}]
+17:["$","h3",null,{"children":"Hidrolik İnce Borusu (Montaj)"}]
+18:["$","p",null,{"className":"mono muted","children":"450-480"}]
+19:["$","$L12","D004",{"href":"/en/products/d004/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M3 17h4l3-10h4l3 10h4M8 12h8M10 7V4M14 7V4"}]}]}],["$","span",null,{"className":"tag","children":"D004"}]]}],["$","h3",null,{"children":"Hidrolik İnce Borusu (Montaj)"}],["$","p",null,{"className":"mono muted","children":"640"}]]}]
+1a:["$","script","script-0",{"src":"/akin-traktor/light/_next/static/chunks/3j2sfx--uyn5j.js","async":true}]
+1b:["$","$L25",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@26"}]}]
+24:true
+9:300
+26:null
+9:C
+23:0
+b:"$undefined"
+7:"$undefined"
+22:"$undefined"
+1c:"$undefined"

@@ -1,0 +1,31 @@
+3:"$Sreact.fragment"
+4:"/akin-traktor/light/_next/static/chunks/3qfy96eoyh-ek.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+b:"/akin-traktor/light/_next/static/chunks/1enfjkeujpp_n.js"
+c:"/akin-traktor/light/_next/static/chunks/1zkqvkjlq5x86.js"
+d:"/akin-traktor/light/_next/static/chunks/1o6ons5yiscy9.js"
+e:"/akin-traktor/light/_next/static/chunks/3eqzjbwbjdxz1.js"
+f:"/akin-traktor/light/_next/static/chunks/3sv3z9e8k7chh.js"
+10:I[47761,["$b","$c","$d","$e","$f"],"default"]
+11:I[97367,["$4"],"OutletBoundary"]
+12:"$Sreact.suspense"
+15:"ViewportBoundary"
+16:I[97367,["$4"],"$15"]
+17:"MetadataBoundary"
+18:I[97367,["$4"],"$17"]
+8:X
+8:C
+9:X
+a:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","section",null,{"className":"fpage","children":["$","div",null,{"className":"wrap","children":[["$","div",null,{"className":"fpage-h","children":[["$","div",null,{"children":[["$","span",null,{"className":"eyebrow","children":"Parça Bulucu"}],["$","h1",null,{"className":"split h2","children":[["$","span","0",{"style":{"display":"block"},"children":[["$","$3","0",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":0},"children":"Parçanı"}]}]," "]}],["$","$3","1",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":1},"children":"traktörün"}]}]," "]}]]}],["$","span","1",{"style":{"display":"block"},"children":[["$","$3","0",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":2},"children":"üzerinde"}]}]," "]}],["$","$3","1",{"children":[["$","span",null,{"className":"w","children":["$","span",null,{"style":{"--i":3},"children":"bul."}]}]," "]}]]}]]}]]}],["$","p",null,{"className":"lead fade","children":"Traktörde bir noktaya dokunun: sistem parlar, traktörden ayrılır ve yakından görünür. Aşağıdan kod, model ya da ada göre arayın."}]]}],["$","$L10",null,{"lang":"tr"}]]}]}],[["$","script","script-0",{"src":"/akin-traktor/light/_next/static/chunks/3sv3z9e8k7chh.js","async":true}]],["$","$L11",null,{"children":["$","$12",null,{"name":"Next.MetadataOutlet","children":"$@13"}]}]]}],"p":"$@14","v":null,"s":"$9"}}]]
+2:[["children",{"s":"finder","h":64,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"tr","s":[]},"h":65584,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L16",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#f3f5f8"}]]}],["$","$L18",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$12",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Parça Bulucu · AKIN"}],["$","meta","1",{"name":"description","content":"Traktör güç aktarma, hidrolik ve fren yedek parçaları. 565 stok kodu, Parça Bulucu ve çevrim içi teklif. Konya, 1998’den beri."}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"tr","href":"/tr/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"/en/"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@19","v":null,"s":"$9"}},"a":"$@1a","u":"$@1b","b":"F5wDaY9mU8hkAwcpj4flV"}
+13:null
+1b:true
+9:300
+9:C
+1a:0
+7:"$undefined"
+19:"$undefined"
+14:"$undefined"

@@ -1,0 +1,42 @@
+3:"$Sreact.fragment"
+4:"/akin-traktor/light/_next/static/chunks/3qfy96eoyh-ek.js"
+5:I[39756,["$4"],"default"]
+6:I[37457,["$4"],"default"]
+d:"/akin-traktor/light/_next/static/chunks/1enfjkeujpp_n.js"
+e:"/akin-traktor/light/_next/static/chunks/1zkqvkjlq5x86.js"
+f:"/akin-traktor/light/_next/static/chunks/1o6ons5yiscy9.js"
+10:"/akin-traktor/light/_next/static/chunks/3eqzjbwbjdxz1.js"
+11:"/akin-traktor/light/_next/static/chunks/3j2sfx--uyn5j.js"
+12:I[22016,["$d","$e","$f","$10","$11"],""]
+13:I[98906,["$d","$e","$f","$10","$11"],"Viewer"]
+14:I[98906,["$d","$e","$f","$10","$11"],"default"]
+1d:"ViewportBoundary"
+1e:I[97367,["$4"],"$1d"]
+1f:"MetadataBoundary"
+20:I[97367,["$4"],"$1f"]
+21:"$Sreact.suspense"
+8:X
+8:C
+9:X
+c:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$3","c",{"children":[["$","section",null,{"className":"pd","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"Product\",\"name\":\"U Kilit ( Mapa )\",\"sku\":\"PM090\",\"category\":\"Pim Grubu\",\"brand\":{\"@type\":\"Brand\",\"name\":\"AKIN\"},\"description\":\"10 mm 3/8\"}"}}],["$","div",null,{"className":"wrap","children":[["$","nav",null,{"className":"breadcrumb","style":{"marginBottom":28},"children":[["$","$L12",null,{"href":"/tr/products/","children":["← ","Kataloğa dön"]}],["$","span",null,{"children":"/"}],["$","$L12",null,{"href":"/tr/products/?g=pim-grubu","children":"Pim Grubu"}],["$","span",null,{"children":"/"}],["$","span",null,{"children":"PM090"}]]}],["$","div",null,{"className":"pd-grid","children":[["$","div",null,{"className":"pd-view","data-cursor":true,"children":[["$","$L13",null,{"kind":"pin"}],["$","span",null,{"className":"code-big mono","aria-hidden":true,"children":"PM090"}],["$","span",null,{"className":"cap mono","children":"3D önizleme · sürükleyerek döndür"}]]}],["$","div",null,{"className":"pd-info","children":[["$","span",null,{"className":"eyebrow","children":"Pim Grubu"}],["$","h1",null,{"children":"U Kilit ( Mapa )"}],["$","$L14",null,{"lang":"tr","code":"PM090","name":"U Kilit ( Mapa )"}],["$","dl",null,{"className":"spec","children":[["$","div",null,{"children":[["$","dt",null,{"children":"Stok kodu"}],["$","dd",null,{"className":"mono","children":"PM090"}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"Ürün grubu"}],["$","dd",null,{"children":"Pim Grubu"}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"Sistem"}],["$","dd",null,{"style":{"display":"flex","gap":10,"alignItems":"center"},"children":[["$","span",null,{"style":{"width":20,"color":"var(--red-2)","display":"inline-flex"},"children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M12 2l7 4v8l-7 4-7-4V6zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM12 18v4"}]}]}],"Bağlantı Elemanları"]}]]}],["$","div",null,{"children":[["$","dt",null,{"children":"Uyumlu modeller"}],["$","dd",null,{"children":["$","span",null,{"className":"models","children":[["$","span","10 mm 3",{"className":"tag","children":"10 mm 3"}]]}]}]]}]]}],["$","p",null,{"className":"muted","style":{"fontSize":13.5},"children":"Görsel temsilidir. Ölçü ve uyum teyidi için ürün kodunu belirtin."}]]}]]}],["$","div",null,{"style":{"marginTop":90},"children":[["$","div",null,{"style":{"display":"flex","justifyContent":"space-between","alignItems":"end","marginBottom":22},"children":[["$","h2",null,{"className":"h3","children":"Aynı gruptan"}],["$","$L12",null,{"className":"pcard-more","href":"/tr/products/?g=pim-grubu","children":["Tümünü gör"," ",["$","svg",null,{"viewBox":"0 0 16 16","fill":"none","stroke":"currentColor","strokeWidth":"1.6","aria-hidden":true,"children":["$","path",null,{"d":"M2 8h11M9 4l4 4-4 4"}]}]]}]]}],["$","div",null,{"className":"pgrid","children":[["$","$L12","PM001",{"href":"/tr/products/pm001/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M12 2l7 4v8l-7 4-7-4V6zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM12 18v4"}]}]}],["$","span",null,{"className":"tag","children":"PM001"}]]}],["$","h3",null,{"children":"Orta Kol Pimi"}],["$","p",null,{"className":"mono muted","children":"19 mm 13 cm MF 135-240"}]]}],["$","$L12","PM002",{"href":"/tr/products/pm002/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M12 2l7 4v8l-7 4-7-4V6zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM12 18v4"}]}]}],["$","span",null,{"className":"tag","children":"PM002"}]]}],["$","h3",null,{"children":"Orta Kol Pimi"}],["$","p",null,{"className":"mono muted","children":"19 mm 15 cm MF 165-175"}]]}],["$","$L12","PM003",{"href":"/tr/products/pm003/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":["$L15","$L16"]}],"$L17","$L18"]}],"$L19"]}]]}]]}]]}],["$L1a"],"$L1b"]}],"p":"$@1c","v":null,"s":"$9"}}]]
+a:[["children",{"s":{"n":"code","t":"d","k":"pm090","s":[]},"h":65632,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@b","v":"$8","s":"$9"},"c":"$Qc"}]]
+2:[["children",{"s":"products","h":131136,"d":{"r":["$","$3","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","template":["$","$L6",null,{}]}]]}],"p":"$@7","v":"$8","s":"$9"},"c":"$Qa"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"tr","s":[]},"h":196656,"c":"$Q2"}]]
+0:{"t":{"t":{"s":"","h":131152,"c":"$Q1"},"h":{"r":["$","$3","h",{"children":[null,["$","$L1e",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#f3f5f8"}]]}],["$","$L20",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$21",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"U Kilit ( Mapa ) · PM090 · AKIN"}],["$","meta","1",{"name":"description","content":"U Kilit ( Mapa ) (PM090) – Pim Grubu. 10 mm 3/8"}],["$","meta","2",{"name":"robots","content":"noindex, nofollow"}],["$","link","3",{"rel":"alternate","hrefLang":"tr","href":"/tr/"}],["$","link","4",{"rel":"alternate","hrefLang":"en","href":"/en/"}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@22","v":null,"s":"$9"}},"a":"$@23","u":"$@24","b":"F5wDaY9mU8hkAwcpj4flV"}
+25:I[97367,["$4"],"OutletBoundary"]
+15:["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M12 2l7 4v8l-7 4-7-4V6zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM12 18v4"}]}]}]
+16:["$","span",null,{"className":"tag","children":"PM003"}]
+17:["$","h3",null,{"children":"Ortakol Pimi"}]
+18:["$","p",null,{"className":"mono muted","children":"19 mm 13 cm ZİNCİRLİ MF 135-240 / FORD-CASE"}]
+19:["$","$L12","PM004",{"href":"/tr/products/pm004/","className":"pcard","children":[["$","div",null,{"className":"pcard-top","children":[["$","span",null,{"className":"pcard-ic","children":["$","svg",null,{"viewBox":"0 0 24 24","fill":"none","stroke":"currentColor","strokeWidth":"1.5","strokeLinejoin":"round","strokeLinecap":"round","aria-hidden":true,"children":["$","path",null,{"d":"M12 2l7 4v8l-7 4-7-4V6zm0 6a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM12 18v4"}]}]}],["$","span",null,{"className":"tag","children":"PM004"}]]}],["$","h3",null,{"children":"Orta Kol Pimi (Semer)"}],["$","p",null,{"className":"mono muted","children":"19 mm LAMALI FİAT"}]]}]
+1a:["$","script","script-0",{"src":"/akin-traktor/light/_next/static/chunks/3j2sfx--uyn5j.js","async":true}]
+1b:["$","$L25",null,{"children":["$","$21",null,{"name":"Next.MetadataOutlet","children":"$@26"}]}]
+24:true
+9:300
+26:null
+9:C
+23:0
+b:"$undefined"
+7:"$undefined"
+22:"$undefined"
+1c:"$undefined"

@@ -1,0 +1,8 @@
+:HL["/akin-traktor/_next/static/chunks/1zfqqh6o393m-.css","style"]
+:HL["/akin-traktor/_next/static/media/GeistMono_Variable.p.2vtemngyy8z-u.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/akin-traktor/_next/static/media/Geist_Variable-s.p.43azbxi7zpibd.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+4:[["children",{"s":"__PAGE__","h":160}]]
+3:[["children",{"s":{"n":"code","t":"d","k":"d146","s":[]},"h":65632,"c":"$Q4"}]]
+2:[["children",{"s":"products","h":131136,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"lang","t":"d","k":"tr","s":[]},"h":196656,"c":"$Q2"}]]
+0:{"b":"71_MMtih2Fxh2O7iDf5sZ","t":{"t":{"s":"","h":131152,"c":"$Q1"}}}
