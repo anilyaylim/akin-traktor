@@ -1,4 +1,4 @@
-"""Builds public/brand/index.html — AKIN brand identity proposals (4 logo directions, colours,
+"""Builds public/brand/index.html — AKIN brand identity proposals (7 logo directions, colours,
 type, applications). Run: python3 tools/build_brand.py"""
 import json, os, sys
 sys.path.insert(0, os.path.dirname(__file__))
@@ -47,6 +47,7 @@ CONCEPTS = [
   ('D', 'Amblem · ince çizgi', 'Rozet içinde önden traktör.',
    ['İnce çift halka içinde, temiz çizgilerle önden bir traktör: tavan ve iki direk bir “A” çizer, kırmızı çizgi gösterge paneli.', 'Lastik dişleri, çamurluklar, ızgara ve farlar sade ve hafif; kaba bloklar yerine teknik çizim inceliği.', 'Yanında geniş aralıklı, hafif AKIN yazısı: kurumsal, sakin ve premium bir amblem.'])
 ]
+NUM_TR = {5: 'beş', 6: 'altı', 7: 'yedi', 8: 'sekiz', 9: 'dokuz'}
 PALETTE = [
   ('Akın Lacivert', '#0F2A4A', 'Ana renk · güven, kurumsal ağırlık'), ('Derin Lacivert', '#0A1C33', 'Başlıklar, koyu yüzeyler'),
   ('Sinyal Kırmızı', '#E3262A', 'Marka vurgusu · mevcut logodan'), ('Teknik Mavi', '#2D6BFF', 'Etkileşim, bağlantı, veri'),
@@ -188,7 +189,7 @@ footer h3 {{ font-size:clamp(26px,3vw,40px); letter-spacing:-.03em; color:var(--
 <nav class="top"><div class="wrap"><b>AKIN<span>.</span> Marka Kimliği</b><div class="links"><a href="#current">Bugün</a><a href="#cA">A</a><a href="#cB">B</a><a href="#cC">C</a><a href="#cC2">C2</a><a href="#cC3">C3</a><a href="#cC4">C4</a><a href="#cD">D</a><a href="#renk">Renkler</a><a href="#tipo">Tipografi</a><a href="#uygulama">Uygulamalar</a></div></div></nav>
 <header class="hero"><div class="wrap">
   <span class="eyebrow">Marka kimliği · konsept önerileri</span>
-  <h1>Yeni AKIN kimliği için beş yön.</h1>
+  <h1>Yeni AKIN kimliği için {NUM_TR[len(CONCEPTS)]} yön.</h1>
   <p class="lead">1998’den bu yana Konya’dan Türkiye’ye traktör yedek parçası. Yeni kimlik, Akın ailesinin adını ve traktörü aynı güvenle taşımalı: teknik, net ve her boyutta okunur.</p>
   <div class="meta"><div><b>Hazırlayan</b>No7 Software</div><div><b>Tarih</b>Kasım 2026</div><div><b>Durum</b>Taslak · v2</div><div><b>Kullanım</b>Web · baskı · tabela · araç</div></div>
   <div class="toc">{''.join(f'<a href="#c{k}"><span class="mono">ÖNERİ {k}</span><span class="tile-like" style="--c:#0F2A4A;--a:#E3262A;--b:#fff">{svg(k)}</span><span>{sub}</span></a>' for k, sub, _, _ in CONCEPTS)}</div>
