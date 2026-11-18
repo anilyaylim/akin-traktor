@@ -7,9 +7,9 @@ export const CONTACT = {
   email: 'info@akintraktor.com',
   address: 'Fevziçakmak Mah. 10763 Sk. No: 1/C, Artar 1, 42050 Karatay / Konya',
   hours: { tr: 'Pzt–Cum 08:00–18:00 · Cmt 09:00–14:00', en: 'Mon–Fri 08:00–18:00 · Sat 09:00–14:00' },
-  // Google Maps business listing (Akın Traktör Konya) + its coordinates for the embedded map
-  map: 'https://www.google.com/maps/place/Ak%C4%B1n+Trakt%C3%B6r+Konya/@37.911437,32.53656,17z/data=!4m6!3m5!1s0x14d08fdf5adaad0b:0xe01e4aca34b5da50!8m2!3d37.911437!4d32.53656!16s%2Fg%2F11bz0bstgd?hl=tr',
-  geo: { lat: 37.911437, lng: 32.53656 },
+  // Yandex Maps business listing (Akın Traktör, Fevziçakmak Mah. 10763. Sk. 1C) + its coordinates and org id for the embed
+  map: 'https://yandex.com.tr/maps/org/akin_traktor/53915109339/?ll=32.556237%2C37.92352&z=17',
+  geo: { lat: 37.92352, lng: 32.556237, yandexOrg: '53915109339' },
 };
 
 const tr = {
