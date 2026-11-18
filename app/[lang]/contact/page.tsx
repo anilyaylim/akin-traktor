@@ -41,7 +41,7 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
       </div></section>
       <section className="section" style={{ paddingTop: 0 }}><div className="wrap">
         <div className="mapw fade">
-          <iframe title={x.mapT} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://maps.google.com/maps?q=${CONTACT.geo.lat},${CONTACT.geo.lng}&z=17&hl=${lang}&output=embed`} />
+          <iframe title={x.mapT} loading="lazy" referrerPolicy="no-referrer-when-downgrade" src={`https://yandex.com.tr/map-widget/v1/?ll=${CONTACT.geo.lng}%2C${CONTACT.geo.lat}&z=17&mode=search&oid=${CONTACT.geo.yandexOrg}&ol=biz&lang=${lang === 'tr' ? 'tr_TR' : 'en_US'}`} />
           <div className="mapw-card"><span className="eyebrow">{x.mapT}</span><p>{CONTACT.address}</p><a className="btn btn-red btn-sm" href={CONTACT.map} target="_blank" rel="noopener">{x.open} ↗</a></div>
         </div>
       </div></section>
