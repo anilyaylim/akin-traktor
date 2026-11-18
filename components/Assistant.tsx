@@ -23,21 +23,29 @@ const UI = {
   tr: {
     name: 'AKIN Asistan', sub: 'Katalog ve site bilgileriyle otomatik yanıt', open: 'Asistanı aç', close: 'Kapat', ph: 'Parça, kod ya da soru yazın …',
     hello: 'Merhaba! Parça arayabilirim (ör. “70.56 fren”, “E007”, “hidrolik orta kol”) ya da teslimat, bayilik ve iletişim sorularınızı yanıtlarım.',
-    fallback: 'Bunu tam anlayamadım. Parça adı, stok kodu veya traktör modeli yazarsanız katalogda arayayım; ya da ekibimize doğrudan ulaşın.',
+    // positive wording only, and every open question is handed to customer service with the direct channels
+    fallback: `Bu konuda size en doğru bilgiyi müşteri hizmetlerimiz verecektir. Konuyla ilgili bilgi almak için lütfen ${CONTACT.phone} numaralı telefondan veya WhatsApp hattımızdan müşteri hizmetlerimize ulaşın; dilerseniz ${CONTACT.email} adresine de yazabilirsiniz. Parça arıyorsanız parça adı, stok kodu ya da traktör modelini yazmanız yeterli.`,
     found: (n: number) => `Katalogda ${n} parça buldum:`, more: (n: number) => `${n} sonucun tamamını Parça Bulucu’da gör`, add: 'Sepete ekle', added: 'Sepette',
-    note: 'Canlı destek değildir · girdiğiniz bilgiler saklanmaz',
+    note: 'Otomatik asistan · müşteri hizmetlerimiz mesai saatlerinde yanınızda',
     chips: ['Parça nasıl bulurum?', 'Teklif almak', 'Teslimat', 'Bayilik / B2B', 'Hangi markalar?', 'İletişim'],
   },
   en: {
     name: 'AKIN Assistant', sub: 'Automatic answers from the catalogue and site', open: 'Open assistant', close: 'Close', ph: 'Type a part, code or question …',
     hello: 'Hello! I can search parts (e.g. “70.56 brake”, “E007”, “hydraulic top link”) or answer questions about delivery, dealership and contact.',
-    fallback: 'I didn’t quite get that. Type a part name, stock code or tractor model and I’ll search the catalogue, or contact our team directly.',
+    fallback: `Our customer service team will give you the most accurate answer on this. For information on this topic, please contact customer service at ${CONTACT.phone} or on WhatsApp, or write to ${CONTACT.email}. Looking for a part? Just type its name, stock code or tractor model.`,
     found: (n: number) => `I found ${n} parts in the catalogue:`, more: (n: number) => `See all ${n} results in the Part Finder`, add: 'Add to quote', added: 'In list',
-    note: 'Not a live chat · nothing you type is stored',
+    note: 'Automatic assistant · our customer service team is here during opening hours',
     chips: ['How do I find a part?', 'Getting a quote', 'Delivery', 'Dealers / B2B', 'Which brands?', 'Contact'],
   },
 };
 const CHIP_IDS = ['finder', 'quote', 'delivery', 'b2b', 'brands', 'contact'];
+
+/** customer-service channels offered whenever the assistant hands a question over */
+const support = (lang: Lang): L[] => [
+  { l: lang === 'tr' ? 'Müşteri hizmetlerini ara' : 'Call customer service', h: `tel:${CONTACT.phone.replace(/\s/g, '')}` },
+  { l: 'WhatsApp', h: `https://wa.me/${CONTACT.whatsapp}` },
+  { l: lang === 'tr' ? 'E-posta gönder' : 'Send an email', h: `mailto:${CONTACT.email}` },
+];
 
 function intents(lang: Lang) {
   const tr = lang === 'tr'; const H = (p: string) => href(lang, p);
@@ -52,7 +60,7 @@ function intents(lang: Lang) {
     { id: 'contact', kw: ['iletisim', 'telefon', 'numara', 'adres', 'nerede', 'konum', 'mail', 'e-posta', 'whatsapp', 'contact', 'phone', 'address', 'where', 'email'], a: tr ? `Adres: ${CONTACT.address}. Telefon: ${CONTACT.phone} · ${CONTACT.phone2}. E-posta: ${CONTACT.email} · destek: ${CONTACT.email2}. ${CONTACT.hours.tr}.` : `Address: ${CONTACT.address}. Phone: ${CONTACT.phone} · ${CONTACT.phone2}. Email: ${CONTACT.email} · support: ${CONTACT.email2}. ${CONTACT.hours.en}.`, links: [call, wa, { l: tr ? 'İletişim' : 'Contact', h: H('contact') }] },
     { id: 'hours', kw: ['saat', 'acik mi', 'calisma', 'cumartesi', 'hours', 'open', 'saturday'], a: CONTACT.hours[lang], links: [call] },
     { id: 'about', kw: ['hakkinda', 'kimsiniz', 'ne zamandan', 'kurulus', 'kac yil', 'tecrube', 'about', 'since', 'founded', 'who are'], a: tr ? '1998’de Konya’da aile işletmesi olarak kurulduk. Bugün 50’yi aşkın uzman ve 15 ürün grubunda 565 stok koduyla çalışıyoruz.' : 'We were founded in Konya in 1998 as a family business. Today 50+ specialists work with 565 stock codes in 15 product groups.', links: [{ l: tr ? 'Hakkımızda' : 'About', h: H('about') }] },
-    { id: 'photo', kw: ['fotograf', 'resim', 'kodu bilmiyorum', 'bilmiyorum', 'photo', 'picture', "don't know the code"], a: tr ? 'Kodu bilmiyorsanız parçanın fotoğrafını WhatsApp’tan gönderin; uzmanlarımız eşleştirsin.' : 'Don’t know the code? Send a photo of the part on WhatsApp and our specialists will match it.', links: [wa] },
+    { id: 'photo', kw: ['fotograf', 'resim', 'kodu bilmiyorum', 'bilmiyorum', 'photo', 'picture', "don't know the code"], a: tr ? 'Parçanın fotoğrafını WhatsApp’tan gönderin; uzmanlarımız doğru stok kodunu sizin için eşleştirsin.' : 'Send a photo of the part on WhatsApp and our specialists will match the right stock code for you.', links: [wa] },
     { id: 'refs', kw: ['referans', 'musteri', 'proje', 'kooperatif', 'belediye', 'reference', 'customer', 'project'], a: tr ? '5.000’i aşkın müşterimiz var: tarım işletmeleri, kooperatifler, belediyeler, eğitim kurumları ve servis/bayiler. Proje ve müşteri görüşlerini Referanslar sayfasında bulabilirsiniz.' : 'We serve more than 5,000 customers: farms, co-operatives, municipalities, schools and workshops/dealers. Projects and customer quotes are on the References page.', links: [{ l: tr ? 'Referanslar' : 'References', h: H('references') }] },
     { id: 'blog', kw: ['blog', 'haber', 'rehber', 'bakim', 'ariza', 'belirti', 'kis', 'news', 'guide', 'maintenance', 'symptom', 'winter'], a: tr ? 'Bakım ve parça seçimi üzerine rehberlerimiz var: debriyaj belirtileri, hidrolik orta kol seçimi ve kış öncesi soğutma kontrolü.' : 'We publish guides on maintenance and choosing parts: clutch symptoms, choosing a top link and a winter cooling checklist.', links: [{ l: tr ? 'Haberler & Blog' : 'News & Blog', h: H('news') }] },
     { id: 'thanks', kw: ['tesekkur', 'sagol', 'eyvallah', 'thank', 'thx'], a: tr ? 'Rica ederim! Başka bir parça arıyorsanız yazmanız yeterli.' : 'You’re welcome! Just type if you need another part.', links: [] },
@@ -97,7 +105,7 @@ export default function Assistant({ lang }: { lang: Lang }) {
     if (hit && (!best || score < 2 || ['brands', 'greet'].includes(best.id))) {
       out.push({ who: 'bot', text: u.found(hit.list.length), parts: hit.list.slice(0, 4), more: hit.list.length > 4 ? { q: hit.q, n: hit.list.length } : undefined });
     } else if (best) out.push({ who: 'bot', text: best.a, links: best.links });
-    else out.push({ who: 'bot', text: u.fallback, links: [{ l: 'WhatsApp', h: `https://wa.me/${CONTACT.whatsapp}` }, { l: lang === 'tr' ? 'Parça Bulucu' : 'Part Finder', h: href(lang, 'finder') }], chips: true });
+    else out.push({ who: 'bot', text: u.fallback, links: support(lang), chips: true });
     setTyping(true); setTimeout(() => { setTyping(false); setMsgs(m => [...m, ...out]); }, 420);
   };
   const ask = (text: string) => { text = text.trim(); if (!text) return; setMsgs(m => [...m, { who: 'me', text }]); reply(text); };
@@ -121,7 +129,7 @@ export default function Assistant({ lang }: { lang: Lang }) {
                   <button className={q.has(p.code) ? 'on' : ''} onClick={() => { q.add(p.code); q.toast(`${p.code} · ${lang === 'tr' ? 'teklif sepetine eklendi' : 'added to quote list'}`); }}>{q.has(p.code) ? '✓ ' + u.added : '+ ' + u.add}</button>
                 </div>))}</div>}
               {m.more && <Link className="amore" href={href(lang, 'finder') + `?q=${encodeURIComponent(m.more.q)}`} onClick={() => setOpen(false)}>{u.more(m.more.n)} →</Link>}
-              {m.links && m.links.length > 0 && <div className="alinks">{m.links.map(l => /^https?:|^tel:/.test(l.h) ? <a key={l.h} href={l.h} target={l.h.startsWith('http') ? '_blank' : undefined} rel="noopener">{l.l} →</a> : <Link key={l.h} href={l.h} onClick={() => setOpen(false)}>{l.l} →</Link>)}</div>}
+              {m.links && m.links.length > 0 && <div className="alinks">{m.links.map(l => /^https?:|^tel:|^mailto:/.test(l.h) ? <a key={l.h} href={l.h} target={l.h.startsWith('http') ? '_blank' : undefined} rel="noopener">{l.l} →</a> : <Link key={l.h} href={l.h} onClick={() => setOpen(false)}>{l.l} →</Link>)}</div>}
               {m.chips && <div className="achips">{u.chips.map((c, k) => <button key={c} onClick={() => chip(k)}>{c}</button>)}</div>}
             </div>
           ))}
