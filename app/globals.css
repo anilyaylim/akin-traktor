@@ -881,3 +881,5 @@ html.light .mx-card .pf-x { background: #fff; }
   .mapx.open .mx-card { transform: none; }
 }
 @media (prefers-reduced-motion: reduce) { .mapx.seen .mx-pin { animation: none; opacity: 1; } .mx-ring { display: none; } }
+
+.mx-two { display: grid; gap: 2px; }

@@ -41,7 +41,8 @@ export default function MapPin({ lang, title }: { lang: Lang; title: string }) {
           <ul className="mx-rows">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z" /><circle cx="12" cy="10" r="2.5" /></svg><span>{CONTACT.address}</span></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 2" /></svg><span>{CONTACT.hours[lang]}</span></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`} tabIndex={open ? 0 : -1}>{CONTACT.phone}</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z" /></svg><span className="mx-two">{[CONTACT.phone, CONTACT.phone2].map(n => <a key={n} href={`tel:${n.replace(/\s/g, '')}`} tabIndex={open ? 0 : -1}>{n}</a>)}</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg><span className="mx-two">{[CONTACT.email, CONTACT.email2].map(m => <a key={m} href={`mailto:${m}`} tabIndex={open ? 0 : -1}>{m}</a>)}</span></li>
           </ul>
           <div className="mx-act">
             <a className="btn btn-red btn-sm" href={CONTACT.map} target="_blank" rel="noopener" tabIndex={open ? 0 : -1}>{x.dir} ↗</a>

@@ -18,9 +18,9 @@ const ICON: Record<string, React.ReactNode> = {
 
 export default async function Contact({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = (await params) as { lang: Lang }; const d = t(lang).contact; const x = p(lang).contact;
-  const ld = { '@context': 'https://schema.org', '@type': 'AutoPartsStore', name: 'Akın Traktör', foundingDate: '1998', email: CONTACT.email, address: { '@type': 'PostalAddress', streetAddress: 'Fevziçakmak Mah. 10763 Sk. No: 1/C', addressLocality: 'Karatay', addressRegion: 'Konya', postalCode: '42050', addressCountry: 'TR' }, geo: { '@type': 'GeoCoordinates', latitude: CONTACT.geo.lat, longitude: CONTACT.geo.lng }, hasMap: CONTACT.map };
-  const hrefOf = (k: string) => k === 'wa' ? `https://wa.me/${CONTACT.whatsapp}` : k === 'tel' ? `tel:${CONTACT.phone.replace(/\s/g, '')}` : k === 'mail' ? `mailto:${CONTACT.email}` : CONTACT.map;
-  const val = (k: string) => k === 'wa' || k === 'tel' ? CONTACT.phone : k === 'mail' ? CONTACT.email : 'Fevziçakmak, Karatay';
+  const ld = { '@context': 'https://schema.org', '@type': 'AutoPartsStore', name: 'Akın Traktör', foundingDate: '1998', email: CONTACT.email, telephone: [CONTACT.phone, CONTACT.phone2], address: { '@type': 'PostalAddress', streetAddress: 'Fevziçakmak Mah. 10763 Sk. No: 1/C', addressLocality: 'Karatay', addressRegion: 'Konya', postalCode: '42050', addressCountry: 'TR' }, geo: { '@type': 'GeoCoordinates', latitude: CONTACT.geo.lat, longitude: CONTACT.geo.lng }, hasMap: CONTACT.map };
+  const hrefOf = (k: string) => k === 'wa' ? `https://wa.me/${CONTACT.whatsapp}` : k === 'tel' ? `tel:${CONTACT.phone2.replace(/\s/g, '')}` : k === 'mail' ? `mailto:${CONTACT.email}` : CONTACT.map;
+  const val = (k: string) => k === 'wa' ? CONTACT.phone : k === 'tel' ? CONTACT.phone2 : k === 'mail' ? CONTACT.email : 'Fevziçakmak, Karatay';
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
@@ -34,8 +34,8 @@ export default async function Contact({ params }: { params: Promise<{ lang: stri
       <section className="section" style={{ paddingTop: 0 }}><div className="wrap cgrid">
         <dl className="cinfo fade">
           <div><dt>{d.address}</dt><dd>{CONTACT.address}</dd></div>
-          <div><dt>{d.phone}</dt><dd><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a></dd></div>
-          <div><dt>{d.email}</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></dd></div>
+          <div><dt>{d.phone}</dt><dd><a href={`tel:${CONTACT.phone.replace(/\s/g, '')}`}>{CONTACT.phone}</a><br /><a href={`tel:${CONTACT.phone2.replace(/\s/g, '')}`}>{CONTACT.phone2}</a></dd></div>
+          <div><dt>{d.email}</dt><dd><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a><br /><a href={`mailto:${CONTACT.email2}`}>{CONTACT.email2}</a></dd></div>
           <div><dt>{d.hours}</dt><dd>{CONTACT.hours[lang]}</dd></div>
         </dl>
         <ContactForm lang={lang} />

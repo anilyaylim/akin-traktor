@@ -2,9 +2,11 @@ import type { Lang } from './catalog';
 
 export const LANGS: Lang[] = ['tr', 'en'];
 export const CONTACT = {
-  phone: '+90 332 000 00 00',          // demo placeholder – real number to be supplied by Akın Traktör
-  whatsapp: '903320000000',
+  phone: '+90 555 123 45 67',          // mobile · also the WhatsApp line
+  phone2: '+90 312 123 45 67',         // landline
+  whatsapp: '905551234567',
   email: 'info@akintraktor.com',
+  email2: 'destek@akintraktor.com',    // support
   address: 'Fevziçakmak Mah. 10763 Sk. No: 1/C, Artar 1, 42050 Karatay / Konya',
   hours: { tr: 'Pzt–Cum 08:00–18:00 · Cmt 09:00–14:00', en: 'Mon–Fri 08:00–18:00 · Sat 09:00–14:00' },
   // Yandex Maps business listing (Akın Traktör, Fevziçakmak Mah. 10763. Sk. 1C) + its coordinates and org id for the embed
